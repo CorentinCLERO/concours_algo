@@ -89,33 +89,40 @@ def solve(dataset_txt):
 
 
 
-dataset_file = "1_example"
+dataset_file = "1_exemple"
 dataset = open(f'.\\datasets\\{dataset_file}.json').read()
+scoreAttempded = 120
+
+def boucle():
+    max_attempts = 1000000
+    best_score = 0
+
+    for attempt in range(max_attempts):
+        solution = solve(dataset)
+        score, is_valid, message = test_solution.getSolutionScore(solution, dataset)
+
+        if is_valid and score > scoreAttempded:
+            print('✅ Solution is valid!')
+            print(f'Message: {message}')
+            print(f'Score: {score:_}')
+
+            date = datetime.datetime.now().strftime('%Y%m%d_%H%M%S')
+            file_name = f'{dataset_file}_{score}_{date}'
+
+            with open(f'.\\solutions\\{file_name}.json', 'w') as f:
+                f.write(solution)
+            print('Solution saved')
+            return
+
+        if score > best_score:
+            best_score = score
+
+        print(f'Attempt {attempt + 1}: Score = {score}')
+
+    print(f'❌ Could not find solution better than {scoreAttempded} after {max_attempts} attempts')
+    print(f'Best score achieved: {best_score}')
+
 
 print('---------------------------------')
 print(f'Solving {dataset_file}')
-solution = solve(dataset)
-print('---------------------------------')
-score, is_valid, message = test_solution.getSolutionScore(solution, dataset)
-
-if is_valid:
-    print('✅ Solution is valid!')
-    print(f'Message: {message}')
-    print(f'Score: {score:_}')
-    
-    save = input('Save solution? (y/n): ')
-    if save.lower() == 'y':
-        date = datetime.datetime.now().strftime('%Y%m%d_%H%M%S')
-        file_name = f'{dataset_file}_{score}_{date}'
-        
-        with open(f'.\\solutions\\{file_name}.json', 'w') as f:
-            f.write(solution)
-        print('Solution saved')
-    else:
-        print('Solution not saved')
-    
-else:
-    print('❌ Solution is invalid')
-    print(f'Message: {message}')
-
-
+boucle()
