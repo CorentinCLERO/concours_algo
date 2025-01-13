@@ -88,7 +88,6 @@ def solve(dataset_txt):
     return json.dumps({"chargeStationId": base_id, "itinerary": path})
 
 
-
 dataset_file = "1_exemple"
 dataset = open(f'.\\datasets\\{dataset_file}.json').read()
 scoreAttempded = 120
