@@ -104,42 +104,55 @@ def analyze_base_nodes(G, dataset):
     return top_nodes
 
 def get_cached_base_nodes(dataset_file):
-    """Récupère les meilleurs noeuds de base depuis le cache"""
-    cache_file = f'cache/base_nodes/base_nodes_cache_{dataset_file}.json'
-    if os.path.exists(cache_file):
+    """Récupère les noeuds de base depuis le cache ou les calcule si nécessaire"""
+    cache_dir = 'cache/base_nodes'
+    cache_file = f'{cache_dir}/base_nodes_cache_{dataset_file}.json'
+
+    # Créer le dossier de cache s'il n'existe pas
+    try:
+        os.makedirs(cache_dir, exist_ok=True)
+    except Exception as e:
+        print(f"Warning: Could not create cache directory: {e}")
+        return None
+
+    try:
+        # Essayer de lire le cache
         with open(cache_file, 'r') as f:
             return json.load(f)
-    return None
+    except (PermissionError, FileNotFoundError) as e:
+        print(f"Warning: Could not access cache file: {e}")
+        return None
+    except Exception as e:
+        print(f"Warning: Unexpected error while reading cache: {e}")
+        return None
 
-def save_base_nodes_cache(dataset_file, top_nodes):
-    """Sauvegarde les meilleurs noeuds de base dans le cache"""
-    cache_file = f'cache/base_nodes/base_nodes_cache_{dataset_file}.json'
-    with open(cache_file, 'w') as f:
-        json.dump(top_nodes, f, indent=2)
+def save_cached_base_nodes(dataset_file, nodes):
+    """Sauvegarde les noeuds de base dans le cache"""
+    cache_dir = 'cache/base_nodes'
+    cache_file = f'{cache_dir}/base_nodes_cache_{dataset_file}.json'
+
+    try:
+        # Créer le dossier de cache s'il n'existe pas
+        os.makedirs(cache_dir, exist_ok=True)
+
+        # Sauvegarder dans le cache
+        with open(cache_file, 'w') as f:
+            json.dump(nodes, f)
+    except Exception as e:
+        print(f"Warning: Could not save to cache: {e}")
 
 def find_best_base(G, dataset, dataset_file):
-    """Trouve le meilleur noeud de base en utilisant le cache"""
-    # Essayer de charger depuis le cache
+    """Trouve le meilleur noeud de base"""
+    # Essayer de récupérer depuis le cache
     cached_nodes = get_cached_base_nodes(dataset_file)
 
     if cached_nodes is None:
-        # Analyser les noeuds et sauvegarder dans le cache
-        print("Analyzing base nodes...")
-        top_nodes = analyze_base_nodes(G, dataset)
-        save_base_nodes_cache(dataset_file, top_nodes)
-        cached_nodes = top_nodes
+        # Si le cache n'est pas accessible, calculer les noeuds
+        cached_nodes = analyze_base_nodes(G, dataset)
+        # Essayer de sauvegarder dans le cache
+        save_cached_base_nodes(dataset_file, cached_nodes)
 
-    # # Afficher les meilleurs noeuds et leurs caractéristiques
-    # print("\nTop base nodes:")
-    # for node_id, stats in cached_nodes:
-    #     print(f"\nNode {node_id}:")
-    #     print(f"  Score: {stats['score']:.2f}")
-    #     print(f"  Neighbors: {stats['num_neighbors']}")
-    #     print(f"  Avg Distance: {stats['avg_distance']:.2f}")
-    #     print(f"  Reachable Edges: {stats['reachable_edges']}")
-    #     print(f"  One-way Routes: {stats['outgoing_one_way']}")
-    #     print(f"  Connected Length: {stats['total_connected_length']:.2f}")
-
+    # Retourner un noeud au hasard parmi les meilleurs
     random_node = random.choice(cached_nodes)
     print(f"\nChosen base node {random_node[0]} with score {random_node[1]['score']:.2f}")
     return int(random_node[0])
@@ -323,70 +336,55 @@ def get_highest_score_from_files(dataset_file):
 
     return highest_score
 
-# dataset_file = "1_example"
-# dataset_file = "2_pacman"
-dataset_file = "3_efrei"
-# dataset_file = "4_manhattan"
-# dataset_file = "5_gta"
-# dataset_file = "6_paris"
-# dataset_file = "7_london"
-dataset = open(f'.\\datasets\\{dataset_file}.json').read()
-scoreAttempded = 120
-
 def loop():
     max_attempts = 1000
-    best_score = 0
     best_result = None
-    is_result_find = False
+    best_score = 0
+
+    # Vérifie si la meilleure solution trouvée est meilleure que les solutions existantes
+    highest_existing_score = get_highest_score_from_files(dataset_file)
 
     for attempt in range(max_attempts):
         solution = solve(dataset)
         score, is_valid, message = test_solution.getSolutionScore(solution, dataset)
 
-        # if is_valid and score >= scoreAttempded:
-        #     print('✅ Solution is valid!')
-        #     print(f'Message: {message}')
-        #     print(f'Score: {score:_}')
-        #     is_result_find = True
-
-        #     break
-
-        if score > best_score:
+        if is_valid and score > best_score:
             best_score = score
             best_result = solution
 
-        print(f'Attempt {attempt + 1}: Score = {score}')
+        if is_valid and score > highest_existing_score:
+            print(f'✅ New best score! (Previous best: {highest_existing_score})')
 
-    # if not is_result_find:
-    #     print(f'❌ Could not find solution better than {scoreAttempded} after {max_attempts} attempts')
-    #     print(f'Best score achieved: {best_score}')
+            # Supprimer les anciennes solutions avec des scores inférieurs
+            pattern = f'.\\solutions\\{dataset_file}_*.json'
+            for old_file in glob.glob(pattern):
+                try:
+                    old_score = int(old_file.split('_')[2])
+                    if old_score < score:
+                        os.remove(old_file)
+                except (IndexError, ValueError):
+                    continue
 
-    # Vérifie si la meilleure solution trouvée est meilleure que les solutions existantes
-    highest_existing_score = get_highest_score_from_files(dataset_file)
+            # Sauvegarder la nouvelle meilleure solution
+            date = datetime.datetime.now().strftime('%Y%m%d_%H%M%S')
+            file_name = f'{dataset_file}_{score}_{date}'
 
-    if best_score > highest_existing_score:
-        print(f'New best score! (Previous best: {highest_existing_score})')
+            with open(f'.\\solutions\\{file_name}.json', 'w') as f:
+                f.write(best_result)
+            # print('Best solution saved')
+        elif not is_valid:
+            print(f'❌ Invalid solution: {message}')
+        
+    print
 
-        # Supprimer les anciennes solutions avec des scores inférieurs
-        pattern = f'.\\solutions\\{dataset_file}_*.json'
-        for old_file in glob.glob(pattern):
-            try:
-                old_score = int(old_file.split('_')[2])
-                if old_score < best_score:
-                    os.remove(old_file)
-                    print(f'Removed old solution with score {old_score}')
-            except (IndexError, ValueError):
-                continue
-
-        # Sauvegarder la nouvelle meilleure solution
-        date = datetime.datetime.now().strftime('%Y%m%d_%H%M%S')
-        file_name = f'{dataset_file}_{best_score}_{date}'
-
-        with open(f'.\\solutions\\{file_name}.json', 'w') as f:
-            f.write(best_result)
-        print('Best solution saved')
-    else:
-        print(f'No new best score ({best_score}). Current best remains: {highest_existing_score}')
+dataset_file = "1_example"
+# dataset_file = "2_pacman"
+# dataset_file = "3_efrei"
+# dataset_file = "4_manhattan"
+# dataset_file = "5_gta"
+# dataset_file = "6_paris"
+# dataset_file = "7_london"
+dataset = open(f'.\\datasets\\{dataset_file}.json').read()
 
 print('---------------------------------')
 print(f'Solving {dataset_file}')
