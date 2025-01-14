@@ -1,0 +1,69 @@
+{
+  "dataset": "3_efrei",
+  "depth_number": 7,
+  "roads_length": 1647,
+  "scores": [
+    {
+      "score": 47503,
+      "is_valid": true,
+      "timestamp": "20250114_152737"
+    },
+    {
+      "score": 44219,
+      "is_valid": true,
+      "timestamp": "20250114_152755"
+    },
+    {
+      "score": 46905,
+      "is_valid": true,
+      "timestamp": "20250114_152815"
+    },
+    {
+      "score": 38177,
+      "is_valid": true,
+      "timestamp": "20250114_152830"
+    },
+    {
+      "score": 52030,
+      "is_valid": true,
+      "timestamp": "20250114_152851"
+    },
+    {
+      "score": 58262,
+      "is_valid": true,
+      "timestamp": "20250114_152930"
+    },
+    {
+      "score": 36405,
+      "is_valid": true,
+      "timestamp": "20250114_152954"
+    },
+    {
+      "score": 29190,
+      "is_valid": true,
+      "timestamp": "20250114_153013"
+    },
+    {
+      "score": 20671,
+      "is_valid": true,
+      "timestamp": "20250114_153020"
+    },
+    {
+      "score": 30993,
+      "is_valid": true,
+      "timestamp": "20250114_153039"
+    },
+    {
+      "score": 28285,
+      "is_valid": true,
+      "timestamp": "20250114_153053"
+    }
+  ],
+  "stats": {
+    "highest_score": 58262,
+    "lowest_score": 20671,
+    "valid_attempts": 11,
+    "invalid_attempts": 0,
+    "total_attempts": 11
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "dataset": "3_efrei",
+  "depth_number": 3,
+  "roads_length": 1647,
+  "scores": [
+    {
+      "score": 25544,
+      "is_valid": true,
+      "timestamp": "20250114_153229"
+    },
+    {
+      "score": 30565,
+      "is_valid": true,
+      "timestamp": "20250114_153229"
+    },
+    {
+      "score": 62593,
+      "is_valid": true,
+      "timestamp": "20250114_153230"
+    },
+    {
+      "score": 62593,
+      "is_valid": true,
+      "timestamp": "20250114_153231"
+    },
+    {
+      "score": 22610,
+      "is_valid": true,
+      "timestamp": "20250114_153231"
+    },
+    {
+      "score": 30474,
+      "is_valid": true,
+      "timestamp": "20250114_153231"
+    },
+    {
+      "score": 29980,
+      "is_valid": true,
+      "timestamp": "20250114_153232"
+    },
+    {
+      "score": 28983,
+      "is_valid": true,
+      "timestamp": "20250114_153232"
+    },
+    {
+      "score": 30474,
+      "is_valid": true,
+      "timestamp": "20250114_153233"
+    },
+    {
+      "score": 12439,
+      "is_valid": true,
+      "timestamp": "20250114_153233"
+    },
+    {
+      "score": 25096,
+      "is_valid": true,
+      "timestamp": "20250114_153233"
+    },
+    {
+      "score": 57983,
+      "is_valid": true,
+      "timestamp": "20250114_153235"
+    },
+    {
+      "score": 20276,
+      "is_valid": true,
+      "timestamp": "20250114_153235"
+    },
+    {
+      "score": 64077,
+      "is_valid": true,
+      "timestamp": "20250114_153237"
+    },
+    {
+      "score": 25096,
+      "is_valid": true,
+      "timestamp": "20250114_153237"
+    },
+    {
+      "score": 69593,
+      "is_valid": true,
+      "timestamp": "20250114_153238"
+    },
+    {
+      "score": 22521,
+      "is_valid": true,
+      "timestamp": "20250114_153238"
+    }
+  ],
+  "stats": {
+    "highest_score": 69593,
+    "lowest_score": 12439,
+    "valid_attempts": 17,
+    "invalid_attempts": 0,
+    "total_attempts": 17
+  }
+}

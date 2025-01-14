@@ -5,6 +5,8 @@ import random
 import networkx as nx
 import test_solution
 import datetime
+import matplotlib.pyplot as plt
+import seaborn as sns
 
 def analyze_base_nodes(G, dataset):
     """Analyse tous les noeuds et retourne les 10% meilleurs avec leurs caractéristiques"""
@@ -157,7 +159,7 @@ def find_best_base(G, dataset, dataset_file):
     print(f"\nChosen base node {random_node[0]} with score {random_node[1]['score']:.2f}")
     return int(random_node[0])
 
-def solve(dataset_txt):
+def solve(dataset_txt, depth_complexity):
     # Lecture du dataset
     dataset = json.loads(dataset_txt)
 
@@ -196,99 +198,90 @@ def solve(dataset_txt):
             # L'agorithme du choix du prochain noeud est là !
             # Commencez par trouver un meilleur algorithme que celui-ci
             # -------------------------------------------
-            # Stratégie améliorée pour choisir le prochain nœud
-            next_node = None
-            best_priority = -1
-            has_alternative = False  # Pour tracker si on a d'autres options viables
+            def evaluate_path(G, path, curr_battery, visited_roads, dist_to_base, dataset, depth):
+                """Évalue un chemin possible en fonction de plusieurs critères"""
+                total_score = 0
+                remaining_battery = curr_battery
+                current_visited = visited_roads.copy()
 
-            # Pour chaque voisin possible
-            for nxt in neighbors:
-                edge_len = G[curr_node][nxt]['length']  # Longueur de la route vers ce voisin
+                # Évaluer chaque étape du chemin
+                for i in range(len(path)-1):
+                    node1, node2 = path[i], path[i+1]
+                    edge_len = G[node1][node2]['length']
 
-                # Vérification différente selon si c'est le dernier jour ou non
-                can_move = False
-                if day_i == dataset['numDays'] - 1:
-                    if nxt == base_id:
-                        can_move = battery_remaining >= edge_len
-                    else:
-                        distance_to_base = dist_to_base[nxt]
-                        can_move = battery_remaining >= (edge_len + distance_to_base)
-                else:
-                    can_move = battery_remaining >= edge_len + dist_to_base[nxt]
+                    if remaining_battery < edge_len:
+                        return float('-inf')  # Chemin impossible
 
-                # Si le mouvement est possible
-                if can_move:
-                    # Initialisation du score de priorité pour ce nœud
-                    priority = 0
+                    remaining_battery -= edge_len
 
-                    # Priorité 1: Routes non visitées (bonus important)
-                    if (curr_node, nxt) not in visited_roads:
-                        priority += 100
+                    # Bonus pour routes non visitées
+                    if (node1, node2) not in current_visited:
+                        total_score += 100 * (1 / (depth + 1))  # Diminue avec la profondeur
+                        current_visited.add((node1, node2))
 
-                    # Priorité 2: Bonus pour les routes plus longues
-                    priority += edge_len / 10
+                    # Bonus pour la longueur de la route
+                    total_score += edge_len / 10
 
-                    # Priorité 3: Bonus pour les nœuds ayant beaucoup de voisins non visités
-                    unvisited_neighbors = sum(1 for neighbor in G.neighbors(nxt)
-                                            if (nxt, neighbor) not in visited_roads)
-                    priority += unvisited_neighbors * 5
+                    # Bonus pour les voisins non visités du prochain nœud
+                    unvisited_neighbors = sum(1 for neighbor in G.neighbors(node2)
+                                            if (node2, neighbor) not in current_visited)
+                    total_score += unvisited_neighbors * 5 * (1 / (depth + 1))
 
-                    # Priorité 4: Gestion de la batterie et retour à la base
-                    battery_after_move = battery_remaining - edge_len
-                    if battery_after_move < dist_to_base[nxt]:
-                        priority -= 1000  # Forte pénalité si on risque de ne pas pouvoir rentrer
+                    # Pénalité si on ne peut pas rentrer à la base
+                    if remaining_battery < dist_to_base[node2]:
+                        total_score -= 1000
 
-                    # Priorité 5: Pénalité pour retour à la base si non nécessaire
-                    if nxt == base_id:
-                        # Vérifier s'il existe d'autres chemins viables
-                        remaining_battery_if_skip_base = battery_remaining - edge_len
-                        if remaining_battery_if_skip_base > dataset['batteryCapacity'] / 3:
-                            priority -= 500  # Forte pénalité pour retour non nécessaire à la base
+                    # Pénalité pour retour non nécessaire à la base
+                    if node2 == base_id and remaining_battery > dataset['batteryCapacity'] / 10:
+                        total_score -= 500
 
-                    # Priorité 6: Gestion différente selon le jour
-                    if day_i == dataset['numDays'] - 1:
-                        if (curr_node, nxt) not in visited_roads:
-                            priority += 50
-                    else:
-                        if dist_to_base[nxt] < dataset['batteryCapacity'] / 3:
-                            priority += 10
+                return total_score
 
-                    # Mise à jour du meilleur nœud si la priorité est plus élevée
-                    if priority > best_priority:
-                        best_priority = priority
-                        next_node = nxt
+            def find_best_path(G, curr_node, battery_remaining, visited_roads, dist_to_base, dataset, depth=0, max_depth=3):
+                """Trouve le meilleur chemin à partir du nœud actuel avec une profondeur donnée"""
+                if depth >= max_depth:
+                    return [], 0
 
-                    # Marquer qu'on a une alternative viable si ce n'est pas la base
-                    if nxt != base_id and battery_after_move >= dist_to_base[nxt]:
-                        has_alternative = True
+                best_path = []
+                best_score = float('-inf')
 
-            # Si on a choisi la base mais qu'il existe des alternatives viables
-            if next_node == base_id and has_alternative and battery_remaining > dataset['batteryCapacity'] / 3:
-                # Rechercher à nouveau le meilleur nœud en excluant la base
-                best_priority = -1
-                for nxt in [n for n in neighbors if n != base_id]:
-                    # [Répéter la logique de priorité précédente en excluant la base]
-                    # ... [même code que ci-dessus sans la partie base_id]
-                    if can_move and nxt != base_id:
-                        # [Calcul de priorité comme avant]
-                        if priority > best_priority:
-                            best_priority = priority
-                            next_node = nxt
+                neighbors = list(G.neighbors(curr_node))
+                for next_node in neighbors:
+                    edge_len = G[curr_node][next_node]['length']
 
-            # Vérifications de sécurité finales
-            if next_node is None or (next_node != base_id and
-                battery_remaining - G[curr_node][next_node]['length'] < dist_to_base[next_node]):
-                try:
-                    path_to_base = nx.shortest_path(G, curr_node, base_id, weight='length')
-                    total_distance = sum(G[path_to_base[i]][path_to_base[i+1]]['length']
-                                    for i in range(len(path_to_base)-1))
-                    if len(path_to_base) > 1 and total_distance <= battery_remaining:
-                        next_node = path_to_base[1]
-                    else:
-                        next_node = base_id
-                except nx.NetworkXNoPath:
-                    next_node = base_id
-            # -------------------------------------------
+                    # Vérifier si le mouvement est possible
+                    if battery_remaining >= edge_len:
+                        # Évaluer le chemin direct
+                        path = [curr_node, next_node]
+                        score = evaluate_path(G, path, battery_remaining, visited_roads, dist_to_base, dataset, depth)
+
+                        # Explorer récursivement
+                        if depth < max_depth - 1:
+                            next_battery = battery_remaining - edge_len
+                            next_visited = visited_roads.copy()
+                            if (curr_node, next_node) not in next_visited:
+                                next_visited.add((curr_node, next_node))
+
+                            sub_path, sub_score = find_best_path(G, next_node, next_battery, next_visited,
+                                                            dist_to_base, dataset, depth + 1, max_depth)
+
+                            if sub_path:
+                                path.extend(sub_path[1:])
+                                score += sub_score * (0.8 ** depth)  # Diminution de l'importance avec la profondeur
+
+                        if score > best_score:
+                            best_score = score
+                            best_path = path
+
+                return best_path, best_score
+
+            best_path, _ = find_best_path(G, curr_node, battery_remaining, visited_roads, dist_to_base, dataset, depth=0, max_depth=depth_complexity)
+
+            if best_path and len(best_path) > 1:
+                next_node = best_path[1]
+            else:
+                # Logique de secours si aucun bon chemin n'est trouvé
+                next_node = base_id
 
             # Mise à jour du score si la route n'a pas été visitée
             if (curr_node, next_node) not in visited_roads:
@@ -336,24 +329,170 @@ def get_highest_score_from_files(dataset_file):
 
     return highest_score
 
+def save_score_history(dataset_file, depth_number, score, is_valid, roads_length, timestamp=None):
+    """Sauvegarde l'historique des scores dans un fichier JSON"""
+    cache_dir = f'cache/scores/{dataset_file}'
+    os.makedirs(cache_dir, exist_ok=True)
+
+    history_file = f'{cache_dir}/history_depth_{depth_number}.json'
+
+    # Charger l'historique existant ou créer un nouveau
+    try:
+        with open(history_file, 'r') as f:
+            history = json.load(f)
+    except FileNotFoundError:
+        history = {
+            'dataset': dataset_file,
+            'depth_number': depth_number,
+            'roads_length': roads_length,
+            'scores': [],
+            'stats': {
+                'highest_score': 0,
+                'lowest_score': float('inf'),
+                'valid_attempts': 0,
+                'invalid_attempts': 0,
+                'total_attempts': 0
+            }
+        }
+
+    # Mettre à jour les statistiques
+    if timestamp is None:
+        timestamp = datetime.datetime.now().strftime('%Y%m%d_%H%M%S')
+
+    score_entry = {
+        'score': score,
+        'is_valid': is_valid,
+        'timestamp': timestamp
+    }
+
+    # Limiter le nombre d'entrées en fonction de la taille du dataset
+    max_entries = min(1000, max(100, int(roads_length / depth_number)))
+    history['scores'].append(score_entry)
+    if len(history['scores']) > max_entries:
+        history['scores'] = history['scores'][-max_entries:]
+
+    # Mettre à jour les stats
+    stats = history['stats']
+    stats['total_attempts'] += 1
+    if is_valid:
+        stats['valid_attempts'] += 1
+        stats['highest_score'] = max(stats['highest_score'], score)
+        stats['lowest_score'] = min(stats['lowest_score'], score)
+    else:
+        stats['invalid_attempts'] += 1
+
+    # Sauvegarder l'historique
+    with open(history_file, 'w') as f:
+        json.dump(history, f, indent=2)
+
+    return history
+
 def loop():
-    max_attempts = 1000
+    # Charger le dataset et obtenir le nombre de routes
+    dataset_data = json.loads(dataset)
+    roads_length = len(dataset_data['roads'])
+    print(f"Dataset {dataset_file} contains {roads_length} roads")
+
+    highest_existing_score = get_highest_score_from_files(dataset_file)
     best_result = None
     best_score = 0
 
+    for attempt in range(max_attempts):
+        print(f"\nAttempt {attempt + 1}/{max_attempts}")
+        solution = solve(dataset, depth_number)
+        score, is_valid, message = test_solution.getSolutionScore(solution, dataset)
+
+        # Sauvegarder dans l'historique
+        history = save_score_history(dataset_file, depth_number, score, is_valid, roads_length)
+
+        if is_valid and score > best_score:
+            best_score = score
+            best_result = solution
+
+            if score > highest_existing_score:
+                print(f'✅ New best score! (Previous best: {highest_existing_score})')
+
+                # Supprimer les anciennes solutions
+                pattern = f'.\\solutions\\{dataset_file}_*.json'
+                for old_file in glob.glob(pattern):
+                    try:
+                        old_score = int(old_file.split('_')[2])
+                        if old_score < score:
+                            os.remove(old_file)
+                    except (IndexError, ValueError):
+                        continue
+
+                # Sauvegarder la nouvelle solution
+                date = datetime.datetime.now().strftime('%Y%m%d_%H%M%S')
+                file_name = f'{dataset_file}_{score}_{date}'
+
+                with open(f'.\\solutions\\{file_name}.json', 'w') as f:
+                    f.write(best_result)
+                print(f'💾 Solution saved: {file_name}')
+
+        elif not is_valid:
+            print(f'❌ Invalid solution: {message}')
+
+        # Afficher les stats périodiquement
+        if (attempt + 1) % 10 == 0:
+            stats = history['stats']
+            print(f"\n📊 Current Statistics (Depth {depth_number}):")
+            print(f"Highest Score: {stats['highest_score']}")
+            print(f"Lowest Valid Score: {stats['lowest_score']}")
+            print(f"Valid/Total Attempts: {stats['valid_attempts']}/{stats['total_attempts']}")
+
+    print(f'\n🏁 Final best score: {best_score}')
+    return best_score
+
+def analyze_history(dataset_file=None, depth_number=None):
+    """Analyse l'historique des scores et génère des visualisations"""
+
+    cache_dir = 'cache/scores'
+    if dataset_file and depth_number:
+        files = [f'{cache_dir}/{dataset_file}/history_depth_{depth_number}.json']
+    else:
+        files = glob.glob(f'{cache_dir}/**/history_depth_*.json', recursive=True)
+
+    plt.figure(figsize=(15, 10))
+
+    for file in files:
+        with open(file, 'r') as f:
+            history = json.load(f)
+
+        valid_scores = [entry['score'] for entry in history['scores'] if entry['is_valid']]
+
+        sns.kdeplot(valid_scores, label=f"{history['dataset']} (Depth {history['depth_number']})")
+
+    plt.title('Score Distribution by Dataset and Depth')
+    plt.xlabel('Score')
+    plt.ylabel('Density')
+    plt.legend()
+
+    # Sauvegarder le graphique
+    os.makedirs('cache/visualizations', exist_ok=True)
+    plt.savefig('cache/visualizations/score_distribution.png')
+    print('📈 Generated visualization: cache/visualizations/score_distribution.png')
     # Vérifie si la meilleure solution trouvée est meilleure que les solutions existantes
     highest_existing_score = get_highest_score_from_files(dataset_file)
 
+    best_result = None
+    lowest_score = highest_existing_score
+    best_score = 0
+
     for attempt in range(max_attempts):
-        solution = solve(dataset)
+        solution = solve(dataset, depth_number)
         score, is_valid, message = test_solution.getSolutionScore(solution, dataset)
+
+        if is_valid and score < lowest_score:
+            lowest_score = score
 
         if is_valid and score > best_score:
             best_score = score
             best_result = solution
 
         if is_valid and score > highest_existing_score:
-            print(f'✅ New best score! (Previous best: {highest_existing_score})')
+            highest_existing_score = score
+            print(f'✅ New best score! {best_score} (Previous best: {highest_existing_score})')
 
             # Supprimer les anciennes solutions avec des scores inférieurs
             pattern = f'.\\solutions\\{dataset_file}_*.json'
@@ -375,17 +514,24 @@ def loop():
         elif not is_valid:
             print(f'❌ Invalid solution: {message}')
         
-    print
+    print(f'Best score found: {best_score}')
 
-dataset_file = "1_example"
+# dataset_file = "1_example"
 # dataset_file = "2_pacman"
-# dataset_file = "3_efrei"
+dataset_file = "3_efrei"
 # dataset_file = "4_manhattan"
 # dataset_file = "5_gta"
 # dataset_file = "6_paris"
 # dataset_file = "7_london"
 dataset = open(f'.\\datasets\\{dataset_file}.json').read()
-
+depth_number = 3
+max_attempts = 100
 print('---------------------------------')
 print(f'Solving {dataset_file}')
-loop()
+# loop()
+
+# Analyser un dataset spécifique
+# analyze_history("1_example", 7)
+
+# Analyser tous les datasets
+# analyze_history()
