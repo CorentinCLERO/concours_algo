@@ -1,0 +1,6684 @@
+[
+  [
+    3393,
+    {
+      "score": 132157.6507845893,
+      "num_neighbors": 4,
+      "all_num_neighbors": 59,
+      "neighbors_by_depth": { "1": 4, "2": 7, "3": 12, "4": 16, "5": 20 },
+      "avg_distance": 5593.66232503888,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 452
+    }
+  ],
+  [
+    558,
+    {
+      "score": 132154.23316148188,
+      "num_neighbors": 3,
+      "all_num_neighbors": 57,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 10, "4": 17, "5": 21 },
+      "avg_distance": 5523.862752721618,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 554
+    }
+  ],
+  [
+    78,
+    {
+      "score": 132152.5747518031,
+      "num_neighbors": 4,
+      "all_num_neighbors": 44,
+      "neighbors_by_depth": { "1": 4, "2": 7, "3": 8, "4": 12, "5": 13 },
+      "avg_distance": 5531.972395023328,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 0,
+      "total_connected_length": 705
+    }
+  ],
+  [
+    214,
+    {
+      "score": 132152.52331810186,
+      "num_neighbors": 4,
+      "all_num_neighbors": 43,
+      "neighbors_by_depth": { "1": 4, "2": 6, "3": 8, "4": 11, "5": 14 },
+      "avg_distance": 5556.8370917573875,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 0,
+      "total_connected_length": 808
+    }
+  ],
+  [
+    4824,
+    {
+      "score": 132149.3288702381,
+      "num_neighbors": 3,
+      "all_num_neighbors": 51,
+      "neighbors_by_depth": { "1": 3, "2": 7, "3": 11, "4": 14, "5": 16 },
+      "avg_distance": 5543.967729393468,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 636
+    }
+  ],
+  [
+    4511,
+    {
+      "score": 132148.75669348924,
+      "num_neighbors": 3,
+      "all_num_neighbors": 47,
+      "neighbors_by_depth": { "1": 3, "2": 7, "3": 11, "4": 13, "5": 13 },
+      "avg_distance": 5444.683709175739,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 3,
+      "total_connected_length": 418
+    }
+  ],
+  [
+    3399,
+    {
+      "score": 132145.7628255123,
+      "num_neighbors": 4,
+      "all_num_neighbors": 54,
+      "neighbors_by_depth": { "1": 4, "2": 7, "3": 9, "4": 14, "5": 20 },
+      "avg_distance": 5555.261275272162,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 359
+    }
+  ],
+  [
+    2505,
+    {
+      "score": 132145.27170446762,
+      "num_neighbors": 3,
+      "all_num_neighbors": 51,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 11, "4": 14, "5": 17 },
+      "avg_distance": 5523.327566096423,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 585
+    }
+  ],
+  [
+    2507,
+    {
+      "score": 132141.8425312614,
+      "num_neighbors": 3,
+      "all_num_neighbors": 50,
+      "neighbors_by_depth": { "1": 3, "2": 5, "3": 10, "4": 15, "5": 17 },
+      "avg_distance": 5404.360614307931,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 370
+    }
+  ],
+  [
+    2636,
+    {
+      "score": 132140.48135990486,
+      "num_neighbors": 4,
+      "all_num_neighbors": 56,
+      "neighbors_by_depth": { "1": 4, "2": 7, "3": 11, "4": 15, "5": 19 },
+      "avg_distance": 5725.2033437014,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 605
+    }
+  ],
+  [
+    4767,
+    {
+      "score": 132140.43517858104,
+      "num_neighbors": 3,
+      "all_num_neighbors": 52,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 9, "4": 14, "5": 20 },
+      "avg_distance": 5408.620139968896,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 313
+    }
+  ],
+  [
+    95,
+    {
+      "score": 132139.97904865045,
+      "num_neighbors": 4,
+      "all_num_neighbors": 43,
+      "neighbors_by_depth": { "1": 4, "2": 7, "3": 8, "4": 9, "5": 15 },
+      "avg_distance": 5613.232698289269,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 671
+    }
+  ],
+  [
+    4560,
+    {
+      "score": 132138.0830619319,
+      "num_neighbors": 3,
+      "all_num_neighbors": 56,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 11, "4": 16, "5": 20 },
+      "avg_distance": 5644.3777216174185,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 636
+    }
+  ],
+  [
+    364,
+    {
+      "score": 132137.33567164114,
+      "num_neighbors": 4,
+      "all_num_neighbors": 40,
+      "neighbors_by_depth": { "1": 4, "2": 5, "3": 9, "4": 9, "5": 13 },
+      "avg_distance": 5497.857892690513,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 577
+    }
+  ],
+  [
+    1137,
+    {
+      "score": 132136.56134831443,
+      "num_neighbors": 3,
+      "all_num_neighbors": 48,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 11, "4": 13, "5": 15 },
+      "avg_distance": 5586.660381026439,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 636
+    }
+  ],
+  [
+    559,
+    {
+      "score": 132136.17626849862,
+      "num_neighbors": 3,
+      "all_num_neighbors": 56,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 10, "4": 14, "5": 23 },
+      "avg_distance": 5513.995139968896,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 389
+    }
+  ],
+  [
+    1279,
+    {
+      "score": 132135.43104322714,
+      "num_neighbors": 3,
+      "all_num_neighbors": 41,
+      "neighbors_by_depth": { "1": 3, "2": 5, "3": 7, "4": 11, "5": 15 },
+      "avg_distance": 5404.903576982892,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 547
+    }
+  ],
+  [
+    3122,
+    {
+      "score": 132132.75543478978,
+      "num_neighbors": 4,
+      "all_num_neighbors": 44,
+      "neighbors_by_depth": { "1": 4, "2": 6, "3": 8, "4": 12, "5": 14 },
+      "avg_distance": 5495.575427682737,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 0,
+      "total_connected_length": 465
+    }
+  ],
+  [
+    3400,
+    {
+      "score": 132132.03470487247,
+      "num_neighbors": 3,
+      "all_num_neighbors": 55,
+      "neighbors_by_depth": { "1": 3, "2": 7, "3": 11, "4": 15, "5": 19 },
+      "avg_distance": 5565.5441290824265,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 420
+    }
+  ],
+  [
+    1281,
+    {
+      "score": 132131.88961618993,
+      "num_neighbors": 3,
+      "all_num_neighbors": 49,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 9, "4": 12, "5": 19 },
+      "avg_distance": 5436.789074650078,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 355
+    }
+  ],
+  [
+    4545,
+    {
+      "score": 132129.6143664568,
+      "num_neighbors": 3,
+      "all_num_neighbors": 57,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 13, "4": 15, "5": 20 },
+      "avg_distance": 5587.772356143079,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 402
+    }
+  ],
+  [
+    4711,
+    {
+      "score": 132127.39171074107,
+      "num_neighbors": 4,
+      "all_num_neighbors": 55,
+      "neighbors_by_depth": { "1": 4, "2": 7, "3": 11, "4": 15, "5": 18 },
+      "avg_distance": 5714.782465007776,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 0,
+      "total_connected_length": 525
+    }
+  ],
+  [
+    4831,
+    {
+      "score": 132123.20940100297,
+      "num_neighbors": 3,
+      "all_num_neighbors": 51,
+      "neighbors_by_depth": { "1": 3, "2": 7, "3": 11, "4": 13, "5": 17 },
+      "avg_distance": 5677.899494556766,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 635
+    }
+  ],
+  [
+    4710,
+    {
+      "score": 132122.5343667011,
+      "num_neighbors": 3,
+      "all_num_neighbors": 55,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 11, "4": 20, "5": 15 },
+      "avg_distance": 5584.200038880249,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 366
+    }
+  ],
+  [
+    4697,
+    {
+      "score": 132121.94409860755,
+      "num_neighbors": 3,
+      "all_num_neighbors": 56,
+      "neighbors_by_depth": { "1": 3, "2": 7, "3": 10, "4": 16, "5": 20 },
+      "avg_distance": 5621.132192846034,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 414
+    }
+  ],
+  [
+    694,
+    {
+      "score": 132120.49086219727,
+      "num_neighbors": 3,
+      "all_num_neighbors": 38,
+      "neighbors_by_depth": { "1": 3, "2": 5, "3": 6, "4": 9, "5": 15 },
+      "avg_distance": 5514.766135303266,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 702
+    }
+  ],
+  [
+    4581,
+    {
+      "score": 132119.62241898113,
+      "num_neighbors": 3,
+      "all_num_neighbors": 54,
+      "neighbors_by_depth": { "1": 3, "2": 7, "3": 10, "4": 16, "5": 18 },
+      "avg_distance": 5684.107115085537,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 549
+    }
+  ],
+  [
+    2374,
+    {
+      "score": 132117.28034901372,
+      "num_neighbors": 4,
+      "all_num_neighbors": 48,
+      "neighbors_by_depth": { "1": 4, "2": 5, "3": 8, "4": 13, "5": 18 },
+      "avg_distance": 5687.74766718507,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 524
+    }
+  ],
+  [
+    1829,
+    {
+      "score": 132116.88097576372,
+      "num_neighbors": 4,
+      "all_num_neighbors": 54,
+      "neighbors_by_depth": { "1": 4, "2": 8, "3": 10, "4": 14, "5": 18 },
+      "avg_distance": 5825.670295489891,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 528
+    }
+  ],
+  [
+    1627,
+    {
+      "score": 132116.00258719138,
+      "num_neighbors": 3,
+      "all_num_neighbors": 47,
+      "neighbors_by_depth": { "1": 3, "2": 5, "3": 10, "4": 13, "5": 16 },
+      "avg_distance": 5570.707037325039,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 513
+    }
+  ],
+  [
+    1576,
+    {
+      "score": 132115.4615736559,
+      "num_neighbors": 4,
+      "all_num_neighbors": 45,
+      "neighbors_by_depth": { "1": 4, "2": 7, "3": 8, "4": 11, "5": 15 },
+      "avg_distance": 5624.9059097978225,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 0,
+      "total_connected_length": 498
+    }
+  ],
+  [
+    1328,
+    {
+      "score": 132114.61348352514,
+      "num_neighbors": 3,
+      "all_num_neighbors": 48,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 9, "4": 14, "5": 16 },
+      "avg_distance": 5514.144440124417,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 297
+    }
+  ],
+  [
+    4304,
+    {
+      "score": 132113.44335175224,
+      "num_neighbors": 3,
+      "all_num_neighbors": 57,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 10, "4": 18, "5": 20 },
+      "avg_distance": 5651.857892690513,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 387
+    }
+  ],
+  [
+    1577,
+    {
+      "score": 132113.31791545555,
+      "num_neighbors": 3,
+      "all_num_neighbors": 47,
+      "neighbors_by_depth": { "1": 3, "2": 7, "3": 10, "4": 12, "5": 15 },
+      "avg_distance": 5677.674572317263,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 634
+    }
+  ],
+  [
+    2625,
+    {
+      "score": 132112.45466676683,
+      "num_neighbors": 3,
+      "all_num_neighbors": 52,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 12, "4": 13, "5": 18 },
+      "avg_distance": 5692.924961119751,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 552
+    }
+  ],
+  [
+    4908,
+    {
+      "score": 132111.28047389476,
+      "num_neighbors": 3,
+      "all_num_neighbors": 48,
+      "neighbors_by_depth": { "1": 3, "2": 5, "3": 7, "4": 13, "5": 20 },
+      "avg_distance": 5508.403382581649,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 364
+    }
+  ],
+  [
+    4305,
+    {
+      "score": 132109.9826287638,
+      "num_neighbors": 3,
+      "all_num_neighbors": 58,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 13, "4": 16, "5": 20 },
+      "avg_distance": 5736.5128304821155,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 459
+    }
+  ],
+  [
+    4106,
+    {
+      "score": 132109.749495954,
+      "num_neighbors": 4,
+      "all_num_neighbors": 49,
+      "neighbors_by_depth": { "1": 4, "2": 7, "3": 9, "4": 13, "5": 16 },
+      "avg_distance": 5816.620528771384,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 0,
+      "total_connected_length": 689
+    }
+  ],
+  [
+    2712,
+    {
+      "score": 132109.59085640166,
+      "num_neighbors": 3,
+      "all_num_neighbors": 40,
+      "neighbors_by_depth": { "1": 3, "2": 7, "3": 7, "4": 12, "5": 11 },
+      "avg_distance": 5498.7558320373255,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 433
+    }
+  ],
+  [
+    3805,
+    {
+      "score": 132108.4275284994,
+      "num_neighbors": 3,
+      "all_num_neighbors": 54,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 11, "4": 17, "5": 17 },
+      "avg_distance": 5580.598561430793,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 253
+    }
+  ],
+  [
+    3401,
+    {
+      "score": 132108.33552812005,
+      "num_neighbors": 3,
+      "all_num_neighbors": 56,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 12, "4": 17, "5": 18 },
+      "avg_distance": 5581.249416796268,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 200
+    }
+  ],
+  [
+    3088,
+    {
+      "score": 132108.05919168922,
+      "num_neighbors": 2,
+      "all_num_neighbors": 51,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 9, "4": 16, "5": 20 },
+      "avg_distance": 5490.190707620529,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 354
+    }
+  ],
+  [
+    560,
+    {
+      "score": 132107.21547272734,
+      "num_neighbors": 3,
+      "all_num_neighbors": 51,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 10, "4": 14, "5": 18 },
+      "avg_distance": 5541.304626749611,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 253
+    }
+  ],
+  [
+    532,
+    {
+      "score": 132106.36698733811,
+      "num_neighbors": 3,
+      "all_num_neighbors": 41,
+      "neighbors_by_depth": { "1": 3, "2": 5, "3": 8, "4": 11, "5": 14 },
+      "avg_distance": 5503.585536547434,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 442
+    }
+  ],
+  [
+    2506,
+    {
+      "score": 132105.7864364376,
+      "num_neighbors": 3,
+      "all_num_neighbors": 48,
+      "neighbors_by_depth": { "1": 3, "2": 5, "3": 8, "4": 14, "5": 18 },
+      "avg_distance": 5483.361586314152,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 0,
+      "total_connected_length": 291
+    }
+  ],
+  [
+    2090,
+    {
+      "score": 132105.31644804197,
+      "num_neighbors": 4,
+      "all_num_neighbors": 46,
+      "neighbors_by_depth": { "1": 4, "2": 7, "3": 8, "4": 11, "5": 16 },
+      "avg_distance": 5804.235614307931,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 656
+    }
+  ],
+  [
+    4470,
+    {
+      "score": 132105.04091109041,
+      "num_neighbors": 4,
+      "all_num_neighbors": 49,
+      "neighbors_by_depth": { "1": 4, "2": 8, "3": 10, "4": 13, "5": 14 },
+      "avg_distance": 5719.782465007776,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 0,
+      "total_connected_length": 424
+    }
+  ],
+  [
+    561,
+    {
+      "score": 132104.9339355496,
+      "num_neighbors": 3,
+      "all_num_neighbors": 51,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 10, "4": 14, "5": 18 },
+      "avg_distance": 5554.038102643857,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 255
+    }
+  ],
+  [
+    3868,
+    {
+      "score": 132104.69577581988,
+      "num_neighbors": 3,
+      "all_num_neighbors": 50,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 8, "4": 16, "5": 17 },
+      "avg_distance": 5721.847589424572,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 3,
+      "total_connected_length": 506
+    }
+  ],
+  [
+    562,
+    {
+      "score": 132104.02518497506,
+      "num_neighbors": 3,
+      "all_num_neighbors": 51,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 10, "4": 14, "5": 18 },
+      "avg_distance": 5627.560847589424,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 387
+    }
+  ],
+  [
+    1000,
+    {
+      "score": 132101.4646714308,
+      "num_neighbors": 4,
+      "all_num_neighbors": 52,
+      "neighbors_by_depth": { "1": 4, "2": 7, "3": 10, "4": 13, "5": 18 },
+      "avg_distance": 5798.727643856921,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 0,
+      "total_connected_length": 501
+    }
+  ],
+  [
+    4302,
+    {
+      "score": 132100.6758431755,
+      "num_neighbors": 3,
+      "all_num_neighbors": 43,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 8, "4": 11, "5": 15 },
+      "avg_distance": 5541.166213063763,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 389
+    }
+  ],
+  [
+    4303,
+    {
+      "score": 132099.97990226088,
+      "num_neighbors": 3,
+      "all_num_neighbors": 50,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 10, "4": 13, "5": 18 },
+      "avg_distance": 5567.721617418351,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 257
+    }
+  ],
+  [
+    958,
+    {
+      "score": 132099.70062999055,
+      "num_neighbors": 3,
+      "all_num_neighbors": 40,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 8, "4": 9, "5": 14 },
+      "avg_distance": 5536.947122861587,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 441
+    }
+  ],
+  [
+    3398,
+    {
+      "score": 132097.15378705692,
+      "num_neighbors": 3,
+      "all_num_neighbors": 51,
+      "neighbors_by_depth": { "1": 3, "2": 5, "3": 9, "4": 15, "5": 19 },
+      "avg_distance": 5539.914269051322,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 188
+    }
+  ],
+  [
+    1702,
+    {
+      "score": 132097.062563672,
+      "num_neighbors": 3,
+      "all_num_neighbors": 40,
+      "neighbors_by_depth": { "1": 3, "2": 4, "3": 7, "4": 12, "5": 14 },
+      "avg_distance": 5518.1230559875585,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 436
+    }
+  ],
+  [
+    4766,
+    {
+      "score": 132096.4011950729,
+      "num_neighbors": 2,
+      "all_num_neighbors": 46,
+      "neighbors_by_depth": { "1": 2, "2": 5, "3": 9, "4": 13, "5": 17 },
+      "avg_distance": 5439.690513219284,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 221
+    }
+  ],
+  [
+    1803,
+    {
+      "score": 132096.38412259903,
+      "num_neighbors": 3,
+      "all_num_neighbors": 40,
+      "neighbors_by_depth": { "1": 3, "2": 4, "3": 7, "4": 11, "5": 15 },
+      "avg_distance": 5518.013608087092,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 434
+    }
+  ],
+  [
+    3873,
+    {
+      "score": 132095.6510993931,
+      "num_neighbors": 3,
+      "all_num_neighbors": 54,
+      "neighbors_by_depth": { "1": 3, "2": 7, "3": 9, "4": 14, "5": 21 },
+      "avg_distance": 5743.094284603421,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 441
+    }
+  ],
+  [
+    1280,
+    {
+      "score": 132095.6183308181,
+      "num_neighbors": 2,
+      "all_num_neighbors": 43,
+      "neighbors_by_depth": { "1": 2, "2": 5, "3": 10, "4": 12, "5": 14 },
+      "avg_distance": 5488.553849144634,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 363
+    }
+  ],
+  [
+    3941,
+    {
+      "score": 132094.30863277277,
+      "num_neighbors": 4,
+      "all_num_neighbors": 47,
+      "neighbors_by_depth": { "1": 4, "2": 6, "3": 8, "4": 12, "5": 17 },
+      "avg_distance": 5851.277021772939,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 634
+    }
+  ],
+  [
+    4009,
+    {
+      "score": 132093.71940029776,
+      "num_neighbors": 2,
+      "all_num_neighbors": 51,
+      "neighbors_by_depth": { "1": 2, "2": 6, "3": 10, "4": 12, "5": 21 },
+      "avg_distance": 5590.871306376361,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 354
+    }
+  ],
+  [
+    4585,
+    {
+      "score": 132092.96637796253,
+      "num_neighbors": 2,
+      "all_num_neighbors": 48,
+      "neighbors_by_depth": { "1": 2, "2": 5, "3": 8, "4": 14, "5": 19 },
+      "avg_distance": 5562.283825816486,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 398
+    }
+  ],
+  [
+    4046,
+    {
+      "score": 132090.58076592945,
+      "num_neighbors": 2,
+      "all_num_neighbors": 49,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 9, "4": 14, "5": 20 },
+      "avg_distance": 5573.235614307931,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 392
+    }
+  ],
+  [
+    4491,
+    {
+      "score": 132090.55437898348,
+      "num_neighbors": 3,
+      "all_num_neighbors": 52,
+      "neighbors_by_depth": { "1": 3, "2": 5, "3": 9, "4": 17, "5": 18 },
+      "avg_distance": 5777.930598755832,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 0,
+      "total_connected_length": 588
+    }
+  ],
+  [
+    750,
+    {
+      "score": 132090.2630673934,
+      "num_neighbors": 4,
+      "all_num_neighbors": 62,
+      "neighbors_by_depth": { "1": 4, "2": 9, "3": 11, "4": 16, "5": 22 },
+      "avg_distance": 6214.063569206843,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 742
+    }
+  ],
+  [
+    563,
+    {
+      "score": 132089.8781655779,
+      "num_neighbors": 3,
+      "all_num_neighbors": 48,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 10, "4": 14, "5": 15 },
+      "avg_distance": 5709.778576982892,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 459
+    }
+  ],
+  [
+    3084,
+    {
+      "score": 132089.6629388133,
+      "num_neighbors": 2,
+      "all_num_neighbors": 49,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 9, "4": 14, "5": 20 },
+      "avg_distance": 5577.992807153966,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 392
+    }
+  ],
+  [
+    4306,
+    {
+      "score": 132089.66067809743,
+      "num_neighbors": 3,
+      "all_num_neighbors": 55,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 10, "4": 19, "5": 17 },
+      "avg_distance": 5844.518468118196,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 534
+    }
+  ],
+  [
+    946,
+    {
+      "score": 132089.6238938305,
+      "num_neighbors": 3,
+      "all_num_neighbors": 42,
+      "neighbors_by_depth": { "1": 3, "2": 4, "3": 8, "4": 13, "5": 14 },
+      "avg_distance": 5585.294517884914,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 434
+    }
+  ],
+  [
+    4103,
+    {
+      "score": 132089.35108054153,
+      "num_neighbors": 2,
+      "all_num_neighbors": 50,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 9, "4": 14, "5": 21 },
+      "avg_distance": 5590.011469673406,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 392
+    }
+  ],
+  [
+    3087,
+    {
+      "score": 132088.79066623366,
+      "num_neighbors": 2,
+      "all_num_neighbors": 46,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 7, "4": 12, "5": 21 },
+      "avg_distance": 5454.749027993779,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 237
+    }
+  ],
+  [
+    4765,
+    {
+      "score": 132088.34542414144,
+      "num_neighbors": 2,
+      "all_num_neighbors": 46,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 7, "4": 12, "5": 21 },
+      "avg_distance": 5464.416213063763,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 252
+    }
+  ],
+  [
+    80,
+    {
+      "score": 132088.2537389958,
+      "num_neighbors": 4,
+      "all_num_neighbors": 47,
+      "neighbors_by_depth": { "1": 4, "2": 7, "3": 9, "4": 11, "5": 16 },
+      "avg_distance": 5814.341174183514,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 470
+    }
+  ],
+  [
+    693,
+    {
+      "score": 132088.06004641994,
+      "num_neighbors": 3,
+      "all_num_neighbors": 39,
+      "neighbors_by_depth": { "1": 3, "2": 4, "3": 7, "4": 11, "5": 14 },
+      "avg_distance": 5530.857115085537,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 396
+    }
+  ],
+  [
+    999,
+    {
+      "score": 132086.89337798915,
+      "num_neighbors": 3,
+      "all_num_neighbors": 54,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 11, "4": 15, "5": 19 },
+      "avg_distance": 5854.21967340591,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 550
+    }
+  ],
+  [
+    2847,
+    {
+      "score": 132086.48135408707,
+      "num_neighbors": 3,
+      "all_num_neighbors": 51,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 10, "4": 14, "5": 18 },
+      "avg_distance": 5721.744362363919,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 387
+    }
+  ],
+  [
+    2844,
+    {
+      "score": 132086.4343669312,
+      "num_neighbors": 3,
+      "all_num_neighbors": 42,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 9, "4": 11, "5": 13 },
+      "avg_distance": 5612.591951788491,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 391
+    }
+  ],
+  [
+    4092,
+    {
+      "score": 132086.17087531756,
+      "num_neighbors": 2,
+      "all_num_neighbors": 47,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 12, "5": 21 },
+      "avg_distance": 5503.565902021773,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 275
+    }
+  ],
+  [
+    2036,
+    {
+      "score": 132085.91055021528,
+      "num_neighbors": 2,
+      "all_num_neighbors": 49,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 9, "4": 13, "5": 21 },
+      "avg_distance": 5595.437791601867,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 393
+    }
+  ],
+  [
+    2711,
+    {
+      "score": 132085.89819407277,
+      "num_neighbors": 2,
+      "all_num_neighbors": 35,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 8, "5": 13 },
+      "avg_distance": 5551.822706065319,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 677
+    }
+  ],
+  [
+    4750,
+    {
+      "score": 132085.12857001912,
+      "num_neighbors": 2,
+      "all_num_neighbors": 47,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 12, "5": 21 },
+      "avg_distance": 5510.859253499222,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 279
+    }
+  ],
+  [
+    4094,
+    {
+      "score": 132084.30620735086,
+      "num_neighbors": 2,
+      "all_num_neighbors": 44,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 13, "5": 17 },
+      "avg_distance": 5480.757192846034,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 266
+    }
+  ],
+  [
+    2846,
+    {
+      "score": 132084.00999016536,
+      "num_neighbors": 3,
+      "all_num_neighbors": 50,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 10, "4": 14, "5": 17 },
+      "avg_distance": 5652.0355754276825,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 253
+    }
+  ],
+  [
+    4100,
+    {
+      "score": 132083.28521031165,
+      "num_neighbors": 2,
+      "all_num_neighbors": 44,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 13, "5": 17 },
+      "avg_distance": 5488.887636080871,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 272
+    }
+  ],
+  [
+    2895,
+    {
+      "score": 132083.18320802602,
+      "num_neighbors": 3,
+      "all_num_neighbors": 54,
+      "neighbors_by_depth": { "1": 3, "2": 7, "3": 9, "4": 13, "5": 22 },
+      "avg_distance": 5793.9558709175735,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 413
+    }
+  ],
+  [
+    668,
+    {
+      "score": 132082.56892343794,
+      "num_neighbors": 3,
+      "all_num_neighbors": 42,
+      "neighbors_by_depth": { "1": 3, "2": 5, "3": 9, "4": 12, "5": 13 },
+      "avg_distance": 5645.161158631416,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 439
+    }
+  ],
+  [
+    2337,
+    {
+      "score": 132081.61559741953,
+      "num_neighbors": 3,
+      "all_num_neighbors": 49,
+      "neighbors_by_depth": { "1": 3, "2": 7, "3": 11, "4": 13, "5": 15 },
+      "avg_distance": 5651.65066096423,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 210
+    }
+  ],
+  [
+    1626,
+    {
+      "score": 132081.41923456985,
+      "num_neighbors": 2,
+      "all_num_neighbors": 47,
+      "neighbors_by_depth": { "1": 2, "2": 5, "3": 8, "4": 14, "5": 18 },
+      "avg_distance": 5592.088452566097,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 360
+    }
+  ],
+  [
+    3872,
+    {
+      "score": 132081.28386265913,
+      "num_neighbors": 2,
+      "all_num_neighbors": 46,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 14, "5": 18 },
+      "avg_distance": 5532.9465396578535,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 294
+    }
+  ],
+  [
+    4703,
+    {
+      "score": 132081.19357702797,
+      "num_neighbors": 3,
+      "all_num_neighbors": 52,
+      "neighbors_by_depth": { "1": 3, "2": 5, "3": 9, "4": 14, "5": 21 },
+      "avg_distance": 5788.865085536548,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 479
+    }
+  ],
+  [
+    1001,
+    {
+      "score": 132081.11088134185,
+      "num_neighbors": 4,
+      "all_num_neighbors": 48,
+      "neighbors_by_depth": { "1": 4, "2": 7, "3": 9, "4": 11, "5": 17 },
+      "avg_distance": 5802.769440124417,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 0,
+      "total_connected_length": 408
+    }
+  ],
+  [
+    4764,
+    {
+      "score": 132080.850695871,
+      "num_neighbors": 2,
+      "all_num_neighbors": 44,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 12, "5": 18 },
+      "avg_distance": 5539.759525660964,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 353
+    }
+  ],
+  [
+    2845,
+    {
+      "score": 132080.7023572135,
+      "num_neighbors": 3,
+      "all_num_neighbors": 47,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 10, "4": 13, "5": 15 },
+      "avg_distance": 5638.79199066874,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 260
+    }
+  ],
+  [
+    544,
+    {
+      "score": 132080.6929835398,
+      "num_neighbors": 2,
+      "all_num_neighbors": 51,
+      "neighbors_by_depth": { "1": 2, "2": 6, "3": 11, "4": 11, "5": 21 },
+      "avg_distance": 5664.0466562986,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 354
+    }
+  ],
+  [
+    3085,
+    {
+      "score": 132080.5559211542,
+      "num_neighbors": 2,
+      "all_num_neighbors": 49,
+      "neighbors_by_depth": { "1": 2, "2": 5, "3": 9, "4": 12, "5": 21 },
+      "avg_distance": 5562.5097200622085,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 251
+    }
+  ],
+  [
+    2741,
+    {
+      "score": 132080.0413224083,
+      "num_neighbors": 4,
+      "all_num_neighbors": 43,
+      "neighbors_by_depth": { "1": 4, "2": 4, "3": 7, "4": 12, "5": 16 },
+      "avg_distance": 5789.343312597201,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 535
+    }
+  ],
+  [
+    2185,
+    {
+      "score": 132079.89198043238,
+      "num_neighbors": 3,
+      "all_num_neighbors": 48,
+      "neighbors_by_depth": { "1": 3, "2": 7, "3": 9, "4": 12, "5": 17 },
+      "avg_distance": 5866.442846034214,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 633
+    }
+  ],
+  [
+    4073,
+    {
+      "score": 132079.18363626048,
+      "num_neighbors": 3,
+      "all_num_neighbors": 51,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 11, "4": 13, "5": 18 },
+      "avg_distance": 5756.511080870918,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 0,
+      "total_connected_length": 419
+    }
+  ],
+  [
+    2103,
+    {
+      "score": 132078.89760252123,
+      "num_neighbors": 3,
+      "all_num_neighbors": 36,
+      "neighbors_by_depth": { "1": 3, "2": 4, "3": 7, "4": 9, "5": 13 },
+      "avg_distance": 5510.340979782271,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 334
+    }
+  ],
+  [
+    1299,
+    {
+      "score": 132078.2266837976,
+      "num_neighbors": 2,
+      "all_num_neighbors": 46,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 13, "5": 19 },
+      "avg_distance": 5576.970645412131,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 354
+    }
+  ],
+  [
+    2848,
+    {
+      "score": 132078.1594271572,
+      "num_neighbors": 3,
+      "all_num_neighbors": 51,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 10, "4": 14, "5": 18 },
+      "avg_distance": 5808.303265940902,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 460
+    }
+  ],
+  [
+    1578,
+    {
+      "score": 132078.07371381376,
+      "num_neighbors": 3,
+      "all_num_neighbors": 48,
+      "neighbors_by_depth": { "1": 3, "2": 5, "3": 11, "4": 13, "5": 16 },
+      "avg_distance": 5783.765940902022,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 497
+    }
+  ],
+  [
+    963,
+    {
+      "score": 132078.0639306895,
+      "num_neighbors": 3,
+      "all_num_neighbors": 51,
+      "neighbors_by_depth": { "1": 3, "2": 7, "3": 11, "4": 12, "5": 18 },
+      "avg_distance": 5733.507970451011,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 0,
+      "total_connected_length": 341
+    }
+  ],
+  [
+    186,
+    {
+      "score": 132077.10617105293,
+      "num_neighbors": 2,
+      "all_num_neighbors": 47,
+      "neighbors_by_depth": { "1": 2, "2": 5, "3": 8, "4": 12, "5": 20 },
+      "avg_distance": 5549.213452566097,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 244
+    }
+  ],
+  [
+    2335,
+    {
+      "score": 132076.58153180193,
+      "num_neighbors": 3,
+      "all_num_neighbors": 43,
+      "neighbors_by_depth": { "1": 3, "2": 5, "3": 6, "4": 13, "5": 16 },
+      "avg_distance": 5710.12266718507,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 515
+    }
+  ],
+  [
+    4859,
+    {
+      "score": 132076.4946188965,
+      "num_neighbors": 2,
+      "all_num_neighbors": 43,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 11, "5": 18 },
+      "avg_distance": 5483.320567651633,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 223
+    }
+  ],
+  [
+    1243,
+    {
+      "score": 132076.35856791388,
+      "num_neighbors": 3,
+      "all_num_neighbors": 51,
+      "neighbors_by_depth": { "1": 3, "2": 5, "3": 13, "4": 15, "5": 15 },
+      "avg_distance": 5865.104782270607,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 527
+    }
+  ],
+  [
+    4095,
+    {
+      "score": 132076.29891941618,
+      "num_neighbors": 2,
+      "all_num_neighbors": 40,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 10, "5": 16 },
+      "avg_distance": 5519.123250388802,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 357
+    }
+  ],
+  [
+    3944,
+    {
+      "score": 132076.29226195064,
+      "num_neighbors": 2,
+      "all_num_neighbors": 44,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 12, "5": 18 },
+      "avg_distance": 5564.730559875583,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 356
+    }
+  ],
+  [
+    2626,
+    {
+      "score": 132075.80636586423,
+      "num_neighbors": 3,
+      "all_num_neighbors": 46,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 9, "4": 12, "5": 16 },
+      "avg_distance": 5682.398522550544,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 331
+    }
+  ],
+  [
+    4008,
+    {
+      "score": 132075.16673861296,
+      "num_neighbors": 2,
+      "all_num_neighbors": 44,
+      "neighbors_by_depth": { "1": 2, "2": 5, "3": 8, "4": 13, "5": 16 },
+      "avg_distance": 5575.726088646968,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 331
+    }
+  ],
+  [
+    533,
+    {
+      "score": 132074.13109227773,
+      "num_neighbors": 2,
+      "all_num_neighbors": 43,
+      "neighbors_by_depth": { "1": 2, "2": 5, "3": 10, "4": 11, "5": 15 },
+      "avg_distance": 5593.938958009331,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 359
+    }
+  ],
+  [
+    1380,
+    {
+      "score": 132073.7474225607,
+      "num_neighbors": 2,
+      "all_num_neighbors": 45,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 10, "4": 12, "5": 17 },
+      "avg_distance": 5601.69031881804,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 355
+    }
+  ],
+  [
+    3943,
+    {
+      "score": 132073.6743513463,
+      "num_neighbors": 2,
+      "all_num_neighbors": 43,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 11, "5": 18 },
+      "avg_distance": 5527.895606531882,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 283
+    }
+  ],
+  [
+    1690,
+    {
+      "score": 132073.51745151426,
+      "num_neighbors": 3,
+      "all_num_neighbors": 55,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 10, "4": 16, "5": 20 },
+      "avg_distance": 5843.625777604977,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 386
+    }
+  ],
+  [
+    1493,
+    {
+      "score": 132072.54210400785,
+      "num_neighbors": 2,
+      "all_num_neighbors": 43,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 11, "5": 18 },
+      "avg_distance": 5538.78032659409,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 293
+    }
+  ],
+  [
+    4699,
+    {
+      "score": 132072.4397456747,
+      "num_neighbors": 2,
+      "all_num_neighbors": 47,
+      "neighbors_by_depth": { "1": 2, "2": 5, "3": 9, "4": 13, "5": 18 },
+      "avg_distance": 5644.253693623639,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 361
+    }
+  ],
+  [
+    4489,
+    {
+      "score": 132072.23041392866,
+      "num_neighbors": 4,
+      "all_num_neighbors": 40,
+      "neighbors_by_depth": { "1": 4, "2": 6, "3": 8, "4": 10, "5": 12 },
+      "avg_distance": 5808.653965785381,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 0,
+      "total_connected_length": 538
+    }
+  ],
+  [
+    2037,
+    {
+      "score": 132072.21367894916,
+      "num_neighbors": 2,
+      "all_num_neighbors": 47,
+      "neighbors_by_depth": { "1": 2, "2": 5, "3": 8, "4": 13, "5": 19 },
+      "avg_distance": 5578.075427682737,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 246
+    }
+  ],
+  [
+    2336,
+    {
+      "score": 132072.1814869191,
+      "num_neighbors": 3,
+      "all_num_neighbors": 46,
+      "neighbors_by_depth": { "1": 3, "2": 5, "3": 10, "4": 12, "5": 16 },
+      "avg_distance": 5653.785769828927,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 258
+    }
+  ],
+  [
+    1002,
+    {
+      "score": 132071.46337066326,
+      "num_neighbors": 3,
+      "all_num_neighbors": 45,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 9, "4": 12, "5": 15 },
+      "avg_distance": 5820.493390357698,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 558
+    }
+  ],
+  [
+    4462,
+    {
+      "score": 132071.14455759787,
+      "num_neighbors": 3,
+      "all_num_neighbors": 49,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 12, "4": 14, "5": 14 },
+      "avg_distance": 5829.0847589424575,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 440
+    }
+  ],
+  [
+    1438,
+    {
+      "score": 132070.93168770376,
+      "num_neighbors": 2,
+      "all_num_neighbors": 46,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 14, "5": 18 },
+      "avg_distance": 5604.56434681182,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 329
+    }
+  ],
+  [
+    4278,
+    {
+      "score": 132070.61702445312,
+      "num_neighbors": 2,
+      "all_num_neighbors": 39,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 10, "5": 15 },
+      "avg_distance": 5662.848561430793,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 0,
+      "total_connected_length": 696
+    }
+  ],
+  [
+    1464,
+    {
+      "score": 132070.5363060443,
+      "num_neighbors": 3,
+      "all_num_neighbors": 44,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 10, "4": 13, "5": 12 },
+      "avg_distance": 5844.657270606532,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 593
+    }
+  ],
+  [
+    2641,
+    {
+      "score": 132070.03979063517,
+      "num_neighbors": 3,
+      "all_num_neighbors": 30,
+      "neighbors_by_depth": { "1": 3, "2": 4, "3": 5, "4": 7, "5": 11 },
+      "avg_distance": 5482.592923794712,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 347
+    }
+  ],
+  [
+    538,
+    {
+      "score": 132069.62049313725,
+      "num_neighbors": 3,
+      "all_num_neighbors": 39,
+      "neighbors_by_depth": { "1": 3, "2": 5, "3": 7, "4": 10, "5": 14 },
+      "avg_distance": 5611.264580093312,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 342
+    }
+  ],
+  [
+    4010,
+    {
+      "score": 132069.62027808008,
+      "num_neighbors": 2,
+      "all_num_neighbors": 47,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 14, "5": 19 },
+      "avg_distance": 5655.355948678071,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 392
+    }
+  ],
+  [
+    4089,
+    {
+      "score": 132069.54302836876,
+      "num_neighbors": 3,
+      "all_num_neighbors": 43,
+      "neighbors_by_depth": { "1": 3, "2": 4, "3": 7, "4": 12, "5": 17 },
+      "avg_distance": 5611.671267496112,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 282
+    }
+  ],
+  [
+    2164,
+    {
+      "score": 132069.34007102833,
+      "num_neighbors": 2,
+      "all_num_neighbors": 44,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 14, "5": 16 },
+      "avg_distance": 5558.810847589424,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 315
+    }
+  ],
+  [
+    2520,
+    {
+      "score": 132069.11938188926,
+      "num_neighbors": 3,
+      "all_num_neighbors": 45,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 9, "4": 12, "5": 15 },
+      "avg_distance": 5843.994362363919,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 526
+    }
+  ],
+  [
+    4583,
+    {
+      "score": 132068.54405240653,
+      "num_neighbors": 2,
+      "all_num_neighbors": 47,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 10, "4": 17, "5": 14 },
+      "avg_distance": 5683.4519828926905,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 392
+    }
+  ],
+  [
+    1509,
+    {
+      "score": 132068.5157819259,
+      "num_neighbors": 2,
+      "all_num_neighbors": 45,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 9, "4": 12, "5": 18 },
+      "avg_distance": 5560.138413685848,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 236
+    }
+  ],
+  [
+    3112,
+    {
+      "score": 132068.50709906113,
+      "num_neighbors": 3,
+      "all_num_neighbors": 35,
+      "neighbors_by_depth": { "1": 3, "2": 4, "3": 8, "4": 9, "5": 11 },
+      "avg_distance": 5486.769245723172,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 190
+    }
+  ],
+  [
+    226,
+    {
+      "score": 132068.3403847192,
+      "num_neighbors": 3,
+      "all_num_neighbors": 46,
+      "neighbors_by_depth": { "1": 3, "2": 7, "3": 10, "4": 11, "5": 15 },
+      "avg_distance": 5713.791601866252,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 276
+    }
+  ],
+  [
+    4486,
+    {
+      "score": 132068.20161485678,
+      "num_neighbors": 4,
+      "all_num_neighbors": 53,
+      "neighbors_by_depth": { "1": 4, "2": 6, "3": 11, "4": 15, "5": 17 },
+      "avg_distance": 5999.990474339036,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 0,
+      "total_connected_length": 502
+    }
+  ],
+  [
+    4814,
+    {
+      "score": 132068.03101285826,
+      "num_neighbors": 2,
+      "all_num_neighbors": 45,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 9, "4": 12, "5": 18 },
+      "avg_distance": 5562.638219284603,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 236
+    }
+  ],
+  [
+    2161,
+    {
+      "score": 132067.86347898378,
+      "num_neighbors": 2,
+      "all_num_neighbors": 47,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 14, "5": 19 },
+      "avg_distance": 5665.274494556766,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 393
+    }
+  ],
+  [
+    4714,
+    {
+      "score": 132067.61014347075,
+      "num_neighbors": 3,
+      "all_num_neighbors": 47,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 9, "4": 13, "5": 16 },
+      "avg_distance": 5724.681765163297,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 302
+    }
+  ],
+  [
+    962,
+    {
+      "score": 132067.53107377287,
+      "num_neighbors": 2,
+      "all_num_neighbors": 41,
+      "neighbors_by_depth": { "1": 2, "2": 5, "3": 10, "4": 11, "5": 13 },
+      "avg_distance": 5569.007970451011,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 285
+    }
+  ],
+  [
+    280,
+    {
+      "score": 132067.2538728458,
+      "num_neighbors": 3,
+      "all_num_neighbors": 51,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 10, "4": 14, "5": 18 },
+      "avg_distance": 5828.654354587869,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 387
+    }
+  ],
+  [
+    4324,
+    {
+      "score": 132067.08918713054,
+      "num_neighbors": 3,
+      "all_num_neighbors": 41,
+      "neighbors_by_depth": { "1": 3, "2": 5, "3": 7, "4": 12, "5": 14 },
+      "avg_distance": 5686.980948678071,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 409
+    }
+  ],
+  [
+    2315,
+    {
+      "score": 132066.92979253145,
+      "num_neighbors": 3,
+      "all_num_neighbors": 44,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 9, "4": 11, "5": 15 },
+      "avg_distance": 5714.756609642302,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 347
+    }
+  ],
+  [
+    4725,
+    {
+      "score": 132066.79550830388,
+      "num_neighbors": 3,
+      "all_num_neighbors": 35,
+      "neighbors_by_depth": { "1": 3, "2": 4, "3": 6, "4": 8, "5": 14 },
+      "avg_distance": 5498.56434681182,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 228
+    }
+  ],
+  [
+    543,
+    {
+      "score": 132066.73493954324,
+      "num_neighbors": 2,
+      "all_num_neighbors": 47,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 10, "4": 17, "5": 14 },
+      "avg_distance": 5693.752138413686,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 393
+    }
+  ],
+  [
+    3,
+    {
+      "score": 132066.6475179958,
+      "num_neighbors": 3,
+      "all_num_neighbors": 47,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 11, "4": 13, "5": 14 },
+      "avg_distance": 5728.66932348367,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 273
+    }
+  ],
+  [
+    1838,
+    {
+      "score": 132066.32925440825,
+      "num_neighbors": 4,
+      "all_num_neighbors": 52,
+      "neighbors_by_depth": { "1": 4, "2": 6, "3": 11, "4": 13, "5": 18 },
+      "avg_distance": 5825.585730948678,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 164
+    }
+  ],
+  [
+    34,
+    {
+      "score": 132065.4402240139,
+      "num_neighbors": 3,
+      "all_num_neighbors": 39,
+      "neighbors_by_depth": { "1": 3, "2": 5, "3": 7, "4": 10, "5": 14 },
+      "avg_distance": 5682.934097978227,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 435
+    }
+  ],
+  [
+    2019,
+    {
+      "score": 132065.42598427378,
+      "num_neighbors": 2,
+      "all_num_neighbors": 38,
+      "neighbors_by_depth": { "1": 2, "2": 3, "3": 6, "4": 12, "5": 15 },
+      "avg_distance": 5757.013802488336,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 834
+    }
+  ],
+  [
+    2849,
+    {
+      "score": 132065.07434180533,
+      "num_neighbors": 3,
+      "all_num_neighbors": 50,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 10, "4": 14, "5": 17 },
+      "avg_distance": 5914.170489891136,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 534
+    }
+  ],
+  [
+    1930,
+    {
+      "score": 132064.5781521335,
+      "num_neighbors": 2,
+      "all_num_neighbors": 43,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 13, "5": 16 },
+      "avg_distance": 5549.357309486781,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 224
+    }
+  ],
+  [
+    1510,
+    {
+      "score": 132064.4433050751,
+      "num_neighbors": 2,
+      "all_num_neighbors": 42,
+      "neighbors_by_depth": { "1": 2, "2": 5, "3": 8, "4": 11, "5": 16 },
+      "avg_distance": 5554.1613530326595,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 232
+    }
+  ],
+  [
+    539,
+    {
+      "score": 132064.36291437733,
+      "num_neighbors": 2,
+      "all_num_neighbors": 43,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 11, "5": 18 },
+      "avg_distance": 5613.317457231727,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 355
+    }
+  ],
+  [
+    2604,
+    {
+      "score": 132064.07620864137,
+      "num_neighbors": 2,
+      "all_num_neighbors": 45,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 12, "5": 19 },
+      "avg_distance": 5576.195373250389,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 236
+    }
+  ],
+  [
+    2162,
+    {
+      "score": 132063.96216775096,
+      "num_neighbors": 2,
+      "all_num_neighbors": 45,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 12, "5": 19 },
+      "avg_distance": 5638.651632970451,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 354
+    }
+  ],
+  [
+    4974,
+    {
+      "score": 132063.93966998055,
+      "num_neighbors": 3,
+      "all_num_neighbors": 37,
+      "neighbors_by_depth": { "1": 3, "2": 4, "3": 5, "4": 10, "5": 15 },
+      "avg_distance": 5511.815902021773,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 189
+    }
+  ],
+  [
+    4077,
+    {
+      "score": 132063.8831973059,
+      "num_neighbors": 4,
+      "all_num_neighbors": 35,
+      "neighbors_by_depth": { "1": 4, "2": 6, "3": 7, "4": 9, "5": 9 },
+      "avg_distance": 5814.926710730949,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 534
+    }
+  ],
+  [
+    4051,
+    {
+      "score": 132063.6516261899,
+      "num_neighbors": 2,
+      "all_num_neighbors": 45,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 12, "5": 19 },
+      "avg_distance": 5578.397356143079,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 236
+    }
+  ],
+  [
+    4063,
+    {
+      "score": 132063.2575958796,
+      "num_neighbors": 2,
+      "all_num_neighbors": 43,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 9, "4": 12, "5": 16 },
+      "avg_distance": 5628.7980171073095,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 355
+    }
+  ],
+  [
+    2739,
+    {
+      "score": 132063.04743498517,
+      "num_neighbors": 2,
+      "all_num_neighbors": 35,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 10, "5": 11 },
+      "avg_distance": 5519.892690513219,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 326
+    }
+  ],
+  [
+    4322,
+    {
+      "score": 132063.01483235304,
+      "num_neighbors": 3,
+      "all_num_neighbors": 42,
+      "neighbors_by_depth": { "1": 3, "2": 5, "3": 9, "4": 11, "5": 14 },
+      "avg_distance": 5798.820178849144,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 530
+    }
+  ],
+  [
+    1979,
+    {
+      "score": 132062.93375544486,
+      "num_neighbors": 2,
+      "all_num_neighbors": 50,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 15, "5": 21 },
+      "avg_distance": 5642.515552099533,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 236
+    }
+  ],
+  [
+    2672,
+    {
+      "score": 132062.6010687402,
+      "num_neighbors": 2,
+      "all_num_neighbors": 50,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 15, "5": 21 },
+      "avg_distance": 5644.282076205288,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 236
+    }
+  ],
+  [
+    3558,
+    {
+      "score": 132062.52546365073,
+      "num_neighbors": 4,
+      "all_num_neighbors": 45,
+      "neighbors_by_depth": { "1": 4, "2": 7, "3": 10, "4": 11, "5": 13 },
+      "avg_distance": 5839.029160186626,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 0,
+      "total_connected_length": 333
+    }
+  ],
+  [
+    2213,
+    {
+      "score": 132062.485235536,
+      "num_neighbors": 2,
+      "all_num_neighbors": 45,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 13, "5": 18 },
+      "avg_distance": 5581.856920684292,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 226
+    }
+  ],
+  [
+    3878,
+    {
+      "score": 132062.44609798622,
+      "num_neighbors": 2,
+      "all_num_neighbors": 43,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 13, "5": 16 },
+      "avg_distance": 5561.356920684292,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 226
+    }
+  ],
+  [
+    2308,
+    {
+      "score": 132061.56334927943,
+      "num_neighbors": 2,
+      "all_num_neighbors": 40,
+      "neighbors_by_depth": { "1": 2, "2": 5, "3": 8, "4": 10, "5": 15 },
+      "avg_distance": 5495.5355754276825,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 133
+    }
+  ],
+  [
+    5101,
+    {
+      "score": 132061.53607106977,
+      "num_neighbors": 3,
+      "all_num_neighbors": 35,
+      "neighbors_by_depth": { "1": 3, "2": 3, "3": 5, "4": 10, "5": 14 },
+      "avg_distance": 5455.185264385692,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 122
+    }
+  ],
+  [
+    648,
+    {
+      "score": 132061.36993055235,
+      "num_neighbors": 3,
+      "all_num_neighbors": 43,
+      "neighbors_by_depth": { "1": 3, "2": 5, "3": 8, "4": 12, "5": 15 },
+      "avg_distance": 5643.385303265941,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 217
+    }
+  ],
+  [
+    3090,
+    {
+      "score": 132061.35726811155,
+      "num_neighbors": 3,
+      "all_num_neighbors": 49,
+      "neighbors_by_depth": { "1": 3, "2": 7, "3": 11, "4": 14, "5": 14 },
+      "avg_distance": 5844.1582426127525,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 352
+    }
+  ],
+  [
+    2605,
+    {
+      "score": 132061.22468263263,
+      "num_neighbors": 2,
+      "all_num_neighbors": 43,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 12, "5": 17 },
+      "avg_distance": 5564.563180404354,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 225
+    }
+  ],
+  [
+    1290,
+    {
+      "score": 132061.02524679352,
+      "num_neighbors": 2,
+      "all_num_neighbors": 41,
+      "neighbors_by_depth": { "1": 2, "2": 5, "3": 7, "4": 10, "5": 17 },
+      "avg_distance": 5529.504860031104,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 188
+    }
+  ],
+  [
+    4715,
+    {
+      "score": 132061.00937541932,
+      "num_neighbors": 3,
+      "all_num_neighbors": 42,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 9, "4": 11, "5": 13 },
+      "avg_distance": 5718.681959564541,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 335
+    }
+  ],
+  [
+    1579,
+    {
+      "score": 132060.82678586256,
+      "num_neighbors": 3,
+      "all_num_neighbors": 48,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 8, "4": 15, "5": 16 },
+      "avg_distance": 5737.002138413686,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 240
+    }
+  ],
+  [
+    1319,
+    {
+      "score": 132060.67255534622,
+      "num_neighbors": 3,
+      "all_num_neighbors": 41,
+      "neighbors_by_depth": { "1": 3, "2": 5, "3": 7, "4": 10, "5": 16 },
+      "avg_distance": 5593.20101088647,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 178
+    }
+  ],
+  [
+    2630,
+    {
+      "score": 132060.6201079054,
+      "num_neighbors": 3,
+      "all_num_neighbors": 49,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 10, "4": 12, "5": 18 },
+      "avg_distance": 5878.547045101089,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 458
+    }
+  ],
+  [
+    4090,
+    {
+      "score": 132060.5533802101,
+      "num_neighbors": 2,
+      "all_num_neighbors": 45,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 7, "4": 13, "5": 19 },
+      "avg_distance": 5595.388219284603,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 246
+    }
+  ],
+  [
+    4590,
+    {
+      "score": 132060.5469497237,
+      "num_neighbors": 3,
+      "all_num_neighbors": 48,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 10, "4": 12, "5": 17 },
+      "avg_distance": 5840.612752721618,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 411
+    }
+  ],
+  [
+    1318,
+    {
+      "score": 132060.47341971644,
+      "num_neighbors": 2,
+      "all_num_neighbors": 43,
+      "neighbors_by_depth": { "1": 2, "2": 5, "3": 8, "4": 11, "5": 17 },
+      "avg_distance": 5600.682542768273,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 262
+    }
+  ],
+  [
+    2893,
+    {
+      "score": 132060.36601064523,
+      "num_neighbors": 3,
+      "all_num_neighbors": 51,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 11, "4": 13, "5": 18 },
+      "avg_distance": 5774.898911353032,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 214
+    }
+  ],
+  [
+    4050,
+    {
+      "score": 132060.34528585584,
+      "num_neighbors": 2,
+      "all_num_neighbors": 45,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 13, "5": 18 },
+      "avg_distance": 5592.995528771384,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 226
+    }
+  ],
+  [
+    2389,
+    {
+      "score": 132060.3363374829,
+      "num_neighbors": 2,
+      "all_num_neighbors": 33,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 7, "5": 12 },
+      "avg_distance": 5519.949066874028,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 354
+    }
+  ],
+  [
+    3870,
+    {
+      "score": 132060.25218081573,
+      "num_neighbors": 2,
+      "all_num_neighbors": 40,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 9, "4": 10, "5": 15 },
+      "avg_distance": 5493.746111975117,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 133
+    }
+  ],
+  [
+    2165,
+    {
+      "score": 132059.86196618355,
+      "num_neighbors": 2,
+      "all_num_neighbors": 39,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 10, "5": 15 },
+      "avg_distance": 5592.387052877139,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 355
+    }
+  ],
+  [
+    4079,
+    {
+      "score": 132059.7831326505,
+      "num_neighbors": 2,
+      "all_num_neighbors": 45,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 10, "4": 12, "5": 17 },
+      "avg_distance": 5676.786741835148,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 357
+    }
+  ],
+  [
+    281,
+    {
+      "score": 132059.7487466539,
+      "num_neighbors": 3,
+      "all_num_neighbors": 51,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 10, "4": 15, "5": 17 },
+      "avg_distance": 5914.90299377916,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 457
+    }
+  ],
+  [
+    279,
+    {
+      "score": 132059.74338489704,
+      "num_neighbors": 3,
+      "all_num_neighbors": 48,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 10, "4": 13, "5": 16 },
+      "avg_distance": 5758.760108864697,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 252
+    }
+  ],
+  [
+    4101,
+    {
+      "score": 132059.63212261832,
+      "num_neighbors": 2,
+      "all_num_neighbors": 41,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 11, "5": 16 },
+      "avg_distance": 5517.939152410576,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 163
+    }
+  ],
+  [
+    4501,
+    {
+      "score": 132059.09255841197,
+      "num_neighbors": 2,
+      "all_num_neighbors": 43,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 12, "5": 17 },
+      "avg_distance": 5576.110614307931,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 226
+    }
+  ],
+  [
+    1973,
+    {
+      "score": 132058.7243672803,
+      "num_neighbors": 3,
+      "all_num_neighbors": 42,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 9, "4": 11, "5": 13 },
+      "avg_distance": 5711.52099533437,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 299
+    }
+  ],
+  [
+    1289,
+    {
+      "score": 132058.57381181297,
+      "num_neighbors": 2,
+      "all_num_neighbors": 39,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 7, "4": 11, "5": 15 },
+      "avg_distance": 5500.354587869362,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 171
+    }
+  ],
+  [
+    4826,
+    {
+      "score": 132058.4497313782,
+      "num_neighbors": 2,
+      "all_num_neighbors": 46,
+      "neighbors_by_depth": { "1": 2, "2": 5, "3": 8, "4": 12, "5": 19 },
+      "avg_distance": 5664.81298600311,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 298
+    }
+  ],
+  [
+    646,
+    {
+      "score": 132058.40628475655,
+      "num_neighbors": 2,
+      "all_num_neighbors": 50,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 9, "4": 13, "5": 22 },
+      "avg_distance": 5668.436236391913,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 236
+    }
+  ],
+  [
+    2866,
+    {
+      "score": 132058.29811499413,
+      "num_neighbors": 2,
+      "all_num_neighbors": 45,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 12, "5": 19 },
+      "avg_distance": 5601.076399688958,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 226
+    }
+  ],
+  [
+    4062,
+    {
+      "score": 132058.12650084886,
+      "num_neighbors": 2,
+      "all_num_neighbors": 50,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 9, "4": 13, "5": 22 },
+      "avg_distance": 5669.935458786937,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 236
+    }
+  ],
+  [
+    4102,
+    {
+      "score": 132058.11602315863,
+      "num_neighbors": 3,
+      "all_num_neighbors": 36,
+      "neighbors_by_depth": { "1": 3, "2": 4, "3": 5, "4": 9, "5": 15 },
+      "avg_distance": 5528.702371695179,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 189
+    }
+  ],
+  [
+    4751,
+    {
+      "score": 132057.7445323328,
+      "num_neighbors": 2,
+      "all_num_neighbors": 43,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 7, "4": 13, "5": 17 },
+      "avg_distance": 5543.2043157076205,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 157
+    }
+  ],
+  [
+    277,
+    {
+      "score": 132057.7235265825,
+      "num_neighbors": 3,
+      "all_num_neighbors": 40,
+      "neighbors_by_depth": { "1": 3, "2": 5, "3": 8, "4": 11, "5": 13 },
+      "avg_distance": 5718.968312597201,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 386
+    }
+  ],
+  [
+    1629,
+    {
+      "score": 132057.56524581517,
+      "num_neighbors": 2,
+      "all_num_neighbors": 43,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 12, "5": 17 },
+      "avg_distance": 5651.386275272162,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 354
+    }
+  ],
+  [
+    2639,
+    {
+      "score": 132057.51340022744,
+      "num_neighbors": 2,
+      "all_num_neighbors": 35,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 6, "4": 9, "5": 14 },
+      "avg_distance": 5545.24300155521,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 352
+    }
+  ],
+  [
+    1632,
+    {
+      "score": 132057.3530056745,
+      "num_neighbors": 2,
+      "all_num_neighbors": 44,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 12, "5": 18 },
+      "avg_distance": 5664.2604976671855,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 356
+    }
+  ],
+  [
+    4488,
+    {
+      "score": 132057.15382928884,
+      "num_neighbors": 3,
+      "all_num_neighbors": 46,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 10, "4": 12, "5": 15 },
+      "avg_distance": 5735.025272161742,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 228
+    }
+  ],
+  [
+    1441,
+    {
+      "score": 132057.05405909533,
+      "num_neighbors": 2,
+      "all_num_neighbors": 44,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 7, "4": 12, "5": 19 },
+      "avg_distance": 5634.809875583203,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 361
+    }
+  ],
+  [
+    3115,
+    {
+      "score": 132056.77943808577,
+      "num_neighbors": 2,
+      "all_num_neighbors": 29,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 5, "4": 7, "5": 11 },
+      "avg_distance": 5442.595062208398,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 284
+    }
+  ],
+  [
+    4022,
+    {
+      "score": 132056.58150337107,
+      "num_neighbors": 3,
+      "all_num_neighbors": 47,
+      "neighbors_by_depth": { "1": 3, "2": 5, "3": 9, "4": 15, "5": 15 },
+      "avg_distance": 5893.016718506999,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 511
+    }
+  ],
+  [
+    2212,
+    {
+      "score": 132056.55254119373,
+      "num_neighbors": 2,
+      "all_num_neighbors": 43,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 12, "5": 17 },
+      "avg_distance": 5594.522744945568,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 236
+    }
+  ],
+  [
+    2629,
+    {
+      "score": 132056.3642872373,
+      "num_neighbors": 3,
+      "all_num_neighbors": 46,
+      "neighbors_by_depth": { "1": 3, "2": 5, "3": 9, "4": 13, "5": 16 },
+      "avg_distance": 5805.839618973561,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 386
+    }
+  ],
+  [
+    4813,
+    {
+      "score": 132056.1679233896,
+      "num_neighbors": 2,
+      "all_num_neighbors": 43,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 12, "5": 17 },
+      "avg_distance": 5596.530520995334,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 236
+    }
+  ],
+  [
+    1703,
+    {
+      "score": 132056.11158275488,
+      "num_neighbors": 2,
+      "all_num_neighbors": 39,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 10, "5": 15 },
+      "avg_distance": 5612.536547433903,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 356
+    }
+  ],
+  [
+    1804,
+    {
+      "score": 132056.05832356648,
+      "num_neighbors": 2,
+      "all_num_neighbors": 37,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 11, "5": 12 },
+      "avg_distance": 5543.304432348367,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 257
+    }
+  ],
+  [
+    3866,
+    {
+      "score": 132056.00824101665,
+      "num_neighbors": 3,
+      "all_num_neighbors": 41,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 8, "4": 10, "5": 14 },
+      "avg_distance": 5721.779548989113,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 329
+    }
+  ],
+  [
+    1533,
+    {
+      "score": 132055.41628667887,
+      "num_neighbors": 3,
+      "all_num_neighbors": 45,
+      "neighbors_by_depth": { "1": 3, "2": 5, "3": 8, "4": 11, "5": 18 },
+      "avg_distance": 5701.61100311042,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 231
+    }
+  ],
+  [
+    4698,
+    {
+      "score": 132055.19709248267,
+      "num_neighbors": 2,
+      "all_num_neighbors": 45,
+      "neighbors_by_depth": { "1": 2, "2": 5, "3": 9, "4": 13, "5": 16 },
+      "avg_distance": 5576.259914463452,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 99
+    }
+  ],
+  [
+    3871,
+    {
+      "score": 132055.17307629343,
+      "num_neighbors": 2,
+      "all_num_neighbors": 41,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 6, "4": 11, "5": 18 },
+      "avg_distance": 5500.694595645412,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 111
+    }
+  ],
+  [
+    278,
+    {
+      "score": 132055.1327152994,
+      "num_neighbors": 3,
+      "all_num_neighbors": 45,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 9, "4": 12, "5": 15 },
+      "avg_distance": 5744.845645412131,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 259
+    }
+  ],
+  [
+    4716,
+    {
+      "score": 132054.29243364872,
+      "num_neighbors": 3,
+      "all_num_neighbors": 44,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 8, "4": 12, "5": 15 },
+      "avg_distance": 5742.683709175739,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 280
+    }
+  ],
+  [
+    1512,
+    {
+      "score": 132054.26406340036,
+      "num_neighbors": 2,
+      "all_num_neighbors": 43,
+      "neighbors_by_depth": { "1": 2, "2": 5, "3": 8, "4": 11, "5": 17 },
+      "avg_distance": 5617.517301710731,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 232
+    }
+  ],
+  [
+    4732,
+    {
+      "score": 132053.99957589392,
+      "num_neighbors": 2,
+      "all_num_neighbors": 37,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 10, "5": 13 },
+      "avg_distance": 5458.841951788491,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 74
+    }
+  ],
+  [
+    1691,
+    {
+      "score": 132053.83410770705,
+      "num_neighbors": 3,
+      "all_num_neighbors": 54,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 11, "4": 15, "5": 19 },
+      "avg_distance": 5873.477449455677,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 253
+    }
+  ],
+  [
+    2987,
+    {
+      "score": 132053.77975749227,
+      "num_neighbors": 2,
+      "all_num_neighbors": 33,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 5, "4": 10, "5": 12 },
+      "avg_distance": 5471.389968895801,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 217
+    }
+  ],
+  [
+    3885,
+    {
+      "score": 132053.4782797788,
+      "num_neighbors": 3,
+      "all_num_neighbors": 57,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 11, "4": 16, "5": 21 },
+      "avg_distance": 5950.131609642302,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 316
+    }
+  ],
+  [
+    564,
+    {
+      "score": 132053.35771813407,
+      "num_neighbors": 3,
+      "all_num_neighbors": 45,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 9, "4": 11, "5": 16 },
+      "avg_distance": 5819.960536547434,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 381
+    }
+  ],
+  [
+    4561,
+    {
+      "score": 132053.2459039259,
+      "num_neighbors": 2,
+      "all_num_neighbors": 42,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 9, "4": 11, "5": 16 },
+      "avg_distance": 5668.7597200622085,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 355
+    }
+  ],
+  [
+    1634,
+    {
+      "score": 132053.1421558507,
+      "num_neighbors": 2,
+      "all_num_neighbors": 44,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 12, "5": 18 },
+      "avg_distance": 5686.335925349922,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 355
+    }
+  ],
+  [
+    2713,
+    {
+      "score": 132053.00747408214,
+      "num_neighbors": 2,
+      "all_num_neighbors": 28,
+      "neighbors_by_depth": { "1": 2, "2": 2, "3": 4, "4": 9, "5": 11 },
+      "avg_distance": 5583.1269440124415,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 657
+    }
+  ],
+  [
+    3879,
+    {
+      "score": 132052.54707858828,
+      "num_neighbors": 2,
+      "all_num_neighbors": 39,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 7, "4": 11, "5": 15 },
+      "avg_distance": 5563.75933125972,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 235
+    }
+  ],
+  [
+    1806,
+    {
+      "score": 132052.53997753057,
+      "num_neighbors": 2,
+      "all_num_neighbors": 42,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 11, "5": 17 },
+      "avg_distance": 5566.549961119751,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 167
+    }
+  ],
+  [
+    1978,
+    {
+      "score": 132052.3471634056,
+      "num_neighbors": 2,
+      "all_num_neighbors": 41,
+      "neighbors_by_depth": { "1": 2, "2": 5, "3": 9, "4": 10, "5": 15 },
+      "avg_distance": 5525.657465007776,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 0,
+      "total_connected_length": 167
+    }
+  ],
+  [
+    4080,
+    {
+      "score": 132051.83810178252,
+      "num_neighbors": 2,
+      "all_num_neighbors": 32,
+      "neighbors_by_depth": { "1": 2, "2": 3, "3": 6, "4": 9, "5": 12 },
+      "avg_distance": 5408.118195956454,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 111
+    }
+  ],
+  [
+    1440,
+    {
+      "score": 132051.7470799597,
+      "num_neighbors": 2,
+      "all_num_neighbors": 42,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 11, "5": 17 },
+      "avg_distance": 5584.133942457232,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 193
+    }
+  ],
+  [
+    2896,
+    {
+      "score": 132051.68131394248,
+      "num_neighbors": 2,
+      "all_num_neighbors": 53,
+      "neighbors_by_depth": { "1": 2, "2": 5, "3": 10, "4": 16, "5": 20 },
+      "avg_distance": 5839.280132192846,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 360
+    }
+  ],
+  [
+    2772,
+    {
+      "score": 132051.25842440512,
+      "num_neighbors": 2,
+      "all_num_neighbors": 46,
+      "neighbors_by_depth": { "1": 2, "2": 5, "3": 10, "4": 11, "5": 18 },
+      "avg_distance": 5707.16932348367,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 283
+    }
+  ],
+  [
+    4056,
+    {
+      "score": 132051.17710832297,
+      "num_neighbors": 2,
+      "all_num_neighbors": 43,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 11, "5": 18 },
+      "avg_distance": 5620.080482115086,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 236
+    }
+  ],
+  [
+    959,
+    {
+      "score": 132051.17558560878,
+      "num_neighbors": 2,
+      "all_num_neighbors": 35,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 6, "4": 10, "5": 13 },
+      "avg_distance": 5573.262441679627,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 338
+    }
+  ],
+  [
+    4702,
+    {
+      "score": 132051.08813134686,
+      "num_neighbors": 2,
+      "all_num_neighbors": 32,
+      "neighbors_by_depth": { "1": 2, "2": 3, "3": 6, "4": 9, "5": 12 },
+      "avg_distance": 5449.640163297046,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 238
+    }
+  ],
+  [
+    4307,
+    {
+      "score": 132051.00480084575,
+      "num_neighbors": 3,
+      "all_num_neighbors": 48,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 13, "4": 12, "5": 14 },
+      "avg_distance": 5990.782465007776,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 533
+    }
+  ],
+  [
+    2319,
+    {
+      "score": 132050.93469760564,
+      "num_neighbors": 2,
+      "all_num_neighbors": 35,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 7, "4": 9, "5": 13 },
+      "avg_distance": 5589.228615863141,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 358
+    }
+  ],
+  [
+    2597,
+    {
+      "score": 132050.85931200086,
+      "num_neighbors": 2,
+      "all_num_neighbors": 40,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 7, "4": 11, "5": 16 },
+      "avg_distance": 5577.147161741836,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 224
+    }
+  ],
+  [
+    4832,
+    {
+      "score": 132050.66257645297,
+      "num_neighbors": 2,
+      "all_num_neighbors": 42,
+      "neighbors_by_depth": { "1": 2, "2": 5, "3": 9, "4": 11, "5": 15 },
+      "avg_distance": 5702.082814930016,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 361
+    }
+  ],
+  [
+    3124,
+    {
+      "score": 132050.6024036211,
+      "num_neighbors": 3,
+      "all_num_neighbors": 28,
+      "neighbors_by_depth": { "1": 3, "2": 3, "3": 5, "4": 7, "5": 10 },
+      "avg_distance": 5503.406687402799,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 0,
+      "total_connected_length": 314
+    }
+  ],
+  [
+    2509,
+    {
+      "score": 132050.54258876143,
+      "num_neighbors": 2,
+      "all_num_neighbors": 37,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 10, "5": 13 },
+      "avg_distance": 5552.622472783826,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 225
+    }
+  ],
+  [
+    4461,
+    {
+      "score": 132050.49248998598,
+      "num_neighbors": 2,
+      "all_num_neighbors": 45,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 9, "4": 14, "5": 16 },
+      "avg_distance": 5743.416601866252,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 390
+    }
+  ],
+  [
+    1327,
+    {
+      "score": 132050.21292527203,
+      "num_neighbors": 2,
+      "all_num_neighbors": 31,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 5, "4": 8, "5": 12 },
+      "avg_distance": 5513.471423017108,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 365
+    }
+  ],
+  [
+    1980,
+    {
+      "score": 132050.13979049833,
+      "num_neighbors": 2,
+      "all_num_neighbors": 43,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 13, "5": 16 },
+      "avg_distance": 5625.548405909798,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 226
+    }
+  ],
+  [
+    2388,
+    {
+      "score": 132050.1146013312,
+      "num_neighbors": 2,
+      "all_num_neighbors": 37,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 11, "5": 12 },
+      "avg_distance": 5558.942068429238,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 228
+    }
+  ],
+  [
+    2598,
+    {
+      "score": 132050.10118591596,
+      "num_neighbors": 2,
+      "all_num_neighbors": 42,
+      "neighbors_by_depth": { "1": 2, "2": 5, "3": 8, "4": 11, "5": 16 },
+      "avg_distance": 5564.684486780716,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 109
+    }
+  ],
+  [
+    1977,
+    {
+      "score": 132050.0618803899,
+      "num_neighbors": 2,
+      "all_num_neighbors": 36,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 7, "4": 10, "5": 13 },
+      "avg_distance": 5605.279160186626,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 355
+    }
+  ],
+  [
+    2738,
+    {
+      "score": 132050.02510786406,
+      "num_neighbors": 2,
+      "all_num_neighbors": 34,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 6, "4": 10, "5": 12 },
+      "avg_distance": 5452.925155520996,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 109
+    }
+  ],
+  [
+    282,
+    {
+      "score": 132050.01786613127,
+      "num_neighbors": 3,
+      "all_num_neighbors": 51,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 11, "4": 13, "5": 18 },
+      "avg_distance": 6020.972978227061,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 535
+    }
+  ],
+  [
+    2642,
+    {
+      "score": 132049.87547949768,
+      "num_neighbors": 2,
+      "all_num_neighbors": 34,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 6, "4": 10, "5": 12 },
+      "avg_distance": 5457.637052877139,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 117
+    }
+  ],
+  [
+    2627,
+    {
+      "score": 132049.68032842255,
+      "num_neighbors": 3,
+      "all_num_neighbors": 47,
+      "neighbors_by_depth": { "1": 3, "2": 5, "3": 7, "4": 13, "5": 19 },
+      "avg_distance": 5716.296850699844,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 164
+    }
+  ],
+  [
+    2077,
+    {
+      "score": 132049.6612614229,
+      "num_neighbors": 3,
+      "all_num_neighbors": 35,
+      "neighbors_by_depth": { "1": 3, "2": 5, "3": 7, "4": 9, "5": 11 },
+      "avg_distance": 5720.216951788491,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 431
+    }
+  ],
+  [
+    2774,
+    {
+      "score": 132049.64255063416,
+      "num_neighbors": 2,
+      "all_num_neighbors": 42,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 9, "4": 11, "5": 16 },
+      "avg_distance": 5687.05268273717,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 353
+    }
+  ],
+  [
+    3086,
+    {
+      "score": 132049.19005419483,
+      "num_neighbors": 3,
+      "all_num_neighbors": 33,
+      "neighbors_by_depth": { "1": 3, "2": 4, "3": 5, "4": 8, "5": 13 },
+      "avg_distance": 5505.995139968896,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 120
+    }
+  ],
+  [
+    1631,
+    {
+      "score": 132049.08534901703,
+      "num_neighbors": 2,
+      "all_num_neighbors": 41,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 11, "5": 16 },
+      "avg_distance": 5672.658631415241,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 354
+    }
+  ],
+  [
+    4558,
+    {
+      "score": 132049.074503781,
+      "num_neighbors": 2,
+      "all_num_neighbors": 43,
+      "neighbors_by_depth": { "1": 2, "2": 5, "3": 8, "4": 11, "5": 17 },
+      "avg_distance": 5713.78732503888,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 360
+    }
+  ],
+  [
+    3804,
+    {
+      "score": 132049.07365852038,
+      "num_neighbors": 2,
+      "all_num_neighbors": 44,
+      "neighbors_by_depth": { "1": 2, "2": 5, "3": 8, "4": 11, "5": 18 },
+      "avg_distance": 5591.283437013997,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 110
+    }
+  ],
+  [
+    1882,
+    {
+      "score": 132048.48513550474,
+      "num_neighbors": 2,
+      "all_num_neighbors": 37,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 10, "5": 13 },
+      "avg_distance": 5563.218895800933,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 225
+    }
+  ],
+  [
+    1490,
+    {
+      "score": 132048.45090489468,
+      "num_neighbors": 3,
+      "all_num_neighbors": 48,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 9, "4": 14, "5": 16 },
+      "avg_distance": 5921.118779160187,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 433
+    }
+  ],
+  [
+    3869,
+    {
+      "score": 132048.3580261304,
+      "num_neighbors": 3,
+      "all_num_neighbors": 42,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 9, "4": 10, "5": 14 },
+      "avg_distance": 5750.213841368584,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 271
+    }
+  ],
+  [
+    3798,
+    {
+      "score": 132048.13822590667,
+      "num_neighbors": 2,
+      "all_num_neighbors": 41,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 12, "5": 15 },
+      "avg_distance": 5611.8715007776045,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 225
+    }
+  ],
+  [
+    4055,
+    {
+      "score": 132048.05790590905,
+      "num_neighbors": 2,
+      "all_num_neighbors": 43,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 13, "5": 16 },
+      "avg_distance": 5636.554626749611,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 226
+    }
+  ],
+  [
+    2807,
+    {
+      "score": 132047.66506954917,
+      "num_neighbors": 3,
+      "all_num_neighbors": 51,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 10, "4": 15, "5": 17 },
+      "avg_distance": 5932.358087091758,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 316
+    }
+  ],
+  [
+    4749,
+    {
+      "score": 132047.64412602162,
+      "num_neighbors": 3,
+      "all_num_neighbors": 45,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 10, "4": 12, "5": 14 },
+      "avg_distance": 5895.163880248833,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 437
+    }
+  ],
+  [
+    1511,
+    {
+      "score": 132047.5195567886,
+      "num_neighbors": 2,
+      "all_num_neighbors": 42,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 9, "4": 11, "5": 16 },
+      "avg_distance": 5565.794517884914,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 102
+    }
+  ],
+  [
+    4557,
+    {
+      "score": 132047.40734666315,
+      "num_neighbors": 2,
+      "all_num_neighbors": 42,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 9, "4": 11, "5": 16 },
+      "avg_distance": 5699.131220839813,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 353
+    }
+  ],
+  [
+    2320,
+    {
+      "score": 132047.38300219667,
+      "num_neighbors": 2,
+      "all_num_neighbors": 40,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 7, "4": 11, "5": 16 },
+      "avg_distance": 5511.934097978227,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 0,
+      "total_connected_length": 162
+    }
+  ],
+  [
+    3796,
+    {
+      "score": 132047.34064136643,
+      "num_neighbors": 2,
+      "all_num_neighbors": 42,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 12, "5": 16 },
+      "avg_distance": 5628.18332037325,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 228
+    }
+  ],
+  [
+    4093,
+    {
+      "score": 132047.28000159227,
+      "num_neighbors": 3,
+      "all_num_neighbors": 33,
+      "neighbors_by_depth": { "1": 3, "2": 4, "3": 5, "4": 8, "5": 13 },
+      "avg_distance": 5520.743390357698,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 130
+    }
+  ],
+  [
+    1240,
+    {
+      "score": 132047.26613586463,
+      "num_neighbors": 2,
+      "all_num_neighbors": 45,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 15, "5": 16 },
+      "avg_distance": 5666.866057542768,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 225
+    }
+  ],
+  [
+    317,
+    {
+      "score": 132047.168763228,
+      "num_neighbors": 2,
+      "all_num_neighbors": 43,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 9, "4": 11, "5": 17 },
+      "avg_distance": 5641.975894245723,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 224
+    }
+  ],
+  [
+    4502,
+    {
+      "score": 132047.15527208,
+      "num_neighbors": 2,
+      "all_num_neighbors": 44,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 11, "5": 19 },
+      "avg_distance": 5580.454510108864,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 100
+    }
+  ],
+  [
+    3802,
+    {
+      "score": 132047.0532449251,
+      "num_neighbors": 2,
+      "all_num_neighbors": 41,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 11, "5": 16 },
+      "avg_distance": 5615.470451010887,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 226
+    }
+  ],
+  [
+    1339,
+    {
+      "score": 132046.80646785634,
+      "num_neighbors": 3,
+      "all_num_neighbors": 34,
+      "neighbors_by_depth": { "1": 3, "2": 5, "3": 6, "4": 9, "5": 11 },
+      "avg_distance": 5626.427877138413,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 261
+    }
+  ],
+  [
+    2258,
+    {
+      "score": 132046.71091611622,
+      "num_neighbors": 3,
+      "all_num_neighbors": 39,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 8, "4": 10, "5": 12 },
+      "avg_distance": 5795.853615863141,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 410
+    }
+  ],
+  [
+    3797,
+    {
+      "score": 132046.61329099908,
+      "num_neighbors": 2,
+      "all_num_neighbors": 42,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 9, "4": 11, "5": 16 },
+      "avg_distance": 5570.479199066874,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 102
+    }
+  ],
+  [
+    1282,
+    {
+      "score": 132046.47485079482,
+      "num_neighbors": 2,
+      "all_num_neighbors": 34,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 6, "4": 9, "5": 13 },
+      "avg_distance": 5496.149105754277,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 165
+    }
+  ],
+  [
+    1633,
+    {
+      "score": 132046.4655736554,
+      "num_neighbors": 2,
+      "all_num_neighbors": 41,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 9, "4": 11, "5": 15 },
+      "avg_distance": 5695.028188180404,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 356
+    }
+  ],
+  [
+    2390,
+    {
+      "score": 132046.46315845381,
+      "num_neighbors": 2,
+      "all_num_neighbors": 38,
+      "neighbors_by_depth": { "1": 2, "2": 5, "3": 7, "4": 11, "5": 13 },
+      "avg_distance": 5510.515357698289,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 0,
+      "total_connected_length": 160
+    }
+  ],
+  [
+    3806,
+    {
+      "score": 132046.34306420814,
+      "num_neighbors": 2,
+      "all_num_neighbors": 44,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 9, "4": 12, "5": 17 },
+      "avg_distance": 5596.312208398133,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 104
+    }
+  ],
+  [
+    4320,
+    {
+      "score": 132046.14699005894,
+      "num_neighbors": 3,
+      "all_num_neighbors": 42,
+      "neighbors_by_depth": { "1": 3, "2": 5, "3": 8, "4": 12, "5": 14 },
+      "avg_distance": 5923.8707231726285,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 588
+    }
+  ],
+  [
+    3795,
+    {
+      "score": 132046.10493294333,
+      "num_neighbors": 2,
+      "all_num_neighbors": 44,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 11, "5": 19 },
+      "avg_distance": 5584.8730559875585,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 98
+    }
+  ],
+  [
+    3089,
+    {
+      "score": 132046.04623118395,
+      "num_neighbors": 2,
+      "all_num_neighbors": 44,
+      "neighbors_by_depth": { "1": 2, "2": 5, "3": 10, "4": 12, "5": 15 },
+      "avg_distance": 5755.981143079316,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 355
+    }
+  ],
+  [
+    1635,
+    {
+      "score": 132045.9913935869,
+      "num_neighbors": 2,
+      "all_num_neighbors": 43,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 9, "4": 12, "5": 16 },
+      "avg_distance": 5720.961897356143,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 354
+    }
+  ],
+  [
+    3894,
+    {
+      "score": 132045.98273002484,
+      "num_neighbors": 3,
+      "all_num_neighbors": 38,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 7, "4": 9, "5": 13 },
+      "avg_distance": 5794.704898911353,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 439
+    }
+  ],
+  [
+    2631,
+    {
+      "score": 132045.80260130446,
+      "num_neighbors": 3,
+      "all_num_neighbors": 47,
+      "neighbors_by_depth": { "1": 3, "2": 7, "3": 10, "4": 11, "5": 16 },
+      "avg_distance": 5989.599144634526,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 514
+    }
+  ],
+  [
+    4586,
+    {
+      "score": 132045.74536628657,
+      "num_neighbors": 2,
+      "all_num_neighbors": 31,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 6, "4": 8, "5": 11 },
+      "avg_distance": 5551.237752721618,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 331
+    }
+  ],
+  [
+    951,
+    {
+      "score": 132045.58279341142,
+      "num_neighbors": 3,
+      "all_num_neighbors": 39,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 8, "4": 10, "5": 12 },
+      "avg_distance": 5764.814930015552,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 343
+    }
+  ],
+  [
+    4700,
+    {
+      "score": 132045.40877281904,
+      "num_neighbors": 2,
+      "all_num_neighbors": 42,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 6, "4": 11, "5": 19 },
+      "avg_distance": 5577.236391912908,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 143
+    }
+  ],
+  [
+    366,
+    {
+      "score": 132045.26752010873,
+      "num_neighbors": 2,
+      "all_num_neighbors": 37,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 7, "4": 10, "5": 14 },
+      "avg_distance": 5514.5464618973565,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 111
+    }
+  ],
+  [
+    1805,
+    {
+      "score": 132045.22841500555,
+      "num_neighbors": 2,
+      "all_num_neighbors": 39,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 11, "5": 14 },
+      "avg_distance": 5543.970062208398,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 110
+    }
+  ],
+  [
+    1693,
+    {
+      "score": 132045.1034360206,
+      "num_neighbors": 3,
+      "all_num_neighbors": 51,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 10, "4": 15, "5": 17 },
+      "avg_distance": 5959.244556765163,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 386
+    }
+  ],
+  [
+    537,
+    {
+      "score": 132044.9984742556,
+      "num_neighbors": 3,
+      "all_num_neighbors": 38,
+      "neighbors_by_depth": { "1": 3, "2": 5, "3": 7, "4": 9, "5": 14 },
+      "avg_distance": 5617.68701399689,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 133
+    }
+  ],
+  [
+    1239,
+    {
+      "score": 132044.95826713854,
+      "num_neighbors": 2,
+      "all_num_neighbors": 44,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 9, "4": 12, "5": 17 },
+      "avg_distance": 5603.552488335926,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 104
+    }
+  ],
+  [
+    1238,
+    {
+      "score": 132044.75699296757,
+      "num_neighbors": 2,
+      "all_num_neighbors": 39,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 7, "4": 12, "5": 14 },
+      "avg_distance": 5603.73367029549,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 229
+    }
+  ],
+  [
+    2854,
+    {
+      "score": 132044.74924691513,
+      "num_neighbors": 2,
+      "all_num_neighbors": 40,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 11, "5": 15 },
+      "avg_distance": 5617.595256609642,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 227
+    }
+  ],
+  [
+    4099,
+    {
+      "score": 132044.69471246417,
+      "num_neighbors": 3,
+      "all_num_neighbors": 44,
+      "neighbors_by_depth": { "1": 3, "2": 5, "3": 9, "4": 12, "5": 15 },
+      "avg_distance": 5872.745528771384,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 432
+    }
+  ],
+  [
+    2163,
+    {
+      "score": 132044.5657154928,
+      "num_neighbors": 2,
+      "all_num_neighbors": 41,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 7, "4": 12, "5": 16 },
+      "avg_distance": 5569.863141524106,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 122
+    }
+  ],
+  [
+    618,
+    {
+      "score": 132044.53021108813,
+      "num_neighbors": 2,
+      "all_num_neighbors": 42,
+      "neighbors_by_depth": { "1": 2, "2": 5, "3": 8, "4": 11, "5": 16 },
+      "avg_distance": 5571.771578538102,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 0,
+      "total_connected_length": 167
+    }
+  ],
+  [
+    1293,
+    {
+      "score": 132044.4675099584,
+      "num_neighbors": 2,
+      "all_num_neighbors": 34,
+      "neighbors_by_depth": { "1": 2, "2": 3, "3": 6, "4": 10, "5": 13 },
+      "avg_distance": 5553.69401244168,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 283
+    }
+  ],
+  [
+    365,
+    {
+      "score": 132044.25366573752,
+      "num_neighbors": 2,
+      "all_num_neighbors": 35,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 6, "4": 11, "5": 12 },
+      "avg_distance": 5527.6613530326595,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 175
+    }
+  ],
+  [
+    1287,
+    {
+      "score": 132044.13456315384,
+      "num_neighbors": 2,
+      "all_num_neighbors": 37,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 6, "4": 9, "5": 16 },
+      "avg_distance": 5513.023911353032,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 115
+    }
+  ],
+  [
+    2387,
+    {
+      "score": 132044.11900998375,
+      "num_neighbors": 2,
+      "all_num_neighbors": 37,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 7, "4": 10, "5": 14 },
+      "avg_distance": 5520.883942457232,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 112
+    }
+  ],
+  [
+    2867,
+    {
+      "score": 132044.0706238918,
+      "num_neighbors": 2,
+      "all_num_neighbors": 46,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 12, "5": 20 },
+      "avg_distance": 5619.588063763608,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 99
+    }
+  ],
+  [
+    2637,
+    {
+      "score": 132043.9354945667,
+      "num_neighbors": 2,
+      "all_num_neighbors": 39,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 11, "5": 14 },
+      "avg_distance": 5551.631026438569,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 112
+    }
+  ],
+  [
+    669,
+    {
+      "score": 132043.92305612337,
+      "num_neighbors": 2,
+      "all_num_neighbors": 41,
+      "neighbors_by_depth": { "1": 2, "2": 5, "3": 10, "4": 10, "5": 14 },
+      "avg_distance": 5731.905520995334,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 360
+    }
+  ],
+  [
+    31,
+    {
+      "score": 132043.91196316044,
+      "num_neighbors": 2,
+      "all_num_neighbors": 29,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 5, "4": 7, "5": 11 },
+      "avg_distance": 5425.695178849144,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 121
+    }
+  ],
+  [
+    4029,
+    {
+      "score": 132043.88396160043,
+      "num_neighbors": 2,
+      "all_num_neighbors": 43,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 12, "5": 17 },
+      "avg_distance": 5724.642690513219,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 353
+    }
+  ],
+  [
+    1785,
+    {
+      "score": 132043.6974849032,
+      "num_neighbors": 3,
+      "all_num_neighbors": 37,
+      "neighbors_by_depth": { "1": 3, "2": 4, "3": 6, "4": 11, "5": 13 },
+      "avg_distance": 5757.723950233281,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 433
+    }
+  ],
+  [
+    315,
+    {
+      "score": 132043.32618314866,
+      "num_neighbors": 2,
+      "all_num_neighbors": 36,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 10, "5": 12 },
+      "avg_distance": 5579.567262830482,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 225
+    }
+  ],
+  [
+    4917,
+    {
+      "score": 132043.27737092733,
+      "num_neighbors": 2,
+      "all_num_neighbors": 36,
+      "neighbors_by_depth": { "1": 2, "2": 3, "3": 6, "4": 11, "5": 14 },
+      "avg_distance": 5558.275272161742,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 235
+    }
+  ],
+  [
+    527,
+    {
+      "score": 132043.27652311628,
+      "num_neighbors": 2,
+      "all_num_neighbors": 46,
+      "neighbors_by_depth": { "1": 2, "2": 5, "3": 10, "4": 13, "5": 16 },
+      "avg_distance": 5726.140746500778,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 228
+    }
+  ],
+  [
+    2186,
+    {
+      "score": 132043.2268012943,
+      "num_neighbors": 3,
+      "all_num_neighbors": 48,
+      "neighbors_by_depth": { "1": 3, "2": 5, "3": 10, "4": 13, "5": 17 },
+      "avg_distance": 5972.159797822706,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 489
+    }
+  ],
+  [
+    3803,
+    {
+      "score": 132043.18266460736,
+      "num_neighbors": 2,
+      "all_num_neighbors": 41,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 11, "5": 16 },
+      "avg_distance": 5635.893856920684,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 226
+    }
+  ],
+  [
+    4058,
+    {
+      "score": 132042.92978643448,
+      "num_neighbors": 2,
+      "all_num_neighbors": 47,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 15, "5": 18 },
+      "avg_distance": 5781.780715396579,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 352
+    }
+  ],
+  [
+    4312,
+    {
+      "score": 132042.7926443646,
+      "num_neighbors": 2,
+      "all_num_neighbors": 39,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 7, "4": 12, "5": 14 },
+      "avg_distance": 5614.036936236392,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 229
+    }
+  ],
+  [
+    1976,
+    {
+      "score": 132042.71866213027,
+      "num_neighbors": 2,
+      "all_num_neighbors": 41,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 11, "5": 16 },
+      "avg_distance": 5709.196150855366,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 358
+    }
+  ],
+  [
+    1244,
+    {
+      "score": 132042.68584465818,
+      "num_neighbors": 3,
+      "all_num_neighbors": 47,
+      "neighbors_by_depth": { "1": 3, "2": 7, "3": 8, "4": 14, "5": 15 },
+      "avg_distance": 6012.113530326594,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 532
+    }
+  ],
+  [
+    1241,
+    {
+      "score": 132042.64913025664,
+      "num_neighbors": 2,
+      "all_num_neighbors": 47,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 10, "4": 14, "5": 17 },
+      "avg_distance": 5731.21500777605,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 236
+    }
+  ],
+  [
+    3877,
+    {
+      "score": 132042.5401196796,
+      "num_neighbors": 2,
+      "all_num_neighbors": 41,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 12, "5": 15 },
+      "avg_distance": 5640.889774494557,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 224
+    }
+  ],
+  [
+    3793,
+    {
+      "score": 132042.48955645494,
+      "num_neighbors": 2,
+      "all_num_neighbors": 46,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 12, "5": 20 },
+      "avg_distance": 5627.396967340591,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 98
+    }
+  ],
+  [
+    4323,
+    {
+      "score": 132042.4255891753,
+      "num_neighbors": 2,
+      "all_num_neighbors": 45,
+      "neighbors_by_depth": { "1": 2, "2": 6, "3": 9, "4": 11, "5": 17 },
+      "avg_distance": 5674.231531881804,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 137
+    }
+  ],
+  [
+    4311,
+    {
+      "score": 132042.38082540574,
+      "num_neighbors": 2,
+      "all_num_neighbors": 45,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 15, "5": 16 },
+      "avg_distance": 5693.684292379471,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 226
+    }
+  ],
+  [
+    2851,
+    {
+      "score": 132042.18120221255,
+      "num_neighbors": 2,
+      "all_num_neighbors": 36,
+      "neighbors_by_depth": { "1": 2, "2": 3, "3": 6, "4": 11, "5": 14 },
+      "avg_distance": 5563.927293934681,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 235
+    }
+  ],
+  [
+    4713,
+    {
+      "score": 132041.82229219584,
+      "num_neighbors": 2,
+      "all_num_neighbors": 42,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 12, "5": 16 },
+      "avg_distance": 5656.945373250389,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 227
+    }
+  ],
+  [
+    1628,
+    {
+      "score": 132041.78242396575,
+      "num_neighbors": 2,
+      "all_num_neighbors": 41,
+      "neighbors_by_depth": { "1": 2, "2": 3, "3": 6, "4": 12, "5": 18 },
+      "avg_distance": 5617.0699844479,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 228
+    }
+  ],
+  [
+    5109,
+    {
+      "score": 132041.75527245912,
+      "num_neighbors": 2,
+      "all_num_neighbors": 43,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 9, "4": 11, "5": 17 },
+      "avg_distance": 5670.317262830482,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 223
+    }
+  ],
+  [
+    4548,
+    {
+      "score": 132041.75148625724,
+      "num_neighbors": 3,
+      "all_num_neighbors": 52,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 10, "4": 14, "5": 19 },
+      "avg_distance": 6162.846423017108,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 670
+    }
+  ],
+  [
+    1880,
+    {
+      "score": 132041.62109311557,
+      "num_neighbors": 2,
+      "all_num_neighbors": 41,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 11, "5": 16 },
+      "avg_distance": 5643.644634525661,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 225
+    }
+  ],
+  [
+    459,
+    {
+      "score": 132041.5987441259,
+      "num_neighbors": 2,
+      "all_num_neighbors": 36,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 6, "4": 11, "5": 13 },
+      "avg_distance": 5576.769828926906,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 224
+    }
+  ],
+  [
+    3515,
+    {
+      "score": 132041.4932437684,
+      "num_neighbors": 2,
+      "all_num_neighbors": 42,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 9, "4": 12, "5": 15 },
+      "avg_distance": 5601.799377916019,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 106
+    }
+  ],
+  [
+    1692,
+    {
+      "score": 132041.39390550158,
+      "num_neighbors": 3,
+      "all_num_neighbors": 50,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 10, "4": 13, "5": 18 },
+      "avg_distance": 5883.888219284603,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 250
+    }
+  ],
+  [
+    4496,
+    {
+      "score": 132041.2914097129,
+      "num_neighbors": 2,
+      "all_num_neighbors": 36,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 10, "5": 12 },
+      "avg_distance": 5589.6277216174185,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 224
+    }
+  ],
+  [
+    2463,
+    {
+      "score": 132041.28530812045,
+      "num_neighbors": 3,
+      "all_num_neighbors": 41,
+      "neighbors_by_depth": { "1": 3, "2": 4, "3": 7, "4": 11, "5": 16 },
+      "avg_distance": 5818.863724727838,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 3,
+      "total_connected_length": 325
+    }
+  ],
+  [
+    1637,
+    {
+      "score": 132041.27815392325,
+      "num_neighbors": 2,
+      "all_num_neighbors": 43,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 9, "4": 12, "5": 16 },
+      "avg_distance": 5747.898716951789,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 356
+    }
+  ],
+  [
+    3799,
+    {
+      "score": 132041.16682648822,
+      "num_neighbors": 2,
+      "all_num_neighbors": 40,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 6, "4": 11, "5": 17 },
+      "avg_distance": 5557.299572317263,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 102
+    }
+  ],
+  [
+    4893,
+    {
+      "score": 132041.05119352418,
+      "num_neighbors": 3,
+      "all_num_neighbors": 54,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 10, "4": 15, "5": 20 },
+      "avg_distance": 5976.775466562986,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 315
+    }
+  ],
+  [
+    2318,
+    {
+      "score": 132041.02086573068,
+      "num_neighbors": 2,
+      "all_num_neighbors": 39,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 10, "5": 15 },
+      "avg_distance": 5692.927488335926,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 356
+    }
+  ],
+  [
+    3984,
+    {
+      "score": 132040.92287701275,
+      "num_neighbors": 2,
+      "all_num_neighbors": 47,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 15, "5": 18 },
+      "avg_distance": 5792.987752721618,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 352
+    }
+  ],
+  [
+    470,
+    {
+      "score": 132040.8532365903,
+      "num_neighbors": 2,
+      "all_num_neighbors": 35,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 7, "4": 9, "5": 13 },
+      "avg_distance": 5571.997472783826,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 224
+    }
+  ],
+  [
+    1284,
+    {
+      "score": 132040.84269989355,
+      "num_neighbors": 2,
+      "all_num_neighbors": 34,
+      "neighbors_by_depth": { "1": 2, "2": 3, "3": 5, "4": 9, "5": 15 },
+      "avg_distance": 5482.5783437014,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 125
+    }
+  ],
+  [
+    2342,
+    {
+      "score": 132040.82231592634,
+      "num_neighbors": 2,
+      "all_num_neighbors": 30,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 7, "4": 8, "5": 9 },
+      "avg_distance": 5464.033437013997,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 116
+    }
+  ],
+  [
+    4044,
+    {
+      "score": 132040.41778858367,
+      "num_neighbors": 3,
+      "all_num_neighbors": 38,
+      "neighbors_by_depth": { "1": 3, "2": 5, "3": 6, "4": 9, "5": 15 },
+      "avg_distance": 5696.368390357698,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 248
+    }
+  ],
+  [
+    2852,
+    {
+      "score": 132040.36265201413,
+      "num_neighbors": 2,
+      "all_num_neighbors": 33,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 7, "4": 9, "5": 11 },
+      "avg_distance": 5554.404743390358,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 225
+    }
+  ],
+  [
+    5108,
+    {
+      "score": 132040.1612906756,
+      "num_neighbors": 3,
+      "all_num_neighbors": 39,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 8, "4": 10, "5": 12 },
+      "avg_distance": 5830.500972006221,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 406
+    }
+  ],
+  [
+    1340,
+    {
+      "score": 132040.15328170042,
+      "num_neighbors": 2,
+      "all_num_neighbors": 27,
+      "neighbors_by_depth": { "1": 2, "2": 3, "3": 5, "4": 6, "5": 11 },
+      "avg_distance": 5636.579121306377,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 0,
+      "total_connected_length": 672
+    }
+  ],
+  [
+    2215,
+    {
+      "score": 132040.13697035366,
+      "num_neighbors": 2,
+      "all_num_neighbors": 40,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 11, "5": 15 },
+      "avg_distance": 5643.029354587869,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 229
+    }
+  ],
+  [
+    1439,
+    {
+      "score": 132039.89634232214,
+      "num_neighbors": 2,
+      "all_num_neighbors": 40,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 7, "4": 12, "5": 15 },
+      "avg_distance": 5708.592923794712,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 357
+    }
+  ],
+  [
+    2316,
+    {
+      "score": 132039.85534166466,
+      "num_neighbors": 2,
+      "all_num_neighbors": 42,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 9, "4": 11, "5": 16 },
+      "avg_distance": 5606.186625194401,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 103
+    }
+  ],
+  [
+    4500,
+    {
+      "score": 132039.6046540716,
+      "num_neighbors": 2,
+      "all_num_neighbors": 39,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 7, "4": 11, "5": 15 },
+      "avg_distance": 5561.914463452566,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 102
+    }
+  ],
+  [
+    647,
+    {
+      "score": 132039.5162273741,
+      "num_neighbors": 2,
+      "all_num_neighbors": 42,
+      "neighbors_by_depth": { "1": 2, "2": 5, "3": 8, "4": 11, "5": 16 },
+      "avg_distance": 5650.5824261275275,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 167
+    }
+  ],
+  [
+    2254,
+    {
+      "score": 132039.48537007853,
+      "num_neighbors": 2,
+      "all_num_neighbors": 39,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 11, "5": 14 },
+      "avg_distance": 5703.947511664074,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 356
+    }
+  ],
+  [
+    82,
+    {
+      "score": 132039.46838607654,
+      "num_neighbors": 2,
+      "all_num_neighbors": 44,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 12, "5": 18 },
+      "avg_distance": 5932.534214618973,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 706
+    }
+  ],
+  [
+    4065,
+    {
+      "score": 132039.33659104223,
+      "num_neighbors": 2,
+      "all_num_neighbors": 40,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 11, "5": 15 },
+      "avg_distance": 5645.687208398133,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 226
+    }
+  ],
+  [
+    4860,
+    {
+      "score": 132039.33022893782,
+      "num_neighbors": 2,
+      "all_num_neighbors": 35,
+      "neighbors_by_depth": { "1": 2, "2": 3, "3": 5, "4": 9, "5": 16 },
+      "avg_distance": 5501.751749611198,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 128
+    }
+  ],
+  [
+    11,
+    {
+      "score": 132039.30725440008,
+      "num_neighbors": 3,
+      "all_num_neighbors": 40,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 9, "4": 10, "5": 12 },
+      "avg_distance": 5778.7496111975115,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 272
+    }
+  ],
+  [
+    2640,
+    {
+      "score": 132039.02609030556,
+      "num_neighbors": 2,
+      "all_num_neighbors": 37,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 11, "5": 12 },
+      "avg_distance": 5529.670489891136,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 0,
+      "total_connected_length": 160
+    }
+  ],
+  [
+    2188,
+    {
+      "score": 132038.85765165195,
+      "num_neighbors": 3,
+      "all_num_neighbors": 51,
+      "neighbors_by_depth": { "1": 3, "2": 7, "3": 11, "4": 13, "5": 17 },
+      "avg_distance": 5926.149494556766,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 234
+    }
+  ],
+  [
+    892,
+    {
+      "score": 132038.84799372646,
+      "num_neighbors": 2,
+      "all_num_neighbors": 38,
+      "neighbors_by_depth": { "1": 2, "2": 5, "3": 8, "4": 10, "5": 13 },
+      "avg_distance": 5645.095256609642,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 235
+    }
+  ],
+  [
+    2524,
+    {
+      "score": 132038.74467330222,
+      "num_neighbors": 2,
+      "all_num_neighbors": 35,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 7, "4": 9, "5": 13 },
+      "avg_distance": 5583.4533437014,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 225
+    }
+  ],
+  [
+    2638,
+    {
+      "score": 132038.7296841001,
+      "num_neighbors": 2,
+      "all_num_neighbors": 35,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 6, "4": 10, "5": 13 },
+      "avg_distance": 5622.61333592535,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 308
+    }
+  ],
+  [
+    4436,
+    {
+      "score": 132038.63690773555,
+      "num_neighbors": 2,
+      "all_num_neighbors": 43,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 12, "5": 17 },
+      "avg_distance": 5639.315707620529,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 192
+    }
+  ],
+  [
+    1443,
+    {
+      "score": 132038.52935819596,
+      "num_neighbors": 2,
+      "all_num_neighbors": 39,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 6, "4": 12, "5": 15 },
+      "avg_distance": 5555.948094867807,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 88
+    }
+  ],
+  [
+    367,
+    {
+      "score": 132038.4121515603,
+      "num_neighbors": 2,
+      "all_num_neighbors": 35,
+      "neighbors_by_depth": { "1": 2, "2": 3, "3": 5, "4": 9, "5": 16 },
+      "avg_distance": 5569.278188180404,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 251
+    }
+  ],
+  [
+    3946,
+    {
+      "score": 132038.3598052764,
+      "num_neighbors": 3,
+      "all_num_neighbors": 46,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 9, "4": 13, "5": 15 },
+      "avg_distance": 5909.399494556766,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 357
+    }
+  ],
+  [
+    4763,
+    {
+      "score": 132038.2555190779,
+      "num_neighbors": 2,
+      "all_num_neighbors": 37,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 6, "4": 12, "5": 13 },
+      "avg_distance": 5615.633748055988,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 240
+    }
+  ],
+  [
+    4066,
+    {
+      "score": 132038.24927677482,
+      "num_neighbors": 2,
+      "all_num_neighbors": 33,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 7, "4": 9, "5": 11 },
+      "avg_distance": 5565.813180404354,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 226
+    }
+  ],
+  [
+    3110,
+    {
+      "score": 132038.24216465282,
+      "num_neighbors": 2,
+      "all_num_neighbors": 30,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 5, "4": 9, "5": 10 },
+      "avg_distance": 5526.531493001556,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 286
+    }
+  ],
+  [
+    460,
+    {
+      "score": 132038.12480769938,
+      "num_neighbors": 2,
+      "all_num_neighbors": 38,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 10, "5": 14 },
+      "avg_distance": 5563.014191290824,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 101
+    }
+  ],
+  [
+    1961,
+    {
+      "score": 132038.07068164265,
+      "num_neighbors": 4,
+      "all_num_neighbors": 53,
+      "neighbors_by_depth": { "1": 4, "2": 7, "3": 10, "4": 15, "5": 17 },
+      "avg_distance": 6185.604393468118,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 0,
+      "total_connected_length": 484
+    }
+  ],
+  [
+    3801,
+    {
+      "score": 132038.01951136906,
+      "num_neighbors": 2,
+      "all_num_neighbors": 38,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 10, "5": 14 },
+      "avg_distance": 5563.557542768273,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 101
+    }
+  ],
+  [
+    2853,
+    {
+      "score": 132038.01826545678,
+      "num_neighbors": 2,
+      "all_num_neighbors": 38,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 10, "5": 14 },
+      "avg_distance": 5564.0800933125975,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 102
+    }
+  ],
+  [
+    947,
+    {
+      "score": 132037.9781341689,
+      "num_neighbors": 2,
+      "all_num_neighbors": 37,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 7, "4": 8, "5": 16 },
+      "avg_distance": 5675.202177293934,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 356
+    }
+  ],
+  [
+    4499,
+    {
+      "score": 132037.85039466707,
+      "num_neighbors": 2,
+      "all_num_neighbors": 36,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 5, "4": 9, "5": 16 },
+      "avg_distance": 5585.156687402799,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 226
+    }
+  ],
+  [
+    3800,
+    {
+      "score": 132037.78119542063,
+      "num_neighbors": 2,
+      "all_num_neighbors": 38,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 10, "5": 14 },
+      "avg_distance": 5565.304043545879,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 102
+    }
+  ],
+  [
+    2522,
+    {
+      "score": 132037.76691419774,
+      "num_neighbors": 2,
+      "all_num_neighbors": 41,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 11, "5": 16 },
+      "avg_distance": 5663.651244167962,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 224
+    }
+  ],
+  [
+    3446,
+    {
+      "score": 132037.35509382328,
+      "num_neighbors": 3,
+      "all_num_neighbors": 46,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 8, "4": 12, "5": 17 },
+      "avg_distance": 5981.122861586314,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 487
+    }
+  ],
+  [
+    4909,
+    {
+      "score": 132037.26561104838,
+      "num_neighbors": 2,
+      "all_num_neighbors": 47,
+      "neighbors_by_depth": { "1": 2, "2": 5, "3": 8, "4": 14, "5": 18 },
+      "avg_distance": 5766.572900466563,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 243
+    }
+  ],
+  [
+    1492,
+    {
+      "score": 132037.07725384,
+      "num_neighbors": 2,
+      "all_num_neighbors": 39,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 10, "5": 15 },
+      "avg_distance": 5713.772356143079,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 355
+    }
+  ],
+  [
+    1513,
+    {
+      "score": 132036.99021244334,
+      "num_neighbors": 2,
+      "all_num_neighbors": 43,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 9, "4": 12, "5": 16 },
+      "avg_distance": 5705.187208398133,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 235
+    }
+  ],
+  [
+    2523,
+    {
+      "score": 132036.8803976033,
+      "num_neighbors": 2,
+      "all_num_neighbors": 39,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 11, "5": 14 },
+      "avg_distance": 5583.960730948678,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 104
+    }
+  ],
+  [
+    4584,
+    {
+      "score": 132036.78537167018,
+      "num_neighbors": 2,
+      "all_num_neighbors": 37,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 6, "4": 10, "5": 15 },
+      "avg_distance": 5630.236391912908,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 263
+    }
+  ],
+  [
+    225,
+    {
+      "score": 132036.5172045908,
+      "num_neighbors": 3,
+      "all_num_neighbors": 41,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 9, "4": 11, "5": 12 },
+      "avg_distance": 5839.4550933125975,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 327
+    }
+  ],
+  [
+    2600,
+    {
+      "score": 132036.4409413628,
+      "num_neighbors": 2,
+      "all_num_neighbors": 41,
+      "neighbors_by_depth": { "1": 2, "2": 5, "3": 8, "4": 11, "5": 15 },
+      "avg_distance": 5696.603810264386,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 242
+    }
+  ],
+  [
+    3394,
+    {
+      "score": 132036.41456406534,
+      "num_neighbors": 2,
+      "all_num_neighbors": 45,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 12, "5": 19 },
+      "avg_distance": 5735.423405909798,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 258
+    }
+  ],
+  [
+    316,
+    {
+      "score": 132036.37046388377,
+      "num_neighbors": 2,
+      "all_num_neighbors": 39,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 11, "5": 14 },
+      "avg_distance": 5586.612947122861,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 104
+    }
+  ],
+  [
+    53,
+    {
+      "score": 132036.3212701281,
+      "num_neighbors": 3,
+      "all_num_neighbors": 39,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 8, "4": 10, "5": 12 },
+      "avg_distance": 5850.634136858476,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 403
+    }
+  ],
+  [
+    2868,
+    {
+      "score": 132036.2856101168,
+      "num_neighbors": 2,
+      "all_num_neighbors": 40,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 11, "5": 15 },
+      "avg_distance": 5663.016524105754,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 228
+    }
+  ],
+  [
+    2855,
+    {
+      "score": 132036.24874114347,
+      "num_neighbors": 2,
+      "all_num_neighbors": 43,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 11, "5": 18 },
+      "avg_distance": 5699.268079315708,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 235
+    }
+  ],
+  [
+    3807,
+    {
+      "score": 132036.18144373907,
+      "num_neighbors": 2,
+      "all_num_neighbors": 42,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 10, "5": 18 },
+      "avg_distance": 5616.3738335925345,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 104
+    }
+  ],
+  [
+    961,
+    {
+      "score": 132036.09921593624,
+      "num_neighbors": 2,
+      "all_num_neighbors": 41,
+      "neighbors_by_depth": { "1": 2, "2": 3, "3": 7, "4": 12, "5": 17 },
+      "avg_distance": 5560.911158631416,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 50
+    }
+  ],
+  [
+    2,
+    {
+      "score": 132036.04624115655,
+      "num_neighbors": 3,
+      "all_num_neighbors": 43,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 8, "4": 12, "5": 14 },
+      "avg_distance": 5844.221034214619,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 299
+    }
+  ],
+  [
+    16,
+    {
+      "score": 132036.0397592429,
+      "num_neighbors": 2,
+      "all_num_neighbors": 40,
+      "neighbors_by_depth": { "1": 2, "2": 5, "3": 9, "4": 11, "5": 13 },
+      "avg_distance": 5599.464230171073,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 0,
+      "total_connected_length": 162
+    }
+  ],
+  [
+    971,
+    {
+      "score": 132035.99545652178,
+      "num_neighbors": 2,
+      "all_num_neighbors": 38,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 10, "5": 14 },
+      "avg_distance": 5574.540824261276,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 102
+    }
+  ],
+  [
+    1291,
+    {
+      "score": 132035.9918227784,
+      "num_neighbors": 2,
+      "all_num_neighbors": 34,
+      "neighbors_by_depth": { "1": 2, "2": 3, "3": 5, "4": 9, "5": 15 },
+      "avg_distance": 5520.68332037325,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 152
+    }
+  ],
+  [
+    4027,
+    {
+      "score": 132035.64203177052,
+      "num_neighbors": 2,
+      "all_num_neighbors": 41,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 11, "5": 16 },
+      "avg_distance": 5746.262052877139,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 355
+    }
+  ],
+  [
+    4833,
+    {
+      "score": 132035.6295059245,
+      "num_neighbors": 3,
+      "all_num_neighbors": 43,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 9, "4": 11, "5": 14 },
+      "avg_distance": 5884.644828926906,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 357
+    }
+  ],
+  [
+    3453,
+    {
+      "score": 132035.50731901446,
+      "num_neighbors": 2,
+      "all_num_neighbors": 40,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 10, "5": 16 },
+      "avg_distance": 5732.722200622084,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 354
+    }
+  ],
+  [
+    2214,
+    {
+      "score": 132035.3779747579,
+      "num_neighbors": 2,
+      "all_num_neighbors": 40,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 10, "5": 16 },
+      "avg_distance": 5596.478032659409,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 98
+    }
+  ],
+  [
+    4497,
+    {
+      "score": 132035.1966615203,
+      "num_neighbors": 2,
+      "all_num_neighbors": 38,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 10, "5": 14 },
+      "avg_distance": 5578.682542768273,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 102
+    }
+  ],
+  [
+    30,
+    {
+      "score": 132035.08042985605,
+      "num_neighbors": 2,
+      "all_num_neighbors": 31,
+      "neighbors_by_depth": { "1": 2, "2": 3, "3": 5, "4": 8, "5": 13 },
+      "avg_distance": 5535.517301710731,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 237
+    }
+  ],
+  [
+    631,
+    {
+      "score": 132035.06712955446,
+      "num_neighbors": 2,
+      "all_num_neighbors": 42,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 11, "5": 17 },
+      "avg_distance": 5780.4582037325035,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 391
+    }
+  ],
+  [
+    2151,
+    {
+      "score": 132034.9881560292,
+      "num_neighbors": 4,
+      "all_num_neighbors": 59,
+      "neighbors_by_depth": { "1": 4, "2": 6, "3": 12, "4": 17, "5": 20 },
+      "avg_distance": 6240.624805598756,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 0,
+      "total_connected_length": 412
+    }
+  ],
+  [
+    4325,
+    {
+      "score": 132034.86210749706,
+      "num_neighbors": 2,
+      "all_num_neighbors": 38,
+      "neighbors_by_depth": { "1": 2, "2": 5, "3": 7, "4": 11, "5": 13 },
+      "avg_distance": 5595.864696734059,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 110
+    }
+  ],
+  [
+    2406,
+    {
+      "score": 132034.8585758464,
+      "num_neighbors": 2,
+      "all_num_neighbors": 42,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 10, "5": 18 },
+      "avg_distance": 5623.339618973561,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 104
+    }
+  ],
+  [
+    894,
+    {
+      "score": 132034.82624179183,
+      "num_neighbors": 2,
+      "all_num_neighbors": 42,
+      "neighbors_by_depth": { "1": 2, "2": 5, "3": 8, "4": 11, "5": 16 },
+      "avg_distance": 5710.242029548989,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 231
+    }
+  ],
+  [
+    1636,
+    {
+      "score": 132034.8011362156,
+      "num_neighbors": 2,
+      "all_num_neighbors": 42,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 7, "4": 11, "5": 18 },
+      "avg_distance": 5754.021384136859,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 354
+    }
+  ],
+  [
+    3452,
+    {
+      "score": 132034.77831032645,
+      "num_neighbors": 2,
+      "all_num_neighbors": 45,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 12, "5": 19 },
+      "avg_distance": 5731.237752721618,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 234
+    }
+  ],
+  [
+    39,
+    {
+      "score": 132034.73366496066,
+      "num_neighbors": 3,
+      "all_num_neighbors": 41,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 8, "4": 10, "5": 14 },
+      "avg_distance": 5868.308125972007,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 378
+    }
+  ],
+  [
+    4061,
+    {
+      "score": 132034.6922161146,
+      "num_neighbors": 2,
+      "all_num_neighbors": 44,
+      "neighbors_by_depth": { "1": 2, "2": 5, "3": 8, "4": 12, "5": 17 },
+      "avg_distance": 5776.4216562986,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 305
+    }
+  ],
+  [
+    1268,
+    {
+      "score": 132034.6017970286,
+      "num_neighbors": 3,
+      "all_num_neighbors": 51,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 10, "4": 14, "5": 18 },
+      "avg_distance": 6173.310264385692,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 635
+    }
+  ],
+  [
+    2897,
+    {
+      "score": 132034.50647325368,
+      "num_neighbors": 2,
+      "all_num_neighbors": 48,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 9, "4": 15, "5": 18 },
+      "avg_distance": 5850.908825816486,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 357
+    }
+  ],
+  [
+    2599,
+    {
+      "score": 132034.47652608325,
+      "num_neighbors": 2,
+      "all_num_neighbors": 39,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 7, "4": 11, "5": 15 },
+      "avg_distance": 5653.812208398133,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 226
+    }
+  ],
+  [
+    4318,
+    {
+      "score": 132034.45048560336,
+      "num_neighbors": 3,
+      "all_num_neighbors": 43,
+      "neighbors_by_depth": { "1": 3, "2": 5, "3": 8, "4": 11, "5": 16 },
+      "avg_distance": 6007.509136858476,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 597
+    }
+  ],
+  [
+    3391,
+    {
+      "score": 132034.4122387772,
+      "num_neighbors": 3,
+      "all_num_neighbors": 46,
+      "neighbors_by_depth": { "1": 3, "2": 7, "3": 8, "4": 12, "5": 16 },
+      "avg_distance": 5809.318818040436,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 131
+    }
+  ],
+  [
+    650,
+    {
+      "score": 132034.33407313965,
+      "num_neighbors": 2,
+      "all_num_neighbors": 43,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 13, "5": 16 },
+      "avg_distance": 5710.199455676517,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 226
+    }
+  ],
+  [
+    4049,
+    {
+      "score": 132034.31499907013,
+      "num_neighbors": 2,
+      "all_num_neighbors": 40,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 11, "5": 15 },
+      "avg_distance": 5674.109447900467,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 229
+    }
+  ],
+  [
+    1881,
+    {
+      "score": 132034.22133207062,
+      "num_neighbors": 2,
+      "all_num_neighbors": 37,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 6, "4": 11, "5": 14 },
+      "avg_distance": 5563.204121306377,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 104
+    }
+  ],
+  [
+    4,
+    {
+      "score": 132034.1929067474,
+      "num_neighbors": 2,
+      "all_num_neighbors": 42,
+      "neighbors_by_depth": { "1": 2, "2": 5, "3": 10, "4": 11, "5": 14 },
+      "avg_distance": 5660.12733281493,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 105
+    }
+  ],
+  [
+    2407,
+    {
+      "score": 132034.13804960906,
+      "num_neighbors": 2,
+      "all_num_neighbors": 41,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 12, "5": 15 },
+      "avg_distance": 5685.81901244168,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 224
+    }
+  ],
+  [
+    4498,
+    {
+      "score": 132034.10305363048,
+      "num_neighbors": 2,
+      "all_num_neighbors": 37,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 6, "4": 11, "5": 14 },
+      "avg_distance": 5562.782465007776,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 102
+    }
+  ],
+  [
+    3792,
+    {
+      "score": 132034.0952396735,
+      "num_neighbors": 2,
+      "all_num_neighbors": 41,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 11, "5": 16 },
+      "avg_distance": 5686.049766718507,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 229
+    }
+  ],
+  [
+    2405,
+    {
+      "score": 132034.05571476463,
+      "num_neighbors": 2,
+      "all_num_neighbors": 36,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 7, "4": 10, "5": 13 },
+      "avg_distance": 5622.651827371696,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 228
+    }
+  ],
+  [
+    3794,
+    {
+      "score": 132034.0362906421,
+      "num_neighbors": 2,
+      "all_num_neighbors": 40,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 10, "5": 16 },
+      "avg_distance": 5604.5402410575425,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 100
+    }
+  ],
+  [
+    2850,
+    {
+      "score": 132034.0074721034,
+      "num_neighbors": 3,
+      "all_num_neighbors": 47,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 10, "4": 13, "5": 15 },
+      "avg_distance": 6062.214230171073,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 536
+    }
+  ],
+  [
+    2982,
+    {
+      "score": 132033.62839034118,
+      "num_neighbors": 2,
+      "all_num_neighbors": 24,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 4, "4": 5, "5": 9 },
+      "avg_distance": 5381.638024883359,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 51
+    }
+  ],
+  [
+    2894,
+    {
+      "score": 132033.57062282925,
+      "num_neighbors": 3,
+      "all_num_neighbors": 47,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 8, "4": 12, "5": 18 },
+      "avg_distance": 5793.280132192846,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 0,
+      "total_connected_length": 154
+    }
+  ],
+  [
+    318,
+    {
+      "score": 132033.56020837053,
+      "num_neighbors": 2,
+      "all_num_neighbors": 43,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 13, "5": 16 },
+      "avg_distance": 5720.404548989113,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 237
+    }
+  ],
+  [
+    1322,
+    {
+      "score": 132033.4244564456,
+      "num_neighbors": 2,
+      "all_num_neighbors": 35,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 7, "4": 9, "5": 13 },
+      "avg_distance": 5591.887441679627,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 188
+    }
+  ],
+  [
+    628,
+    {
+      "score": 132033.37567614287,
+      "num_neighbors": 2,
+      "all_num_neighbors": 40,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 10, "5": 16 },
+      "avg_distance": 5744.976088646968,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 355
+    }
+  ],
+  [
+    2334,
+    {
+      "score": 132033.30932527245,
+      "num_neighbors": 2,
+      "all_num_neighbors": 38,
+      "neighbors_by_depth": { "1": 2, "2": 3, "3": 7, "4": 11, "5": 15 },
+      "avg_distance": 5679.333592534992,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 362
+    }
+  ],
+  [
+    4025,
+    {
+      "score": 132033.23750119668,
+      "num_neighbors": 2,
+      "all_num_neighbors": 41,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 9, "4": 11, "5": 15 },
+      "avg_distance": 5768.022744945568,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 357
+    }
+  ],
+  [
+    3616,
+    {
+      "score": 132033.1581529679,
+      "num_neighbors": 3,
+      "all_num_neighbors": 45,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 9, "4": 10, "5": 17 },
+      "avg_distance": 6080.133553654743,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 625
+    }
+  ],
+  [
+    3451,
+    {
+      "score": 132033.09530600542,
+      "num_neighbors": 2,
+      "all_num_neighbors": 42,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 11, "5": 17 },
+      "avg_distance": 5790.904743390358,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 390
+    }
+  ],
+  [
+    4328,
+    {
+      "score": 132032.9894767684,
+      "num_neighbors": 2,
+      "all_num_neighbors": 34,
+      "neighbors_by_depth": { "1": 2, "2": 3, "3": 7, "4": 9, "5": 13 },
+      "avg_distance": 5593.112752721618,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 236
+    }
+  ],
+  [
+    1514,
+    {
+      "score": 132032.9833855711,
+      "num_neighbors": 2,
+      "all_num_neighbors": 42,
+      "neighbors_by_depth": { "1": 2, "2": 5, "3": 9, "4": 11, "5": 15 },
+      "avg_distance": 5767.2136469673405,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 303
+    }
+  ],
+  [
+    1491,
+    {
+      "score": 132032.8084252469,
+      "num_neighbors": 2,
+      "all_num_neighbors": 43,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 9, "4": 12, "5": 16 },
+      "avg_distance": 5793.814735614308,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 354
+    }
+  ],
+  [
+    229,
+    {
+      "score": 132032.79664794847,
+      "num_neighbors": 2,
+      "all_num_neighbors": 38,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 7, "4": 10, "5": 15 },
+      "avg_distance": 5722.7527216174185,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 362
+    }
+  ],
+  [
+    2020,
+    {
+      "score": 132032.78364559272,
+      "num_neighbors": 3,
+      "all_num_neighbors": 36,
+      "neighbors_by_depth": { "1": 3, "2": 5, "3": 7, "4": 9, "5": 12 },
+      "avg_distance": 5814.924183514774,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 413
+    }
+  ],
+  [
+    2408,
+    {
+      "score": 132032.7026910705,
+      "num_neighbors": 2,
+      "all_num_neighbors": 46,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 11, "5": 21 },
+      "avg_distance": 5751.9895023328145,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 236
+    }
+  ],
+  [
+    644,
+    {
+      "score": 132032.35128455903,
+      "num_neighbors": 2,
+      "all_num_neighbors": 25,
+      "neighbors_by_depth": { "1": 2, "2": 3, "3": 5, "4": 6, "5": 9 },
+      "avg_distance": 5494.5894245723175,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 309
+    }
+  ],
+  [
+    3516,
+    {
+      "score": 132032.117083034,
+      "num_neighbors": 2,
+      "all_num_neighbors": 40,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 9, "4": 11, "5": 14 },
+      "avg_distance": 5626.899688958009,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 105
+    }
+  ],
+  [
+    4334,
+    {
+      "score": 132032.0840803964,
+      "num_neighbors": 2,
+      "all_num_neighbors": 36,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 7, "4": 10, "5": 13 },
+      "avg_distance": 5633.063374805599,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 228
+    }
+  ],
+  [
+    1639,
+    {
+      "score": 132031.93778403534,
+      "num_neighbors": 2,
+      "all_num_neighbors": 42,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 9, "4": 11, "5": 16 },
+      "avg_distance": 5785.268079315708,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 355
+    }
+  ],
+  [
+    1599,
+    {
+      "score": 132031.69619761425,
+      "num_neighbors": 3,
+      "all_num_neighbors": 33,
+      "neighbors_by_depth": { "1": 3, "2": 4, "3": 7, "4": 8, "5": 11 },
+      "avg_distance": 5717.300155520996,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 271
+    }
+  ],
+  [
+    1237,
+    {
+      "score": 132031.63462255104,
+      "num_neighbors": 2,
+      "all_num_neighbors": 34,
+      "neighbors_by_depth": { "1": 2, "2": 3, "3": 7, "4": 9, "5": 13 },
+      "avg_distance": 5600.188180404354,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 236
+    }
+  ],
+  [
+    2671,
+    {
+      "score": 132031.63124230344,
+      "num_neighbors": 2,
+      "all_num_neighbors": 42,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 12, "5": 16 },
+      "avg_distance": 5652.099922239502,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 166
+    }
+  ],
+  [
+    360,
+    {
+      "score": 132031.62661431037,
+      "num_neighbors": 4,
+      "all_num_neighbors": 44,
+      "neighbors_by_depth": { "1": 4, "2": 7, "3": 9, "4": 10, "5": 14 },
+      "avg_distance": 6103.840785381027,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 458
+    }
+  ],
+  [
+    749,
+    {
+      "score": 132031.3217747628,
+      "num_neighbors": 2,
+      "all_num_neighbors": 27,
+      "neighbors_by_depth": { "1": 2, "2": 3, "3": 5, "4": 8, "5": 9 },
+      "avg_distance": 5480.1784603421465,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 220
+    }
+  ],
+  [
+    2241,
+    {
+      "score": 132031.26654947666,
+      "num_neighbors": 2,
+      "all_num_neighbors": 46,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 13, "5": 19 },
+      "avg_distance": 5764.350894245723,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 234
+    }
+  ],
+  [
+    2082,
+    {
+      "score": 132031.18291044614,
+      "num_neighbors": 3,
+      "all_num_neighbors": 44,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 10, "4": 12, "5": 13 },
+      "avg_distance": 5905.386275272162,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 310
+    }
+  ],
+  [
+    972,
+    {
+      "score": 132031.13036606557,
+      "num_neighbors": 2,
+      "all_num_neighbors": 33,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 5, "4": 9, "5": 13 },
+      "avg_distance": 5588.903965785381,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 226
+    }
+  ],
+  [
+    461,
+    {
+      "score": 132031.12648674686,
+      "num_neighbors": 2,
+      "all_num_neighbors": 38,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 6, "4": 11, "5": 15 },
+      "avg_distance": 5653.901244167962,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 226
+    }
+  ],
+  [
+    1974,
+    {
+      "score": 132031.09657407049,
+      "num_neighbors": 2,
+      "all_num_neighbors": 40,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 9, "4": 11, "5": 14 },
+      "avg_distance": 5632.29199066874,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 105
+    }
+  ],
+  [
+    1962,
+    {
+      "score": 132030.93091664504,
+      "num_neighbors": 4,
+      "all_num_neighbors": 56,
+      "neighbors_by_depth": { "1": 4, "2": 7, "3": 12, "4": 14, "5": 19 },
+      "avg_distance": 6323.904548989113,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 0,
+      "total_connected_length": 543
+    }
+  ],
+  [
+    4812,
+    {
+      "score": 132030.89702953276,
+      "num_neighbors": 2,
+      "all_num_neighbors": 46,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 13, "5": 19 },
+      "avg_distance": 5766.398716951789,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 234
+    }
+  ],
+  [
+    919,
+    {
+      "score": 132030.8923302802,
+      "num_neighbors": 3,
+      "all_num_neighbors": 44,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 9, "4": 12, "5": 14 },
+      "avg_distance": 5886.592146189736,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 288
+    }
+  ],
+  [
+    1321,
+    {
+      "score": 132030.8617147541,
+      "num_neighbors": 3,
+      "all_num_neighbors": 31,
+      "neighbors_by_depth": { "1": 3, "2": 3, "3": 5, "4": 8, "5": 12 },
+      "avg_distance": 5602.836508553654,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 195
+    }
+  ],
+  [
+    1543,
+    {
+      "score": 132030.8244433214,
+      "num_neighbors": 2,
+      "all_num_neighbors": 37,
+      "neighbors_by_depth": { "1": 2, "2": 3, "3": 6, "4": 13, "5": 13 },
+      "avg_distance": 5615.271384136859,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 240
+    }
+  ],
+  [
+    4878,
+    {
+      "score": 132030.77492545522,
+      "num_neighbors": 2,
+      "all_num_neighbors": 40,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 11, "5": 15 },
+      "avg_distance": 5691.5550155521,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 226
+    }
+  ],
+  [
+    1465,
+    {
+      "score": 132030.65503656227,
+      "num_neighbors": 2,
+      "all_num_neighbors": 34,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 7, "4": 9, "5": 12 },
+      "avg_distance": 5654.4597589424575,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 349
+    }
+  ],
+  [
+    3986,
+    {
+      "score": 132030.4416114101,
+      "num_neighbors": 2,
+      "all_num_neighbors": 43,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 12, "5": 17 },
+      "avg_distance": 5818.734059097978,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 388
+    }
+  ],
+  [
+    462,
+    {
+      "score": 132030.40459365843,
+      "num_neighbors": 2,
+      "all_num_neighbors": 40,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 11, "5": 15 },
+      "avg_distance": 5698.424183514774,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 235
+    }
+  ],
+  [
+    4815,
+    {
+      "score": 132030.3318982938,
+      "num_neighbors": 2,
+      "all_num_neighbors": 31,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 7, "4": 7, "5": 11 },
+      "avg_distance": 5589.243195956454,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 242
+    }
+  ],
+  [
+    4804,
+    {
+      "score": 132030.3202342617,
+      "num_neighbors": 2,
+      "all_num_neighbors": 41,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 11, "5": 16 },
+      "avg_distance": 5710.274688958009,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 236
+    }
+  ],
+  [
+    4712,
+    {
+      "score": 132030.29621311472,
+      "num_neighbors": 2,
+      "all_num_neighbors": 43,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 9, "4": 12, "5": 16 },
+      "avg_distance": 5741.746695178849,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 235
+    }
+  ],
+  [
+    973,
+    {
+      "score": 132030.14328168778,
+      "num_neighbors": 2,
+      "all_num_neighbors": 31,
+      "neighbors_by_depth": { "1": 2, "2": 3, "3": 6, "4": 9, "5": 11 },
+      "avg_distance": 5569.806765163297,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 236
+    }
+  ],
+  [
+    4877,
+    {
+      "score": 132030.13189009024,
+      "num_neighbors": 2,
+      "all_num_neighbors": 42,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 11, "5": 17 },
+      "avg_distance": 5721.650466562986,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 235
+    }
+  ],
+  [
+    1542,
+    {
+      "score": 132030.0920872973,
+      "num_neighbors": 2,
+      "all_num_neighbors": 38,
+      "neighbors_by_depth": { "1": 2, "2": 3, "3": 7, "4": 11, "5": 15 },
+      "avg_distance": 5607.216951788491,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 194
+    }
+  ],
+  [
+    4875,
+    {
+      "score": 132029.8850142891,
+      "num_neighbors": 2,
+      "all_num_neighbors": 38,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 6, "4": 11, "5": 15 },
+      "avg_distance": 5659.991446345257,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 225
+    }
+  ],
+  [
+    3562,
+    {
+      "score": 132029.7644010261,
+      "num_neighbors": 3,
+      "all_num_neighbors": 42,
+      "neighbors_by_depth": { "1": 3, "2": 5, "3": 8, "4": 12, "5": 14 },
+      "avg_distance": 5816.912519440124,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 0,
+      "total_connected_length": 288
+    }
+  ],
+  [
+    3859,
+    {
+      "score": 132029.75429489175,
+      "num_neighbors": 3,
+      "all_num_neighbors": 52,
+      "neighbors_by_depth": { "1": 3, "2": 7, "3": 10, "4": 15, "5": 17 },
+      "avg_distance": 6030.23600311042,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 301
+    }
+  ],
+  [
+    4892,
+    {
+      "score": 132029.6168910726,
+      "num_neighbors": 3,
+      "all_num_neighbors": 51,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 10, "4": 14, "5": 18 },
+      "avg_distance": 6006.307542768273,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 315
+    }
+  ],
+  [
+    2187,
+    {
+      "score": 132029.38627418032,
+      "num_neighbors": 3,
+      "all_num_neighbors": 49,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 9, "4": 14, "5": 17 },
+      "avg_distance": 5929.106143079316,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 236
+    }
+  ],
+  [
+    15,
+    {
+      "score": 132029.38615393458,
+      "num_neighbors": 2,
+      "all_num_neighbors": 33,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 7, "4": 9, "5": 11 },
+      "avg_distance": 5679.4582037325035,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 353
+    }
+  ],
+  [
+    4916,
+    {
+      "score": 132029.35342730803,
+      "num_neighbors": 2,
+      "all_num_neighbors": 43,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 11, "5": 18 },
+      "avg_distance": 5736.855948678071,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 235
+    }
+  ],
+  [
+    2691,
+    {
+      "score": 132029.3197959867,
+      "num_neighbors": 3,
+      "all_num_neighbors": 48,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 11, "4": 13, "5": 15 },
+      "avg_distance": 6020.9613141524105,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 388
+    }
+  ],
+  [
+    2234,
+    {
+      "score": 132029.28622235515,
+      "num_neighbors": 2,
+      "all_num_neighbors": 39,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 9, "4": 10, "5": 14 },
+      "avg_distance": 5698.704121306377,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 236
+    }
+  ],
+  [
+    3454,
+    {
+      "score": 132029.20898283,
+      "num_neighbors": 2,
+      "all_num_neighbors": 39,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 7, "4": 11, "5": 15 },
+      "avg_distance": 5753.4261275272165,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 357
+    }
+  ],
+  [
+    469,
+    {
+      "score": 132029.20826617043,
+      "num_neighbors": 2,
+      "all_num_neighbors": 31,
+      "neighbors_by_depth": { "1": 2, "2": 3, "3": 6, "4": 9, "5": 11 },
+      "avg_distance": 5574.647161741836,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 236
+    }
+  ],
+  [
+    4333,
+    {
+      "score": 132029.1741169109,
+      "num_neighbors": 2,
+      "all_num_neighbors": 41,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 12, "5": 15 },
+      "avg_distance": 5712.70101088647,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 224
+    }
+  ],
+  [
+    2372,
+    {
+      "score": 132029.1057551152,
+      "num_neighbors": 2,
+      "all_num_neighbors": 39,
+      "neighbors_by_depth": { "1": 2, "2": 5, "3": 7, "4": 12, "5": 13 },
+      "avg_distance": 5725.980948678071,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 271
+    }
+  ],
+  [
+    35,
+    {
+      "score": 132029.101819747,
+      "num_neighbors": 2,
+      "all_num_neighbors": 40,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 10, "5": 16 },
+      "avg_distance": 5768.035769828927,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 354
+    }
+  ],
+  [
+    2508,
+    {
+      "score": 132029.08031752091,
+      "num_neighbors": 2,
+      "all_num_neighbors": 30,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 5, "4": 9, "5": 10 },
+      "avg_distance": 5573.5832037325035,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 236
+    }
+  ],
+  [
+    2668,
+    {
+      "score": 132028.81264498123,
+      "num_neighbors": 2,
+      "all_num_neighbors": 43,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 13, "5": 16 },
+      "avg_distance": 5741.473172628304,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 228
+    }
+  ],
+  [
+    1108,
+    {
+      "score": 132028.63550288504,
+      "num_neighbors": 2,
+      "all_num_neighbors": 41,
+      "neighbors_by_depth": { "1": 2, "2": 5, "3": 8, "4": 11, "5": 15 },
+      "avg_distance": 5668.636858475894,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 112
+    }
+  ],
+  [
+    3865,
+    {
+      "score": 132028.57355637016,
+      "num_neighbors": 2,
+      "all_num_neighbors": 36,
+      "neighbors_by_depth": { "1": 2, "2": 5, "3": 8, "4": 9, "5": 12 },
+      "avg_distance": 5681.319206842923,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 245
+    }
+  ],
+  [
+    1883,
+    {
+      "score": 132028.4690030272,
+      "num_neighbors": 2,
+      "all_num_neighbors": 30,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 5, "4": 8, "5": 11 },
+      "avg_distance": 5574.159797822706,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 236
+    }
+  ],
+  [
+    1057,
+    {
+      "score": 132028.45452270974,
+      "num_neighbors": 3,
+      "all_num_neighbors": 40,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 9, "4": 10, "5": 12 },
+      "avg_distance": 5848.9230171073095,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 288
+    }
+  ],
+  [
+    1540,
+    {
+      "score": 132028.4267354694,
+      "num_neighbors": 2,
+      "all_num_neighbors": 43,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 12, "5": 17 },
+      "avg_distance": 5828.996889580093,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 386
+    }
+  ],
+  [
+    4054,
+    {
+      "score": 132028.38169021372,
+      "num_neighbors": 2,
+      "all_num_neighbors": 41,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 11, "5": 16 },
+      "avg_distance": 5716.471034214619,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 228
+    }
+  ],
+  [
+    2130,
+    {
+      "score": 132028.26960740582,
+      "num_neighbors": 2,
+      "all_num_neighbors": 50,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 10, "4": 15, "5": 19 },
+      "avg_distance": 5915.948094867807,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 354
+    }
+  ],
+  [
+    3867,
+    {
+      "score": 132028.22826266708,
+      "num_neighbors": 2,
+      "all_num_neighbors": 39,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 6, "4": 12, "5": 15 },
+      "avg_distance": 5657.091368584759,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 178
+    }
+  ],
+  [
+    2986,
+    {
+      "score": 132028.10174116353,
+      "num_neighbors": 3,
+      "all_num_neighbors": 25,
+      "neighbors_by_depth": { "1": 3, "2": 3, "3": 4, "4": 5, "5": 10 },
+      "avg_distance": 5477.109253499222,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 70
+    }
+  ],
+  [
+    4547,
+    {
+      "score": 132028.04183674545,
+      "num_neighbors": 3,
+      "all_num_neighbors": 49,
+      "neighbors_by_depth": { "1": 3, "2": 6, "3": 10, "4": 14, "5": 16 },
+      "avg_distance": 6191.535186625194,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 638
+    }
+  ],
+  [
+    4510,
+    {
+      "score": 132027.9928031062,
+      "num_neighbors": 2,
+      "all_num_neighbors": 23,
+      "neighbors_by_depth": { "1": 2, "2": 3, "3": 4, "4": 6, "5": 8 },
+      "avg_distance": 5441.3769440124415,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 162
+    }
+  ],
+  [
+    319,
+    {
+      "score": 132027.98784725554,
+      "num_neighbors": 2,
+      "all_num_neighbors": 43,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 10, "4": 11, "5": 16 },
+      "avg_distance": 5792.437791601867,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 295
+    }
+  ],
+  [
+    3808,
+    {
+      "score": 132027.5548078342,
+      "num_neighbors": 2,
+      "all_num_neighbors": 39,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 9, "4": 10, "5": 14 },
+      "avg_distance": 5636.217923794712,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 102
+    }
+  ],
+  [
+    3123,
+    {
+      "score": 132027.36602281468,
+      "num_neighbors": 2,
+      "all_num_neighbors": 34,
+      "neighbors_by_depth": { "1": 2, "2": 5, "3": 7, "4": 8, "5": 12 },
+      "avg_distance": 5498.881026438569,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 0,
+      "total_connected_length": 41
+    }
+  ],
+  [
+    2878,
+    {
+      "score": 132027.3645833099,
+      "num_neighbors": 2,
+      "all_num_neighbors": 39,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 9, "4": 10, "5": 14 },
+      "avg_distance": 5708.584370139969,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 235
+    }
+  ],
+  [
+    2104,
+    {
+      "score": 132027.32531673947,
+      "num_neighbors": 2,
+      "all_num_neighbors": 31,
+      "neighbors_by_depth": { "1": 2, "2": 3, "3": 5, "4": 9, "5": 12 },
+      "avg_distance": 5520.0050544323485,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 1,
+      "total_connected_length": 174
+    }
+  ],
+  [
+    2242,
+    {
+      "score": 132027.20692103368,
+      "num_neighbors": 2,
+      "all_num_neighbors": 44,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 13, "5": 17 },
+      "avg_distance": 5758.593118195957,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 223
+    }
+  ],
+  [
+    4504,
+    {
+      "score": 132027.18132894696,
+      "num_neighbors": 2,
+      "all_num_neighbors": 40,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 11, "5": 15 },
+      "avg_distance": 5641.732309486781,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 97
+    }
+  ],
+  [
+    970,
+    {
+      "score": 132027.17947038752,
+      "num_neighbors": 2,
+      "all_num_neighbors": 37,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 6, "4": 11, "5": 14 },
+      "avg_distance": 5664.297239502333,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 226
+    }
+  ],
+  [
+    6,
+    {
+      "score": 132027.0973689308,
+      "num_neighbors": 2,
+      "all_num_neighbors": 37,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 7, "4": 9, "5": 15 },
+      "avg_distance": 5736.431959564541,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 355
+    }
+  ],
+  [
+    3517,
+    {
+      "score": 132026.94257728898,
+      "num_neighbors": 2,
+      "all_num_neighbors": 39,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 9, "4": 11, "5": 13 },
+      "avg_distance": 5641.584175738724,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 101
+    }
+  ],
+  [
+    3893,
+    {
+      "score": 132026.88816371505,
+      "num_neighbors": 3,
+      "all_num_neighbors": 36,
+      "neighbors_by_depth": { "1": 3, "2": 5, "3": 7, "4": 9, "5": 12 },
+      "avg_distance": 5702.124805598756,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 0,
+      "total_connected_length": 200
+    }
+  ],
+  [
+    4067,
+    {
+      "score": 132026.88501912635,
+      "num_neighbors": 2,
+      "all_num_neighbors": 29,
+      "neighbors_by_depth": { "1": 2, "2": 3, "3": 6, "4": 6, "5": 12 },
+      "avg_distance": 5557.720839813374,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 235
+    }
+  ],
+  [
+    2521,
+    {
+      "score": 132026.77586399656,
+      "num_neighbors": 2,
+      "all_num_neighbors": 43,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 13, "5": 16 },
+      "avg_distance": 5757.659214618973,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 237
+    }
+  ],
+  [
+    3518,
+    {
+      "score": 132026.76986766027,
+      "num_neighbors": 2,
+      "all_num_neighbors": 42,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 9, "4": 12, "5": 15 },
+      "avg_distance": 5675.604587869362,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 98
+    }
+  ],
+  [
+    535,
+    {
+      "score": 132026.53477416123,
+      "num_neighbors": 2,
+      "all_num_neighbors": 38,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 6, "4": 10, "5": 16 },
+      "avg_distance": 5638.973561430793,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 157
+    }
+  ],
+  [
+    2856,
+    {
+      "score": 132026.51205246223,
+      "num_neighbors": 2,
+      "all_num_neighbors": 41,
+      "neighbors_by_depth": { "1": 2, "2": 4, "3": 8, "4": 12, "5": 15 },
+      "avg_distance": 5767.424377916019,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 297
+    }
+  ],
+  [
+    458,
+    {
+      "score": 132026.49977688023,
+      "num_neighbors": 2,
+      "all_num_neighbors": 30,
+      "neighbors_by_depth": { "1": 2, "2": 3, "3": 6, "4": 7, "5": 12 },
+      "avg_distance": 5572.619362363919,
+      "reachable_edges": 8720,
+      "outgoing_one_way": 2,
+      "total_connected_length": 235
+    }
+  ]
+]

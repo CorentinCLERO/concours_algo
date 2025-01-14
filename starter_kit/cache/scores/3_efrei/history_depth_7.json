@@ -57,13 +57,68 @@
       "score": 28285,
       "is_valid": true,
       "timestamp": "20250114_153053"
+    },
+    {
+      "score": 49860,
+      "is_valid": true,
+      "timestamp": "20250114_170423"
+    },
+    {
+      "score": 73498,
+      "is_valid": true,
+      "timestamp": "20250114_170538"
+    },
+    {
+      "score": 71381,
+      "is_valid": true,
+      "timestamp": "20250114_170621"
+    },
+    {
+      "score": 72824,
+      "is_valid": true,
+      "timestamp": "20250114_170655"
+    },
+    {
+      "score": 43899,
+      "is_valid": true,
+      "timestamp": "20250114_170737"
+    },
+    {
+      "score": 51440,
+      "is_valid": true,
+      "timestamp": "20250114_170807"
+    },
+    {
+      "score": 73566,
+      "is_valid": true,
+      "timestamp": "20250114_170836"
+    },
+    {
+      "score": 53869,
+      "is_valid": true,
+      "timestamp": "20250114_170915"
+    },
+    {
+      "score": 38530,
+      "is_valid": true,
+      "timestamp": "20250114_170927"
+    },
+    {
+      "score": 45382,
+      "is_valid": true,
+      "timestamp": "20250114_170945"
+    },
+    {
+      "score": 71103,
+      "is_valid": true,
+      "timestamp": "20250114_171021"
     }
   ],
   "stats": {
-    "highest_score": 58262,
+    "highest_score": 73566,
     "lowest_score": 20671,
-    "valid_attempts": 11,
+    "valid_attempts": 22,
     "invalid_attempts": 0,
-    "total_attempts": 11
+    "total_attempts": 22
   }
 }

@@ -31,6 +31,7 @@ class Loop:
             best_result = solution
 
             if score > highest_existing_score:
+                highest_existing_score = score
                 print(f'✅ New best score! (Previous best: {highest_existing_score})')
 
                 # Supprimer les anciennes solutions

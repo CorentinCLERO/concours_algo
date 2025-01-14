@@ -2,6 +2,7 @@ import json
 import random
 import networkx as nx
 from src.node_analyser import NodeAnalyser
+import datetime
 
 class Solver:
     @staticmethod
@@ -40,85 +41,59 @@ class Solver:
             # Retour d'une solution minimale en cas d'erreur
             return json.dumps({"chargeStationId": base_id, "itinerary": [base_id]})
 
-        def evaluate_path(G, path, curr_battery, visited_roads, dist_to_base, dataset, depth):
-            """Évalue un chemin possible en fonction de plusieurs critères
-
-            Args:
-                G: Le graphe
-                path: Liste des nœuds du chemin à évaluer
-                curr_battery: Niveau de batterie actuel
-                visited_roads: Ensemble des routes déjà visitées
-                dist_to_base: Dictionnaire des distances à la base
-                dataset: Données du problème
-                depth: Profondeur actuelle dans la recherche
-
-            Returns:
-                float: Score d'évaluation du chemin
-            """
+        def evaluate_path(G, path, curr_battery, visited_roads, dist_to_base, dataset, depth, is_last_day=False):
             total_score = 0
             remaining_battery = curr_battery
-            current_visited = visited_roads.copy()  # Copie pour ne pas modifier l'original
+            current_visited = visited_roads.copy()
 
-            # Évaluation de chaque segment du chemin
             for i in range(len(path)-1):
                 node1, node2 = path[i], path[i+1]
 
-                # Vérification de l'existence de l'arête
                 if not G.has_edge(node1, node2):
                     return float('-inf')
 
                 edge_len = G[node1][node2]['length']
 
-                # Vérification de la faisabilité énergétique
                 if remaining_battery < edge_len:
                     return float('-inf')
 
                 remaining_battery -= edge_len
 
-                # Bonus pour les routes non visitées (diminue avec la profondeur)
+                # Bonus pour les routes non visitées
                 if (node1, node2) not in current_visited:
-                    total_score += 100 * (1 / (depth + 1))
+                    if is_last_day:
+                        # Bonus plus important le dernier jour
+                        total_score += 150 * (1 / (depth + 1))
+                        # Bonus supplémentaire pour l'utilisation de batterie
+                        total_score += (edge_len / dataset['batteryCapacity']) * 200
+                    else:
+                        total_score += 100 * (1 / (depth + 1))
                     current_visited.add((node1, node2))
 
-                # Bonus proportionnel à la longueur de la route
-                total_score += edge_len / 10
+                # Bonus pour l'utilisation efficace de la batterie le dernier jour
+                if is_last_day:
+                    battery_efficiency = edge_len / dataset['batteryCapacity']
+                    total_score += battery_efficiency * 100
 
-                # Bonus pour les voisins non visités du prochain nœud
+                # Autres bonus existants...
+                total_score += edge_len / 10
                 unvisited_neighbors = sum(1 for neighbor in G.neighbors(node2)
                                         if (node2, neighbor) not in current_visited)
                 total_score += unvisited_neighbors * 5 * (1 / (depth + 1))
 
-                # Vérification que le nœud est connecté à la base
-                if node2 not in dist_to_base:
-                    return float('-inf')
-
-                # Pénalité si on ne peut pas rentrer à la base
-                if remaining_battery < dist_to_base[node2]:
-                    total_score -= 1000
-
-                # Pénalité pour retour non nécessaire à la base
-                if node2 == base_id and remaining_battery > dataset['batteryCapacity'] / 10:
-                    total_score -= 500
+                # Conditions pour les jours non-derniers
+                if not is_last_day:
+                    if node2 not in dist_to_base:
+                        return float('-inf')
+                    if remaining_battery < dist_to_base[node2]:
+                        total_score -= 1000
+                    if node2 == base_id and remaining_battery > dataset['batteryCapacity'] / 100:
+                        total_score -= 500
 
             return total_score
 
-        def find_best_path(G, curr_node, battery_remaining, visited_roads, dist_to_base, dataset, depth=0, max_depth=3):
-            """Trouve le meilleur chemin possible à partir du nœud actuel
-
-            Args:
-                G: Le graphe
-                curr_node: Nœud de départ
-                battery_remaining: Niveau de batterie restant
-                visited_roads: Ensemble des routes déjà visitées
-                dist_to_base: Dictionnaire des distances à la base
-                dataset: Données du problème
-                depth: Profondeur actuelle dans la recherche
-                max_depth: Profondeur maximale de recherche
-
-            Returns:
-                tuple: (meilleur_chemin, meilleur_score)
-            """
-            # Condition d'arrêt de la récursion
+        def find_best_path(G, curr_node, battery_remaining, visited_roads, dist_to_base, dataset, depth=0, max_depth=3, is_last_day=False):
+            """Version modifiée pour maximiser l'utilisation de la batterie le dernier jour"""
             if depth >= max_depth:
                 return [], 0
 
@@ -126,39 +101,80 @@ class Solver:
             best_score = float('-inf')
 
             try:
-                # Récupération et mélange des voisins pour diversifier la recherche
                 neighbors = list(G.neighbors(curr_node))
+
+                if is_last_day and depth == 0:
+                    # Calcul des scores heuristiques pour le dernier jour
+                    neighbor_scores = []
+                    for n in neighbors:
+                        if G.has_edge(curr_node, n) and battery_remaining >= G[curr_node][n]['length']:
+                            heuristic_score = 0
+                            edge_len = G[curr_node][n]['length']
+
+                            # Bonus pour les routes non visitées
+                            if (curr_node, n) not in visited_roads:
+                                heuristic_score += 1000
+
+                            # Bonus pour maximiser l'utilisation de la batterie
+                            battery_usage_ratio = edge_len / battery_remaining
+                            heuristic_score += battery_usage_ratio * 500  # Favorise les routes qui utilisent plus de batterie
+
+                            # Bonus pour les routes qui mènent à plus de routes non visitées
+                            unvisited_connections = sum(1 for neighbor in G.neighbors(n)
+                                                    if (n, neighbor) not in visited_roads and
+                                                    battery_remaining - edge_len >= G[n][neighbor]['length'])
+                            heuristic_score += unvisited_connections * 200
+
+                            # Bonus pour les chemins qui permettent d'utiliser toute la batterie
+                            remaining_after_move = battery_remaining - edge_len
+                            possible_subsequent_moves = sum(1 for neighbor in G.neighbors(n)
+                                                        if G.has_edge(n, neighbor) and
+                                                        remaining_after_move >= G[n][neighbor]['length'])
+                            heuristic_score += possible_subsequent_moves * 100
+
+                            neighbor_scores.append((n, heuristic_score))
+
+                    # Trier les voisins par score heuristique décroissant
+                    neighbors = [n for n, _ in sorted(neighbor_scores, key=lambda x: -x[1])]
+
                 for next_node in neighbors:
-                    # Vérification de la validité de l'arête
                     if not G.has_edge(curr_node, next_node):
                         continue
 
                     edge_len = G[curr_node][next_node]['length']
-
-                    # Vérification de la faisabilité énergétique
                     if battery_remaining >= edge_len:
-                        # Évaluation du chemin direct
                         path = [curr_node, next_node]
-                        score = evaluate_path(G, path, battery_remaining, visited_roads, dist_to_base, dataset, depth)
 
-                        # Exploration récursive des chemins plus longs
+                        # Calcul du score avec bonus pour utilisation de batterie le dernier jour
+                        if is_last_day:
+                            battery_usage = edge_len / dataset['batteryCapacity']
+                            score = evaluate_path(G, path, battery_remaining, visited_roads,
+                                            dist_to_base, dataset, depth, is_last_day)
+                            score += battery_usage * 1000  # Bonus pour utilisation de batterie
+                        else:
+                            score = evaluate_path(G, path, battery_remaining, visited_roads,
+                                            dist_to_base, dataset, depth, is_last_day)
+
                         if depth < max_depth - 1:
                             next_battery = battery_remaining - edge_len
                             next_visited = visited_roads.copy()
                             if (curr_node, next_node) not in next_visited:
                                 next_visited.add((curr_node, next_node))
 
-                            # Recherche récursive du meilleur sous-chemin
-                            sub_path, sub_score = find_best_path(G, next_node, next_battery, next_visited,
-                                                            dist_to_base, dataset, depth + 1, max_depth)
+                            sub_path, sub_score = find_best_path(
+                                G, next_node, next_battery, next_visited,
+                                dist_to_base, dataset, depth + 1, max_depth,
+                                is_last_day
+                            )
 
-                            # Combinaison des chemins si un sous-chemin a été trouvé
                             if sub_path:
                                 path.extend(sub_path[1:])
-                                # Le score du sous-chemin est pondéré par la profondeur
-                                score += sub_score * (0.8 ** depth)
+                                if is_last_day:
+                                    # Augmenter l'importance des sous-chemins le dernier jour
+                                    score += sub_score * (0.95 ** depth)
+                                else:
+                                    score += sub_score * (0.8 ** depth)
 
-                        # Mise à jour du meilleur chemin si nécessaire
                         if score > best_score:
                             best_score = score
                             best_path = path
@@ -174,47 +190,56 @@ class Solver:
         curr_node = base_id    # Position actuelle (commence à la base)
         path = [base_id]       # Chemin parcouru
         score = 0             # Score total
+        time = datetime.datetime.now().isoformat()
 
         # Boucle principale sur chaque jour
         for day_i in range(dataset['numDays']):
             battery_remaining = dataset['batteryCapacity']
             failed_attempts = 0  # Compteur pour les tentatives échouées
+            is_last_day = day_i == dataset['numDays'] - 1
 
             # Boucle de déplacement pour la journée
             while True:
                 try:
-                    # Si trop de tentatives échouées, force le retour à la base
+                    # Si trop de tentatives échouées
                     if failed_attempts >= 3:
-                        print(f"Too many failed attempts, forcing return to base")
-                        # Trouver le plus court chemin vers la base
-                        try:
-                            shortest_path = nx.shortest_path(G, curr_node, base_id, weight='length')
-                            for node in shortest_path[1:]:
-                                path.append(node)
-                                if (curr_node, node) not in visited_roads:
-                                    score += G[curr_node][node]['length']
-                                visited_roads.add((curr_node, node))
-                                visited_roads.add((node, curr_node))
-                                curr_node = node
-                        except nx.NetworkXNoPath:
-                            print(f"No path to base found, teleporting to base")
-                            path.append(base_id)
-                            curr_node = base_id
+                        if not is_last_day:  # Seulement si ce n'est pas le dernier jour
+                            print(f"Too many failed attempts, forcing return to base")
+                            try:
+                                shortest_path = nx.shortest_path(G, curr_node, base_id, weight='length')
+                                for node in shortest_path[1:]:
+                                    path.append(node)
+                                    if (curr_node, node) not in visited_roads:
+                                        score += G[curr_node][node]['length']
+                                    visited_roads.add((curr_node, node))
+                                    visited_roads.add((node, curr_node))
+                                    curr_node = node
+                            except nx.NetworkXNoPath:
+                                print(f"No path to base found, teleporting to base")
+                                path.append(base_id)
+                                curr_node = base_id
                         break
 
                     neighbors = list(G.neighbors(curr_node))
                     if not neighbors:
-                        print(f"Warning: Node {curr_node} has no neighbors, returning to base")
-                        next_node = base_id
+                        if not is_last_day:  # Seulement si ce n'est pas le dernier jour
+                            print(f"Warning: Node {curr_node} has no neighbors, returning to base")
+                            next_node = base_id
+                        else:
+                            break
                     else:
                         random.shuffle(neighbors)
                         best_path, _ = find_best_path(G, curr_node, battery_remaining, visited_roads,
-                                                    dist_to_base, dataset, depth=0, max_depth=depth_complexity)
+                                                    dist_to_base, dataset, depth=0, max_depth=depth_complexity,
+                                                    is_last_day=is_last_day)
 
                         if best_path and len(best_path) > 1:
                             next_node = best_path[1]
                         else:
-                            next_node = base_id
+                            if not is_last_day:
+                                next_node = base_id
+                            else:
+                                break
 
                     # Vérification de sécurité pour l'arête
                     if not G.has_edge(curr_node, next_node):
@@ -229,6 +254,10 @@ class Solver:
                     if (curr_node, next_node) not in visited_roads:
                         score += G[curr_node][next_node]['length']
 
+                        if datetime.datetime.now() - datetime.datetime.fromisoformat(time) > datetime.timedelta(seconds=5):
+                            print(f"😴 It's been a while so the current score: {score}")
+                            time = datetime.datetime.now().isoformat()
+
                     # Marquage des routes comme visitées
                     visited_roads.add((curr_node, next_node))
                     visited_roads.add((next_node, curr_node))
@@ -238,9 +267,23 @@ class Solver:
                     path.append(next_node)
                     curr_node = next_node
 
-                    # Fin de la journée si retour à la base
-                    if curr_node == base_id:
+                    # Fin de la journée si retour à la base (sauf dernier jour)
+                    if not is_last_day and curr_node == base_id:
                         break
+                    # Pour le dernier jour, on continue jusqu'à épuisement de la batterie
+                    elif is_last_day:
+                        # Vérifier s'il reste assez de batterie pour au moins une route non visitée
+                        min_edge_length = float('inf')
+                        for n in G.neighbors(curr_node):
+                            if G.has_edge(curr_node, n):
+                                min_edge_length = min(min_edge_length, G[curr_node][n]['length'])
+
+                        if battery_remaining < min_edge_length or not any(
+                            G.has_edge(curr_node, n) and battery_remaining >= G[curr_node][n]['length']
+                            for n in G.neighbors(curr_node)
+                        ):
+                            print(f"No more feasible moves with remaining battery: {battery_remaining}")
+                            break
 
                 except Exception as e:
                     print(f"Error during path finding: {e}")
@@ -251,7 +294,7 @@ class Solver:
                         curr_node = base_id
                         break
 
-            print(f'End day {day_i+1} with {battery_remaining} battery')
+            print(f'End day {day_i+1} with {battery_remaining} battery and score {score:_}')
 
         # Affichage des statistiques finales
         print(f'Visited {len(visited_roads) // 2} / {len(dataset["roads"])} roads')
