@@ -1,3 +1,4 @@
 /starter_kit/cache/scores
 /starter_kit/cache/visualizations
-*/__pycache__/*
+*/__pycache__
+*.pyc

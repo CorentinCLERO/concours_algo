@@ -5,7 +5,7 @@ import test_solution
 import datetime
 import matplotlib.pyplot as plt
 import seaborn as sns
-from src.solver import Solver
+from src.solver.solver import Solver
 
 class Analyser:
     def analyze_history(max_attempts, dataset, dataset_file=None, depth_number=None):

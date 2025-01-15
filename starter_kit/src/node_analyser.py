@@ -154,7 +154,6 @@ class NodeAnalyser:
         """Trouve le meilleur noeud de base"""
         # Essayer de récupérer depuis le cache
         cached_nodes = NodeAnalyser.get_cached_base_nodes(dataset_file)
-
         if cached_nodes is None:
             # Si le cache n'est pas accessible, calculer les noeuds
             cached_nodes = NodeAnalyser.analyze_base_nodes(G, dataset)
@@ -165,3 +164,51 @@ class NodeAnalyser:
         random_node = random.choice(cached_nodes)
         print(f"\nChosen base node {random_node[0]} with score {random_node[1]['score']:.2f}")
         return int(random_node[0])
+
+    @staticmethod
+    def get_daily_scores(solution_json, dataset_json):
+        """Calcule les scores cumulatifs pour chaque jour d'une solution"""
+        solution = json.loads(solution_json)
+        dataset = json.loads(dataset_json)
+
+        # D'abord, calculer le score total et les routes visitées pour chaque jour
+        daily_routes = []  # Liste des ensembles de routes visitées par jour
+        visited_roads = set()
+        day_start = 0
+
+        # Première passe : collecter les routes visitées par jour
+        for day in range(dataset['numDays']):
+            day_visited_roads = set()
+            i = day_start
+
+            while i < len(solution['itinerary']) - 1:
+                node1 = solution['itinerary'][i]
+                node2 = solution['itinerary'][i + 1]
+
+                if node2 == solution['chargeStationId'] and day < dataset['numDays'] - 1:
+                    day_start = i + 1
+                    break
+
+                edge = (min(node1, node2), max(node1, node2))
+                if edge not in visited_roads:
+                    for road in dataset['roads']:
+                        if (road['intersectionId1'], road['intersectionId2']) == edge or \
+                        (road['intersectionId2'], road['intersectionId1']) == edge:
+                            day_visited_roads.add((edge, road['length']))
+                            visited_roads.add(edge)
+                            break
+                i += 1
+
+            daily_routes.append(day_visited_roads)
+
+        # Calculer les scores cumulatifs dans l'ordre croissant
+        daily_scores = []
+        running_total = 0
+
+        # Parcourir les jours dans l'ordre normal
+        for day in range(dataset['numDays']):
+            day_score = sum(length for _, length in daily_routes[day])
+            running_total += day_score
+            daily_scores.append(running_total)
+
+        return daily_scores

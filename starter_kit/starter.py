@@ -4,8 +4,8 @@ from src.loop import Loop
 # dataset_file = "1_example"
 # dataset_file = "2_pacman"
 # dataset_file = "3_efrei"
-# dataset_file = "4_manhattan"
-dataset_file = "5_gta"
+dataset_file = "4_manhattan"
+# dataset_file = "5_gta"
 # dataset_file = "6_paris"
 # dataset_file = "7_london"
 dataset = open(f'.\\datasets\\{dataset_file}.json').read()
