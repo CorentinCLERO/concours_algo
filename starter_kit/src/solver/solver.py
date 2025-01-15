@@ -1,4 +1,5 @@
 import json
+import os
 import networkx as nx
 import glob
 from src.node_analyser import NodeAnalyser
@@ -61,24 +62,78 @@ class Solver:
 
     @staticmethod
     def _load_best_scores(dataset_file, dataset_txt, best_score):
-        """Charge les meilleurs scores existants"""
-        if not dataset_file:
-            return None
-        try:
-            pattern = f'.\\solutions\\{dataset_file}_*.json'
-            best_solution = None
-            for solution_file in glob.glob(pattern):
-                with open(solution_file, 'r') as f:
-                    solution = f.read()
-                    score = int(solution_file.split('_')[2])
-                    if score > best_score:
-                        best_score = score
-                        best_solution = solution
+        """
+        Charge les meilleurs scores journaliers existants
 
+        Args:
+            dataset_file (str): Nom du fichier dataset sans extension
+            dataset_txt (str): Contenu JSON du dataset
+            best_score (int): Score actuel à battre
+        """
+        if not dataset_file:
+            print("Warning: No dataset file provided")
+            return None
+
+        try:
+            # Définir les chemins de recherche
+            solutions_dir = os.path.join('.', 'solutions')
+            cache_dir = os.path.join('.', 'cache', 'daily_scores')
+
+            # Créer les dossiers s'ils n'existent pas
+            os.makedirs(solutions_dir, exist_ok=True)
+            os.makedirs(cache_dir, exist_ok=True)
+
+            # Fichier cache pour les scores journaliers
+            cache_file = os.path.join(cache_dir, f'{dataset_file}_daily_scores.json')
+
+            # Si le cache existe, le charger
+            if os.path.exists(cache_file):
+                with open(cache_file, 'r') as f:
+                    print(f"Loading cached daily scores for {dataset_file}")
+                    return json.load(f)
+
+            # Pattern pour chercher les fichiers de solutions
+            pattern = os.path.join(solutions_dir, f'{dataset_file}_*.json')
+
+            best_solution = None
+            highest_existing_score = 0
+
+            # Parcourir tous les fichiers de solutions
+            for solution_file in glob.glob(pattern):
+                try:
+                    filename = os.path.basename(solution_file)
+                    file_score = int(filename.split('_')[2].split('.')[0])
+
+                    if file_score > highest_existing_score:
+                        highest_existing_score = file_score
+                        with open(solution_file, 'r') as f:
+                            best_solution = f.read()
+
+                except (ValueError, IndexError) as e:
+                    print(f"Warning: Invalid solution file {solution_file}: {e}")
+                    continue
+
+            # Si on a trouvé une solution
             if best_solution:
-                best_daily_scores = NodeAnalyser.get_daily_scores(best_solution, dataset_txt)
-                print(f"Best existing daily scores: {best_daily_scores}")
-                return best_daily_scores
+                try:
+                    # Calculer les scores journaliers
+                    best_daily_scores = NodeAnalyser.get_daily_scores(best_solution, dataset_txt)
+                    print(f"Best existing daily scores: {best_daily_scores}")
+
+                    # Sauvegarder les scores journaliers en cache
+                    with open(cache_file, 'w') as f:
+                        json.dump(best_daily_scores, f)
+                    print(f"Saved daily scores to cache: {cache_file}")
+
+                    return best_daily_scores
+
+                except Exception as e:
+                    print(f"Warning: Error calculating daily scores: {e}")
+                    return None
+
+            print("No valid solutions found")
+            return None
+
         except Exception as e:
-            print(f"Warning: Could not load best solution: {e}")
+            print(f"Error in _load_best_scores: {e}")
             return None
