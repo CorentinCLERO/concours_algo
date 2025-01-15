@@ -21,7 +21,15 @@ class PathEvaluator:
         if not neighbors:
             return [curr_node], 0
 
-        random.shuffle(neighbors)
+        # Trier les voisins par nombre de routes non visitées
+        neighbors.sort(key=lambda n: sum(1 for next_n in G.neighbors(n) if (n, next_n) not in visited_roads), reverse=True)
+
+        # Ajouter un peu d'aléatoire tout en gardant la priorité
+        if len(neighbors) > 3:
+            top_neighbors = neighbors[:3]
+            other_neighbors = neighbors[3:]
+            random.shuffle(other_neighbors)
+            neighbors = top_neighbors + other_neighbors
 
         for next_node in neighbors:
             if not G.has_edge(curr_node, next_node):
@@ -79,6 +87,7 @@ class PathEvaluator:
         total_score = 0
         remaining_battery = curr_battery
         current_visited = visited_roads.copy()
+        new_roads_count = 0
 
         for i in range(len(path)-1):
             node1, node2 = path[i], path[i+1]
@@ -92,21 +101,26 @@ class PathEvaluator:
 
             remaining_battery -= edge_len
 
-            # Score pour routes non visitées
+            # Score significativement plus élevé pour les nouvelles routes
             if (node1, node2) not in current_visited:
-                total_score += 10  # Score de base pour nouvelle route
+                new_roads_count += 1
+                total_score += edge_len * 50  # Augmentation significative du score de base
                 if is_last_day:
-                    total_score += 5  # Bonus pour dernier jour
+                    total_score += edge_len * 10  # Bonus pour dernier jour
                 current_visited.add((node1, node2))
                 current_visited.add((node2, node1))
 
             # Bonus pour utilisation efficace de la batterie
             battery_efficiency = edge_len / dataset['batteryCapacity']
-            total_score += battery_efficiency * 2
+            total_score += battery_efficiency * 5
 
-            # Bonus pour exploration
+            # Bonus pour l'exploration de nouvelles zones
             unvisited_neighbors = sum(1 for n in G.neighbors(node2)
                                     if (node2, n) not in current_visited)
-            total_score += unvisited_neighbors * (1 / (depth + 1))
+            total_score += unvisited_neighbors * 20  # Augmentation significative du bonus d'exploration
+
+        # Bonus pour la diversité des routes
+        if new_roads_count > 0:
+            total_score *= (1 + (new_roads_count / len(path)))
 
         return total_score

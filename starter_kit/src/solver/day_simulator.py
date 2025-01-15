@@ -94,7 +94,7 @@ class DaySimulator:
 
             # Vérification si le score est meilleur que le meilleur score connu
             if best_daily_scores and day_i < len(best_daily_scores):
-                if score > best_daily_scores[day_i] * 0.7:
+                if score > best_daily_scores[day_i] * 0.9:
                     if score > best_daily_scores[day_i]:
                         print(f"👏 Found better score on try {current_try + 1}: {score} > {best_daily_scores[day_i]}, hope it's the one !")
                     else:

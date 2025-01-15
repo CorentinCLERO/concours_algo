@@ -63,70 +63,93 @@ class Solver:
     @staticmethod
     def _load_best_scores(dataset_file, dataset_txt, best_score):
         """
-        Charge les meilleurs scores journaliers existants
-
-        Args:
-            dataset_file (str): Nom du fichier dataset sans extension
-            dataset_txt (str): Contenu JSON du dataset
-            best_score (int): Score actuel à battre
+        Charge les meilleurs scores journaliers existants et met à jour le cache si nécessaire
         """
         if not dataset_file:
             print("Warning: No dataset file provided")
             return None
 
         try:
-            # Définir les chemins de recherche
             solutions_dir = os.path.join('.', 'solutions')
             cache_dir = os.path.join('.', 'cache', 'daily_scores')
-
-            # Créer les dossiers s'ils n'existent pas
             os.makedirs(solutions_dir, exist_ok=True)
             os.makedirs(cache_dir, exist_ok=True)
 
-            # Fichier cache pour les scores journaliers
-            cache_file = os.path.join(cache_dir, f'{dataset_file}_daily_scores.json')
+            def get_cache_filename(score):
+                return os.path.join(cache_dir, f'{dataset_file}_{score}_daily_scores.json')
 
-            # Si le cache existe, le charger
-            if os.path.exists(cache_file):
-                with open(cache_file, 'r') as f:
-                    print(f"Loading cached daily scores for {dataset_file}")
-                    return json.load(f)
-
-            # Pattern pour chercher les fichiers de solutions
-            pattern = os.path.join(solutions_dir, f'{dataset_file}_*.json')
-
+            # Trouver la meilleure solution existante
+            solution_pattern = os.path.join(solutions_dir, f'{dataset_file}_*.json')
             best_solution = None
-            highest_existing_score = 0
+            highest_solution_score = 0
 
-            # Parcourir tous les fichiers de solutions
-            for solution_file in glob.glob(pattern):
+            for solution_file in glob.glob(solution_pattern):
                 try:
                     filename = os.path.basename(solution_file)
-                    file_score = int(filename.split('_')[2].split('.')[0])
-
-                    if file_score > highest_existing_score:
-                        highest_existing_score = file_score
+                    file_score = int(filename.split('_')[2])
+                    if file_score > highest_solution_score:
+                        highest_solution_score = file_score
                         with open(solution_file, 'r') as f:
                             best_solution = f.read()
-
+                        print(f"Found solution with score: {file_score}")
                 except (ValueError, IndexError) as e:
                     print(f"Warning: Invalid solution file {solution_file}: {e}")
                     continue
 
-            # Si on a trouvé une solution
-            if best_solution:
+            # Trouver le cache existant
+            cache_pattern = os.path.join(cache_dir, f'{dataset_file}_*_daily_scores.json')
+            current_cache_file = None
+            current_cache_score = 0
+
+            for cache_file in glob.glob(cache_pattern):
                 try:
-                    # Calculer les scores journaliers
-                    best_daily_scores = NodeAnalyser.get_daily_scores(best_solution, dataset_txt)
-                    print(f"Best existing daily scores: {best_daily_scores}")
+                    cache_score = int(cache_file.split('_')[-3])  # Extraire le score du nom du cache
+                    current_cache_file = cache_file
+                    current_cache_score = cache_score
+                    print(f"Found cache with score: {cache_score}")
+                except (ValueError, IndexError):
+                    continue
 
-                    # Sauvegarder les scores journaliers en cache
-                    with open(cache_file, 'w') as f:
-                        json.dump(best_daily_scores, f)
-                    print(f"Saved daily scores to cache: {cache_file}")
+            # Vérifier si une mise à jour est nécessaire
+            should_update_cache = highest_solution_score > current_cache_score
 
-                    return best_daily_scores
+            if should_update_cache:
+                try:
+                    print(f"Updating cache: solution score {highest_solution_score} > cache score {current_cache_score}")
+                    new_daily_scores = NodeAnalyser.get_daily_scores(best_solution, dataset_txt)
+                    new_cache_file = get_cache_filename(highest_solution_score)
 
+                    # Sauvegarder les nouveaux scores
+                    with open(new_cache_file, 'w') as f:
+                        json.dump(new_daily_scores, f)
+                    print(f"Created new cache: {new_cache_file}")
+
+                    # Supprimer l'ancien cache s'il existe
+                    if current_cache_file and os.path.exists(current_cache_file):
+                        os.remove(current_cache_file)
+                        print(f"Removed old cache: {current_cache_file}")
+
+                    return new_daily_scores
+
+                except Exception as e:
+                    print(f"Warning: Error calculating new daily scores: {e}")
+                    return None
+
+            # Utiliser le cache existant
+            elif current_cache_file:
+                with open(current_cache_file, 'r') as f:
+                    print(f"Loading existing cache with score {current_cache_score}")
+                    return json.load(f)
+
+            # Créer un nouveau cache si aucun n'existe
+            elif best_solution:
+                try:
+                    daily_scores = NodeAnalyser.get_daily_scores(best_solution, dataset_txt)
+                    new_cache_file = get_cache_filename(highest_solution_score)
+                    with open(new_cache_file, 'w') as f:
+                        json.dump(daily_scores, f)
+                    print(f"Created initial cache: {new_cache_file}")
+                    return daily_scores
                 except Exception as e:
                     print(f"Warning: Error calculating daily scores: {e}")
                     return None

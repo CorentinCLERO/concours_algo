@@ -9,8 +9,8 @@ from src.loop import Loop
 dataset_file = "6_paris"
 # dataset_file = "7_london"
 dataset = open(f'.\\datasets\\{dataset_file}.json').read()
-depth_number = 3
-max_attempts = 100
+depth_number = 10
+max_attempts = 1
 print('---------------------------------')
 print(f'Solving {dataset_file}')
 Loop.loop(dataset, dataset_file, max_attempts, depth_number)

@@ -2,6 +2,7 @@ import os
 import json
 import random
 import networkx as nx
+import math
 
 class NodeAnalyser:
     def analyze_base_nodes(G, dataset):
@@ -166,49 +167,71 @@ class NodeAnalyser:
         return int(random_node[0])
 
     @staticmethod
-    def get_daily_scores(solution_json, dataset_json):
-        """Calcule les scores cumulatifs pour chaque jour d'une solution"""
-        solution = json.loads(solution_json)
-        dataset = json.loads(dataset_json)
+    def get_daily_scores(solution_txt, dataset_txt):
+        """
+        Calcule les scores cumulatifs pour chaque jour de la solution
+        """
+        dataset = json.loads(dataset_txt)
+        solution = json.loads(solution_txt)
 
-        # D'abord, calculer le score total et les routes visitées pour chaque jour
-        daily_routes = []  # Liste des ensembles de routes visitées par jour
-        visited_roads = set()
-        day_start = 0
+        # Initialisation
+        base_id = solution['chargeStationId']
+        itinerary = solution['itinerary']
 
-        # Première passe : collecter les routes visitées par jour
-        for day in range(dataset['numDays']):
-            day_visited_roads = set()
-            i = day_start
+        # Création du dictionnaire des longueurs des routes
+        edge_length = {}
+        for road in dataset['roads']:
+            edge_length[(road['intersectionId1'], road['intersectionId2'])] = road['length']
+            if not road['isOneWay']:
+                edge_length[(road['intersectionId2'], road['intersectionId1'])] = road['length']
 
-            while i < len(solution['itinerary']) - 1:
-                node1 = solution['itinerary'][i]
-                node2 = solution['itinerary'][i + 1]
-
-                if node2 == solution['chargeStationId'] and day < dataset['numDays'] - 1:
-                    day_start = i + 1
-                    break
-
-                edge = (min(node1, node2), max(node1, node2))
-                if edge not in visited_roads:
-                    for road in dataset['roads']:
-                        if (road['intersectionId1'], road['intersectionId2']) == edge or \
-                        (road['intersectionId2'], road['intersectionId1']) == edge:
-                            day_visited_roads.add((edge, road['length']))
-                            visited_roads.add(edge)
-                            break
-                i += 1
-
-            daily_routes.append(day_visited_roads)
-
-        # Calculer les scores cumulatifs dans l'ordre croissant
+        # Variables pour le suivi
         daily_scores = []
-        running_total = 0
+        visited_edges = set()
+        cumulative_score = 0
+        remaining_battery = dataset['batteryCapacity']
 
-        # Parcourir les jours dans l'ordre normal
-        for day in range(dataset['numDays']):
-            day_score = sum(length for _, length in daily_routes[day])
-            running_total += day_score
-            daily_scores.append(running_total)
+        # Parcours de l'itinéraire
+        for i in range(len(itinerary) - 1):
+            n1, n2 = itinerary[i], itinerary[i + 1]
+
+            # Nouveau jour
+            if n1 == base_id and i > 0:
+                daily_scores.append(cumulative_score)
+                remaining_battery = dataset['batteryCapacity']
+
+            # Mise à jour de la batterie
+            edge_dist = edge_length.get((n1, n2), float('inf'))
+            remaining_battery -= edge_dist
+
+            # Si la batterie est épuisée, on arrête le calcul pour ce jour
+            if remaining_battery < 0:
+                daily_scores.append(cumulative_score)
+                break
+
+            # Calcul du score pour les nouvelles routes
+            if (n1, n2) not in visited_edges:
+                cumulative_score += edge_dist
+                visited_edges.add((n1, n2))
+                visited_edges.add((n2, n1))
+
+        # Ajouter le dernier jour si nécessaire
+        if not daily_scores or daily_scores[-1] != cumulative_score:
+            daily_scores.append(cumulative_score)
+
+        # Vérifier si toutes les routes ont été couvertes
+        total_length = sum(road['length'] for road in dataset['roads'])
+
+        if cumulative_score == total_length:
+            # Calculer le bonus pour finition précoce
+            days_used = len(daily_scores)
+            remaining_days = dataset['numDays'] - days_used
+            battery_ratio = remaining_battery / dataset['batteryCapacity']
+            bonus = (remaining_days + battery_ratio) / dataset['numDays'] + 1
+
+            # Appliquer le bonus au score final
+            final_score = math.ceil(cumulative_score * bonus)
+            if daily_scores:
+                daily_scores[-1] = final_score
 
         return daily_scores
