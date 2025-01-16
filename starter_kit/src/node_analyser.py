@@ -24,21 +24,23 @@ class NodeAnalyser:
                 if os.path.exists(ranking_file):
                     with open(ranking_file, 'r') as f:
                         current_ranking = json.load(f)
+                        # Convertir l'ancien format si nécessaire
+                        if current_ranking and isinstance(current_ranking[0], dict):
+                            current_ranking = [[entry['node_id'], entry['stats']] for entry in current_ranking]
                 else:
                     current_ranking = []
 
-                # Convertir les tuples en listes pour la sérialisation JSON
-                new_entries = [{
-                    'node_id': node,
-                    'score': data['score'],
-                    'stats': data
-                } for node, data in new_nodes]
+                # Convertir les nouveaux nœuds au format souhaité
+                new_entries = [
+                    [node, data]  # Format direct [node_id, stats]
+                    for node, data in new_nodes
+                ]
 
                 # Combiner ancien et nouveau classement
                 all_entries = current_ranking + new_entries
 
                 # Trier par score
-                all_entries.sort(key=lambda x: x['score'], reverse=True)
+                all_entries.sort(key=lambda x: x[1]['score'], reverse=True)
 
                 # Garder les 20 meilleurs
                 top_entries = all_entries[:20]
@@ -48,7 +50,7 @@ class NodeAnalyser:
                     json.dump(top_entries, f, indent=2)
 
                 print(f"📊 Classement mis à jour dans {ranking_file}")
-                print(f"   Top score: {top_entries[0]['score']:.2f}")
+                print(f"   Top score: {top_entries[0][1]['score']:.2f}")
             except Exception as e:
                 print(f"❌ Erreur lors de la mise à jour du classement: {e}")
 
