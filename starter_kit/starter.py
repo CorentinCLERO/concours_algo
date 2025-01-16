@@ -10,7 +10,7 @@ import time
 dataset_file = "6_paris"
 # dataset_file = "7_london"
 dataset = open(f'.\\datasets\\{dataset_file}.json').read()
-depth_number = 1
+depth_number = 2
 max_attempts = 100
 print('---------------------------------')
 print(f'Solving {dataset_file}')
@@ -25,3 +25,5 @@ print(f"Execution time: {elapsed_time:.2f} seconds")
 
 # Analyser tous les datasets
 # Analyser.analyze_history(max_attempts, dataset)
+
+# 6sec
