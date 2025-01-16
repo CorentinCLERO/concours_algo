@@ -41,7 +41,7 @@ class DaySimulator:
         # Calcul du score cumulé attendu pour ce jour
         expected_cumulative_score = best_daily_scores[day_i] if best_daily_scores and day_i < len(best_daily_scores) else 0
         if day_i > 0 and best_daily_scores:
-          expected_cumulative_score += best_daily_scores[day_i - 1]
+            expected_cumulative_score += best_daily_scores[day_i - 1]
 
         while current_try < max_tries:
             failed_attempts = 0
@@ -72,7 +72,7 @@ class DaySimulator:
 
                     # Mise à jour de l'état
                     curr_node, battery_remaining, visited_roads, path, score = self._update_state(
-                        curr_node, next_node, battery_remaining, visited_roads, path, score)
+                        curr_node, next_node, battery_remaining, visited_roads, path, score, best_daily_scores[day_i])
 
                     # Vérification de fin de journée
                     if self._should_end_day(curr_node, battery_remaining, is_last_day):
@@ -163,7 +163,7 @@ class DaySimulator:
             return False
         return True
 
-    def _update_state(self, curr_node, next_node, battery_remaining, visited_roads, path, score):
+    def _update_state(self, curr_node, next_node, battery_remaining, visited_roads, path, score, best_daily_score):
         """
         Met à jour l'état après un mouvement
 
@@ -173,7 +173,7 @@ class DaySimulator:
         # Mise à jour du score pour les nouvelles routes
         if (curr_node, next_node) not in visited_roads:
             score += self.G[curr_node][next_node]['length']
-            self._print_progress(score)
+            self._print_progress(score, best_daily_score)
 
         # Marquage des routes comme visitées
         visited_roads.add((curr_node, next_node))
@@ -188,31 +188,36 @@ class DaySimulator:
     def _should_end_day(self, curr_node, battery_remaining, is_last_day):
         """
         Détermine si la journée doit se terminer
-
-        Returns:
-            bool: True si la journée doit se terminer, False sinon
         """
+        # Si ce n'est pas le dernier jour et qu'on est à la base, on termine
         if not is_last_day and curr_node == self.base_id:
             return True
 
+        # Pour le dernier jour
         if is_last_day:
-            min_edge_length = float('inf')
-            for n in self.G.neighbors(curr_node):
-                if self.G.has_edge(curr_node, n):
-                    min_edge_length = min(min_edge_length, self.G[curr_node][n]['length'])
+            # Ne jamais terminer au base_id le dernier jour
+            if curr_node == self.base_id:
+                return False
 
-            if battery_remaining < min_edge_length or not any(
-                self.G.has_edge(curr_node, n) and battery_remaining >= self.G[curr_node][n]['length']
-                for n in self.G.neighbors(curr_node)
-            ):
-                print(f"No more feasible moves with remaining battery: {battery_remaining}")
+            # Vérifier s'il reste des mouvements possibles
+            has_feasible_moves = False
+            for n in self.G.neighbors(curr_node):
+                if (self.G.has_edge(curr_node, n) and
+                    battery_remaining >= self.G[curr_node][n]['length'] and
+                    n != self.base_id):  # Ignorer les mouvements vers la base
+                    has_feasible_moves = True
+                    break
+
+            # Terminer seulement si aucun mouvement n'est possible
+            if not has_feasible_moves:
+                print(f"No more feasible non-base moves with remaining battery: {battery_remaining}")
                 return True
 
         return False
 
-    def _print_progress(self, score):
+    def _print_progress(self, score, best_daily_score):
         """Affiche la progression si nécessaire"""
         current_time = datetime.datetime.now()
         if current_time - datetime.datetime.fromisoformat(self.time) > datetime.timedelta(seconds=5):
-            print(f"😴 It's been a while so the current score: {score}")
+            print(f"😴 It's been a while so the current score: {score}/{best_daily_score}")
             self.time = current_time.isoformat()

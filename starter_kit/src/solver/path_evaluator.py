@@ -27,9 +27,19 @@ class PathEvaluator:
             if not G.has_edge(curr_node, n):
                 continue
 
+            # Empêcher d'aller à la base le dernier jour
+            if is_last_day and n == base_id:
+                continue
+
             edge_len = G[curr_node][n]['length']
             if curr_battery < edge_len:
                 continue
+
+            # Vérification de la batterie pour le retour à la base
+            if n == base_id and not is_last_day:
+                battery_percentage = (curr_battery / dataset['batteryCapacity']) * 100
+                if battery_percentage > 10:  # Impossible de rentrer avec plus de 10%
+                    continue
 
             if not is_last_day:
                 if n not in dist_to_base or curr_battery - edge_len < dist_to_base[n]:
@@ -37,33 +47,38 @@ class PathEvaluator:
 
             # Score du voisin basé sur plusieurs facteurs
             unvisited_count = sum(1 for next_n in G.neighbors(n) if (n, next_n) not in visited_roads)
-            battery_efficiency = 1 - (edge_len / curr_battery)  # Plus c'est court, mieux c'est
+            battery_efficiency = 1 - (edge_len / curr_battery)
             distance_to_base = dist_to_base.get(n, float('inf')) if not is_last_day else 0
-            
+
             neighbor_score = (
-                unvisited_count * 100 +  # Priorité aux nœuds avec beaucoup de routes non visitées
-                battery_efficiency * 50 +  # Bonus pour l'efficacité énergétique
-                (1 / (distance_to_base + 1)) * 30  # Bonus pour la proximité à la base
+                unvisited_count * 100 +
+                battery_efficiency * 50 +
+                (1 / (distance_to_base + 1)) * 30
             )
-            
+
+            # Pénalité pour retour à la base avec plus de 5% de batterie
+            if n == base_id and not is_last_day:
+                battery_percentage = (curr_battery / dataset['batteryCapacity']) * 100
+                if battery_percentage > 5:
+                    neighbor_score *= 0.1  # Très forte pénalité (90% de réduction)
+
             if (curr_node, n) not in visited_roads:
-                neighbor_score *= 2  # Double score pour les routes non visitées
+                neighbor_score *= 2
 
             neighbor_scores.append((n, neighbor_score))
 
         # Tri des voisins par score
-        neighbor_scores.sort(key=lambda x: x[1], reverse=True)
-        
-        # Sélection des meilleurs voisins avec un peu d'aléatoire
-        top_k = min(5, len(neighbor_scores))
-        if top_k > 0:
+        if neighbor_scores:
+            neighbor_scores.sort(key=lambda x: x[1], reverse=True)
+
+            # Sélection des meilleurs voisins avec un peu d'aléatoire
+            top_k = min(5, len(neighbor_scores))
             selected_neighbors = neighbor_scores[:top_k]
-            # Ajout d'aléatoire pondéré pour les meilleurs voisins
-            weights = [1/(i+1) for i in range(top_k)]  # Poids décroissants
+            weights = [1/(i+1) for i in range(top_k)]
             selected_neighbors = random.choices(selected_neighbors, weights=weights, k=min(3, top_k))
             neighbors = [n[0] for n in selected_neighbors]
         else:
-            neighbors = []
+            return [curr_node], 0
 
         for next_node in neighbors:
             edge_len = G[curr_node][next_node]['length']
@@ -78,7 +93,7 @@ class PathEvaluator:
                 sub_path, sub_score = PathEvaluator.find_best_path(
                     G, next_node, remaining_battery,
                     temp_visited, dist_to_base, dataset,
-                    depth + 1, max_depth, is_last_day
+                    depth + 1, max_depth, base_id, is_last_day
                 )
                 if len(sub_path) > 1:
                     candidate_path.extend(sub_path[1:])
@@ -89,7 +104,7 @@ class PathEvaluator:
                 curr_battery, visited_roads,
                 dist_to_base, dataset,
                 depth, max_depth,
-                is_last_day
+                base_id, is_last_day
             )
 
             if path_score > best_score:
@@ -99,7 +114,7 @@ class PathEvaluator:
         return best_path, best_score
 
     @staticmethod
-    def evaluate_path(G, path, curr_battery, visited_roads, dist_to_base, dataset, depth, max_depth, is_last_day=False):
+    def evaluate_path(G, path, curr_battery, visited_roads, dist_to_base, dataset, depth, max_depth, base_id, is_last_day=False):
         """Évalue un chemin donné et calcule son score"""
         if not path or len(path) < 2:
             return float('-inf')
@@ -112,6 +127,17 @@ class PathEvaluator:
 
         for i in range(len(path)-1):
             node1, node2 = path[i], path[i+1]
+
+            # Vérification du retour à la base
+            if node2 == base_id:
+                if is_last_day:  # Impossible d'aller à la base le dernier jour
+                    return float('-inf')
+
+                battery_percentage = (remaining_battery / dataset['batteryCapacity']) * 100
+                if battery_percentage > 10:  # Impossible de rentrer avec plus de 10%
+                    return float('-inf')
+                elif battery_percentage > 5:  # Forte pénalité entre 5% et 10%
+                    total_score *= 0.1
 
             if not G.has_edge(node1, node2):
                 return float('-inf')
