@@ -145,7 +145,8 @@ class DaySimulator:
         best_path, _ = PathEvaluator.find_best_path(
             self.G, curr_node, battery_remaining, visited_roads,
             self.dist_to_base, self.dataset, depth=0,
-            max_depth=self.depth_complexity, is_last_day=is_last_day
+            max_depth=self.depth_complexity, base_id=self.base_id,
+            is_last_day=is_last_day
         )
 
         return best_path[1] if best_path and len(best_path) > 1 else None

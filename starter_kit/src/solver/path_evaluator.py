@@ -4,7 +4,7 @@ class PathEvaluator:
     """Classe responsable de l'évaluation des chemins et du calcul des scores"""
 
     @staticmethod
-    def find_best_path(G, curr_node, curr_battery, visited_roads, dist_to_base, dataset, depth, max_depth, is_last_day=False):
+    def find_best_path(G, curr_node, curr_battery, visited_roads, dist_to_base, dataset, depth, max_depth, base_id, is_last_day=False):
         """
         Trouve le meilleur chemin à partir du nœud actuel
 

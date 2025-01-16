@@ -5,10 +5,54 @@ import networkx as nx
 import math
 
 class NodeAnalyser:
-    def analyze_base_nodes(G, dataset):
-        """Analyse tous les noeuds et retourne les 10% meilleurs avec leurs caractéristiques"""
+    def analyze_base_nodes(G, dataset, dataset_file):
+        """Analyse tous les noeuds et met à jour le classement périodiquement"""
         nodes_analysis = {}
+        total_nodes = len(G.nodes())
+        nodes_processed = 0
+        update_frequency = 100  # Mise à jour tous les 100 nœuds
+        cache_dir = "cache/base_nodes"
+        os.makedirs(cache_dir, exist_ok=True)
 
+        # Construction du nom du fichier
+        ranking_file = f"{cache_dir}/base_nodes_cache_{dataset_file}.json"
+
+        def update_ranking_file(new_nodes):
+            """Met à jour le fichier de classement"""
+            try:
+                # Charger le classement existant
+                if os.path.exists(ranking_file):
+                    with open(ranking_file, 'r') as f:
+                        current_ranking = json.load(f)
+                else:
+                    current_ranking = []
+
+                # Convertir les tuples en listes pour la sérialisation JSON
+                new_entries = [{
+                    'node_id': node,
+                    'score': data['score'],
+                    'stats': data
+                } for node, data in new_nodes]
+
+                # Combiner ancien et nouveau classement
+                all_entries = current_ranking + new_entries
+
+                # Trier par score
+                all_entries.sort(key=lambda x: x['score'], reverse=True)
+
+                # Garder les 20 meilleurs
+                top_entries = all_entries[:20]
+
+                # Sauvegarder le nouveau classement
+                with open(ranking_file, 'w') as f:
+                    json.dump(top_entries, f, indent=2)
+
+                print(f"📊 Classement mis à jour dans {ranking_file}")
+                print(f"   Top score: {top_entries[0]['score']:.2f}")
+            except Exception as e:
+                print(f"❌ Erreur lors de la mise à jour du classement: {e}")
+
+        # [Le reste des fonctions helpers reste identique]
         def count_neighbors_at_depth(G, start_node, max_depth, battery_limit):
             """Compte les voisins accessibles à chaque profondeur avec contrainte de batterie"""
             visited = set([start_node])
@@ -55,7 +99,9 @@ class NodeAnalyser:
 
             return reachable_edges
 
+        current_batch = []
         for node in G.nodes():
+            print(f"Analyse du nœud {node} ({nodes_processed}/{total_nodes})...")
             score = 0
 
             # Critère 1 : Nombre de voisins directs et jusqu'à profondeur 5
@@ -104,14 +150,36 @@ class NodeAnalyser:
                 'total_connected_length': total_connected_length
             }
 
-        # Trier les noeuds par score
-        sorted_nodes = sorted(nodes_analysis.items(), key=lambda x: x[1]['score'], reverse=True)
+            current_batch.append((node, nodes_analysis[node]))
+            nodes_processed += 1
 
-        # Prendre les 10% meilleurs avec minimum 5 noeuds
-        num_top_nodes = max(5, int(len(sorted_nodes) * 0.1))
-        top_nodes = sorted_nodes[:num_top_nodes]
+            # Mise à jour périodique du classement
+            if nodes_processed % update_frequency == 0:
+                # Trier le batch courant
+                sorted_batch = sorted(current_batch, key=lambda x: x[1]['score'], reverse=True)
+                # Prendre les 20 meilleurs du batch
+                top_batch = sorted_batch[:20]
+                # Mettre à jour le fichier de classement
+                update_ranking_file(top_batch)
+                # Vider le batch courant
+                current_batch = []
 
-        return top_nodes
+                # Afficher la progression
+                progress = (nodes_processed / total_nodes) * 100
+                print(f"⏳ Progression: {progress:.1f}% ({nodes_processed}/{total_nodes} nœuds)")
+
+        # Traiter le dernier batch s'il en reste
+        if current_batch:
+            sorted_batch = sorted(current_batch, key=lambda x: x[1]['score'], reverse=True)
+            top_batch = sorted_batch[:20]
+            update_ranking_file(top_batch)
+
+        # Retourner le classement final
+        with open(ranking_file, 'r') as f:
+            final_ranking = json.load(f)
+
+        # Convertir le format pour maintenir la compatibilité avec le code existant
+        return [(entry['node_id'], entry['stats']) for entry in final_ranking]
 
     def get_cached_base_nodes(dataset_file):
         """Récupère les noeuds de base depuis le cache ou les calcule si nécessaire"""
@@ -139,7 +207,7 @@ class NodeAnalyser:
     def save_cached_base_nodes(dataset_file, nodes):
         """Sauvegarde les noeuds de base dans le cache"""
         cache_dir = 'cache/base_nodes'
-        cache_file = f'{cache_dir}/base_nodes_cache_{dataset_file}.json'
+        cache_file = f'{cache_dir}/final_base_nodes_cache_{dataset_file}.json'
 
         try:
             # Créer le dossier de cache s'il n'existe pas
@@ -157,7 +225,7 @@ class NodeAnalyser:
         cached_nodes = NodeAnalyser.get_cached_base_nodes(dataset_file)
         if cached_nodes is None:
             # Si le cache n'est pas accessible, calculer les noeuds
-            cached_nodes = NodeAnalyser.analyze_base_nodes(G, dataset)
+            cached_nodes = NodeAnalyser.analyze_base_nodes(G, dataset, dataset_file)
             # Essayer de sauvegarder dans le cache
             NodeAnalyser.save_cached_base_nodes(dataset_file, cached_nodes)
 

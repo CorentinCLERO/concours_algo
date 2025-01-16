@@ -91,7 +91,6 @@ class Solver:
                         highest_solution_score = file_score
                         with open(solution_file, 'r') as f:
                             best_solution = f.read()
-                        print(f"Found solution with score: {file_score}")
                 except (ValueError, IndexError) as e:
                     print(f"Warning: Invalid solution file {solution_file}: {e}")
                     continue
@@ -106,7 +105,6 @@ class Solver:
                     cache_score = int(cache_file.split('_')[-3])  # Extraire le score du nom du cache
                     current_cache_file = cache_file
                     current_cache_score = cache_score
-                    print(f"Found cache with score: {cache_score}")
                 except (ValueError, IndexError):
                     continue
 
@@ -138,8 +136,9 @@ class Solver:
             # Utiliser le cache existant
             elif current_cache_file:
                 with open(current_cache_file, 'r') as f:
-                    print(f"Loading existing cache with score {current_cache_score}")
-                    return json.load(f)
+                    json_data = json.load(f)
+                    print(f"Loading existing cache with score {current_cache_score} : {json_data}")
+                    return json_data
 
             # Créer un nouveau cache si aucun n'existe
             elif best_solution:
