@@ -38,6 +38,25 @@
     }
   ],
   [
+    2327,
+    {
+      "score": 2805649.9626515936,
+      "num_neighbors": 4,
+      "all_num_neighbors": 40,
+      "neighbors_by_depth": {
+        "1": 4,
+        "2": 4,
+        "3": 9,
+        "4": 11,
+        "5": 12
+      },
+      "avg_distance": 14312.104621099257,
+      "reachable_edges": 186751,
+      "outgoing_one_way": 0,
+      "total_connected_length": 115
+    }
+  ],
+  [
     66599,
     {
       "score": 2805648.2168258056,
@@ -358,25 +377,6 @@
       "reachable_edges": 186751,
       "outgoing_one_way": 1,
       "total_connected_length": 184
-    }
-  ],
-  [
-    84680,
-    {
-      "score": 2805613.967187044,
-      "num_neighbors": 3,
-      "all_num_neighbors": 32,
-      "neighbors_by_depth": {
-        "1": 3,
-        "2": 5,
-        "3": 7,
-        "4": 9,
-        "5": 8
-      },
-      "avg_distance": 14345.057033864901,
-      "reachable_edges": 186751,
-      "outgoing_one_way": 1,
-      "total_connected_length": 148
     }
   ]
 ]
