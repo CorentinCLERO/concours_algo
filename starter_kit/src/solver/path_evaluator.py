@@ -51,10 +51,18 @@ class PathEvaluator:
             distance_to_base = dist_to_base.get(n, float('inf')) if not is_last_day else 0
 
             neighbor_score = (
-                unvisited_count * 100 +
-                battery_efficiency * 50 +
-                (1 / (distance_to_base + 1)) * 30
+                unvisited_count * 150 +  # Augmentation de l'importance des routes non visitées
+                battery_efficiency * 70 +  # Plus d'importance à l'efficacité
+                (1 / (distance_to_base + 1)) * 40 +  # Distance à la base
+                len(list(G.neighbors(n))) * 20 +  # Bonus pour les nœuds bien connectés
+                (edge_len / dataset['batteryCapacity']) * 30  # Bonus pour les longues routes
             )
+
+            # Bonus pour les zones peu explorées
+            area_exploration = sum(1 for nn in G.neighbors(n)
+                                for nnn in G.neighbors(nn)
+                                if (nn, nnn) not in visited_roads)
+            neighbor_score += area_exploration * 15
 
             # Pénalité pour retour à la base avec plus de 5% de batterie
             if n == base_id and not is_last_day:
@@ -128,17 +136,6 @@ class PathEvaluator:
         for i in range(len(path)-1):
             node1, node2 = path[i], path[i+1]
 
-            # Vérification du retour à la base
-            if node2 == base_id:
-                if is_last_day:  # Impossible d'aller à la base le dernier jour
-                    return float('-inf')
-
-                battery_percentage = (remaining_battery / dataset['batteryCapacity']) * 100
-                if battery_percentage > 10:  # Impossible de rentrer avec plus de 10%
-                    return float('-inf')
-                elif battery_percentage > 5:  # Forte pénalité entre 5% et 10%
-                    total_score *= 0.1
-
             if not G.has_edge(node1, node2):
                 return float('-inf')
 
@@ -172,6 +169,30 @@ class PathEvaluator:
             # Bonus pour les routes consécutives non visitées
             if consecutive_new_roads > 1:
                 total_score *= (1 + (consecutive_new_roads * 0.1))
+
+            # Bonus pour la couverture de zones
+            zone_coverage = len(set(n for p in path for n in G.neighbors(p))) / len(G.nodes())
+            total_score *= (1 + zone_coverage)
+
+            # Bonus pour l'efficacité du chemin
+            path_efficiency = len(set(path)) / len(path)  # Pénalise les allers-retours
+            total_score *= path_efficiency
+
+            # Bonus pour la batterie restante le dernier jour
+            if is_last_day:
+                battery_usage = (dataset['batteryCapacity'] - remaining_battery) / dataset['batteryCapacity']
+                total_score *= (1 + battery_usage)  # Récompense l'utilisation maximale
+
+            # Vérification du retour à la base
+            if node2 == base_id:
+                if is_last_day:  # Impossible d'aller à la base le dernier jour
+                    return float('-inf')
+
+                battery_percentage = (remaining_battery / dataset['batteryCapacity']) * 100
+                if battery_percentage > 10:  # Impossible de rentrer avec plus de 10%
+                    return float('-inf')
+                elif battery_percentage > 5:  # Forte pénalité entre 5% et 10%
+                    total_score *= 0.1
 
         # Bonus pour la diversité des routes
         if new_roads_count > 0:
