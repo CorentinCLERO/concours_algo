@@ -2,83 +2,89 @@ import os
 import glob
 import json
 import test_solution
+import pandas as pd
 import datetime
 import matplotlib.pyplot as plt
 import seaborn as sns
 from src.solver.solver import Solver
 
 class Analyser:
-    def analyze_history(max_attempts, dataset, dataset_file=None, depth_number=None):
+    @staticmethod
+    def analyze_history(max_attempts, dataset, dataset_file=None):
         """Analyse l'historique des scores et génère des visualisations"""
 
         cache_dir = 'cache/scores'
-        if dataset_file and depth_number:
-            files = [f'{cache_dir}/{dataset_file}/history_depth_{depth_number}.json']
+        if dataset_file:
+            files = [f'{cache_dir}/{dataset_file}/history_depth_*.json']
         else:
             files = glob.glob(f'{cache_dir}/**/history_depth_*.json', recursive=True)
 
-        plt.figure(figsize=(15, 10))
+        plt.figure(figsize=(12, 8))
 
+        # Style du graphique
+        plt.style.use('seaborn-v0_8-darkgrid')
+
+        # Palette de couleurs unique pour chaque profondeur
+        depths = []
+        data_by_depth = {}
+
+        # Charger les données et organiser par profondeur
         for file in files:
             with open(file, 'r') as f:
                 history = json.load(f)
 
-            valid_scores = [entry['score'] for entry in history['scores'] if entry['is_valid']]
+            depth = history['depth_number']
+            depths.append(depth)
 
-            sns.kdeplot(valid_scores, label=f"{history['dataset']} (Depth {history['depth_number']})")
+            scores_data = [(entry['score'], entry['timestamp'])
+                           for entry in history['scores']
+                           if entry['is_valid']]
+            scores_data.sort(key=lambda x: x[1])  # Tri par timestamp
 
-        plt.title('Score Distribution by Dataset and Depth')
-        plt.xlabel('Score')
-        plt.ylabel('Density')
-        plt.legend()
+            if depth not in data_by_depth:
+                data_by_depth[depth] = {'scores': [], 'timestamps': []}
+
+            data_by_depth[depth]['scores'].extend([score for score, _ in scores_data])
+            data_by_depth[depth]['timestamps'].extend(
+                [datetime.datetime.strptime(ts, "%Y%m%d_%H%M%S") for _, ts in scores_data]
+            )
+
+        # Générer une palette de couleurs unique
+        unique_depths = sorted(set(depths))
+        colors = sns.color_palette("tab10", len(unique_depths))
+        depth_color_map = {depth: colors[i] for i, depth in enumerate(unique_depths)}
+
+        # Tracer les courbes
+        for depth, data in data_by_depth.items():
+            scores = data['scores']
+            timestamps = data['timestamps']
+
+            # Calcul de la moyenne mobile
+            moving_avg = pd.Series(scores).rolling(window=10).mean()
+
+            # Tracer les points et la courbe
+            plt.scatter(timestamps, scores, alpha=0.5, color=depth_color_map[depth], label=f"Depth {depth}")
+            plt.plot(timestamps, moving_avg, '-', linewidth=2, color=depth_color_map[depth])
+
+        # Personnalisation du graphique
+        plt.title('Évolution des Scores par Profondeur de Recherche', fontsize=16, pad=20)
+        plt.xlabel('Temps', fontsize=14)
+        plt.ylabel('Score', fontsize=14)
+        plt.grid(True, alpha=0.3)
+
+        # Rotation des labels de l'axe x
+        plt.xticks(rotation=45)
+
+        # Légende simplifiée
+        plt.legend(title="Profondeur", fontsize=12, title_fontsize=14)
+
+        # Ajustement automatique de la mise en page
+        plt.tight_layout()
 
         # Sauvegarder le graphique
         os.makedirs('cache/visualizations', exist_ok=True)
-        plt.savefig('cache/visualizations/score_distribution.png')
-        print('📈 Generated visualization: cache/visualizations/score_distribution.png')
-        # Vérifie si la meilleure solution trouvée est meilleure que les solutions existantes
-        highest_existing_score = Analyser.get_highest_score_from_files(dataset_file)
-
-        best_result = None
-        lowest_score = highest_existing_score
-        best_score = 0
-
-        for attempt in range(max_attempts):
-            solution = Solver.solve(dataset, depth_number, dataset_file)
-            score, is_valid, message = test_solution.getSolutionScore(solution, dataset)
-
-            if is_valid and score < lowest_score:
-                lowest_score = score
-
-            if is_valid and score > best_score:
-                best_score = score
-                best_result = solution
-
-            if is_valid and score > highest_existing_score:
-                highest_existing_score = score
-                print(f'✅ New best score! {best_score} (Previous best: {highest_existing_score})')
-
-                # Supprimer les anciennes solutions avec des scores inférieurs
-                pattern = f'.\\solutions\\{dataset_file}_*.json'
-                for old_file in glob.glob(pattern):
-                    try:
-                        old_score = int(old_file.split('_')[2])
-                        if old_score < score:
-                            os.remove(old_file)
-                    except (IndexError, ValueError):
-                        continue
-
-                # Sauvegarder la nouvelle meilleure solution
-                date = datetime.datetime.now().strftime('%Y%m%d_%H%M%S')
-                file_name = f'{dataset_file}_{score}_{date}'
-
-                with open(f'.\\solutions\\{file_name}.json', 'w') as f:
-                    f.write(best_result)
-                # print('Best solution saved')
-            elif not is_valid:
-                print(f'❌ Invalid solution: {message}')
-            
-        print(f'Best score found: {best_score}')
+        plt.savefig('cache/visualizations/score_evolution_cleaned.png', bbox_inches='tight', dpi=300)
+        print('📈 Generated visualization: cache/visualizations/score_evolution_cleaned.png')
 
     def get_highest_score_from_files(dataset_file):
         # Cherche tous les fichiers de solution pour ce dataset
